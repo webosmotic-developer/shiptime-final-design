@@ -91,11 +91,11 @@ ul.notification-list {margin: 0px; padding: 0px; list-style: none;}
 
 .sideNav ul.sideNav-list {margin: 0px; padding: 0px; list-style: none;}
 .sideNav ul.sideNav-list.sideNav-list-bottom {position: absolute; bottom: 0px; left: 0px; width:240px;}
-.sideNav ul.sideNav-list li {padding: 2px 8px 2px 8px;}
+.sideNav ul.sideNav-list li {padding: 0px 8px 1px 8px;}
 
 .sideNav .sideNav-list .feather {margin-right: 5px; float: left;}
 .sideNav .sideNav-list a.nav-label {/*display: flex; align-items: center;*/}
-.sideNav .sideNav-list a.nav-label .nav-text {margin-top: 2px;display: inline-block;}
+.sideNav .sideNav-list a.nav-label .nav-text {margin-top: -2px;display: inline-block;}
 .sideNav .sideNav-list a {font-size: 0.8rem; padding: 8px 11px; min-height:38px; min-width: 40px; white-space: nowrap; color: #fff;display: block;text-decoration: none; border-radius:20px;
 /*TRANSISTIONS*/ -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease;}
 
@@ -247,6 +247,8 @@ select.form-control-sm:not([size]):not([multiple]) {height: calc(1.5rem + 2px);p
 .card-tab:hover,.card-tab:focus {webkit-box-shadow:0 3px 6px rgba(0,0,0,.15);box-shadow:0 3px 6px rgba(0,0,0,.15);}
 .card-tab .card-header a {text-decoration: none;}
 .card-tab .card-header button.btn-icon {line-height: 10px; width: 35px; height: 35px; border-radius: 50px;margin: 0 2px;}
+.card-tab .card-body {padding: 0 .75rem .75rem;}
+.card-tab .card-body .table {margin-bottom: 0px !important;}
 
 .file-upload {border: 2px dashed #d6d7d8;text-align: center;padding: 50px 0;margin-bottom: 1rem;}
 .file-upload:focus, .file-upload:hover {border-color: #17a2b8;}
