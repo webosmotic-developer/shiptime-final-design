@@ -264,6 +264,8 @@ select.form-control-sm:not([size]):not([multiple]) {height: calc(1.5rem + 2px);p
 .pagination .page-item.active .page-link {background-color: #17a2b8;border-color: transparent;border-radius: 50%;color: #fff;}
 
 .pagination-entries { padding: 10px 0;}
+.pagebtn-container .page-item:first-child .page-link {border-top-left-radius: 50%!important;  border-bottom-left-radius: 50%!important; }
+.pagebtn-container .page-item:last-child .page-link {border-top-right-radius: 50%!important;  border-bottom-right-radius: 50%!important; }
 
 ._nav {}
   ._nav .nav-link {color: #000;border-radius: 8px 8px 0px 0;border: 1px solid rgba(0, 0, 0, 0.08);border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
