@@ -7,8 +7,10 @@ $(function() {
         }
     });
 
-    Waves.attach('.waves');
-    $(".select7").select7();
+    if($('.select7').length){
+        $('.select7').select7();
+    }
+    
 })
 
 feather.replace()

@@ -13,10 +13,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/iziToast.min.css">
     <link rel="stylesheet" href="css/_main.css">
 </head>
 
 <body>
+  <div class="loader" style="position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 99999; background:rgba(255, 255, 255, 0.80);display: flex;justify-content: center;align-items: center;"><div class="text-center"><i data-feather="home" class="feather-loader"></i><p>LOADING</p></div></div>
   <header id="_mainHeader" class="_mainHeader-white">
       <!--Navbar-->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top fixed">
@@ -120,6 +122,16 @@
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
                                 a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
                                 Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.</p>
+
+
+                                <h3>button loading</h3>
+                            <div class="float-right">
+                                <button type="button" class="btn btn-info waves btn-shadow mr-1 mb-2 _btn-loader" id="_btn1">Add New</button>
+                                <button type="button"  class="btn btn-default waves btn-shadow mb-2 _btn-loader" id="_btn2">Bulk Import</button>
+                            </div>
+                            <button class="_btn-loader" id="_btn3">Sign In</button>
+
+
                         </div>
                     </div>
                 </div>
@@ -130,6 +142,20 @@
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
                                 a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
                                 Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.</p>
+
+                                <h3>examples - lightweight notification </h3>
+                                <ul class="buttons">
+                                    <li><a href="#" class="trigger-info">Info</a></li>
+                                    <li><a href="#" class="trigger-success">Success</a></li>
+                                    <li><a href="#" class="trigger-warning">Warning</a></li>
+                                    <li><a href="#" class="trigger-error">Error</a></li>
+                                    <li><a href="#" class="trigger-question">Question</a></li>
+                                    <li><a href="#" class="trigger-progress">Progress</a></li>
+                                    <li><a href="#" class="trigger-custom1">Custom I</a></li>
+                                    <li><a href="#" class="trigger-custom2">Custom II</a></li>
+                                    <li class="lava"></li>
+                                </ul>
+
                         </div>
                     </div>
                 </div>
@@ -158,16 +184,57 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/feather.min.js"></script>
+
+    <script src="js/iziToast.min.js"></script>
+    <script src="js/_iziToast.demo.js"></script>
     <script src="js/_main.js"></script>
-    <script>
-        //feather.replace()
+
+    <script type="text/javascript">
+      $(window).load(function() {
+        $(".loader").fadeOut("slow");
+      });
     </script>
+
+    <script>
+    $(function(){
+          var btnLoader = document.querySelector('#_btn1');
+          btnLoader.addEventListener("click", function() {
+              btnLoader.innerHTML = "Signing In";
+              btnLoader.classList.add('spinning');
+            setTimeout(
+                  function  (){
+                      btnLoader.classList.remove('spinning');
+                      btnLoader.innerHTML = "Sign In";
+                  }, 6000);
+          }, false);
+
+          var btnLoader2 = document.querySelector('#_btn2');
+          btnLoader2.addEventListener("click", function() {
+              btnLoader2.innerHTML = "Signing In";
+              btnLoader2.classList.add('spinning');
+            setTimeout(
+                  function  (){
+                      btnLoader2.classList.remove('spinning');
+                      btnLoader2.innerHTML = "Sign In";
+                  }, 60000);
+          }, false);
+
+          var btnLoader3 = document.querySelector('#_btn3');
+          btnLoader3.addEventListener("click", function() {
+              btnLoader3.innerHTML = "Signing In";
+              btnLoader3.classList.add('spinning');
+            setTimeout(
+                  function  (){
+                      btnLoader3.classList.remove('spinning');
+                      btnLoader3.innerHTML = "Sign In";
+                  }, 6000);
+          }, false);
+      });
+    </script>
+
 </body>
-
-</html>
-
 </html>

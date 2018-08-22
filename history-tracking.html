@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <div class="loader" style="position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 99999; background:rgba(255, 255, 255, 0.80);display: flex;justify-content: center;align-items: center;"><div class="text-center"><i data-feather="file-text" class="feather-loader"></i><p>LOADING</p></div></div>
     <header id="_mainHeader" class="_mainHeader-white">
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top fixed">
@@ -1570,15 +1571,17 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-1.11.3.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/feather.min.js"></script>
         <script src="js/jquery-select7.js"></script>
-        <script src="js/waves.min.js"></script>
         <script src="js/_main.js"></script>
+
+        <script type="text/javascript">
+          $(window).load(function() {
+            $(".loader").fadeOut("slow");
+          });
+        </script>
 </body>
-
-</html>
-
 </html>
