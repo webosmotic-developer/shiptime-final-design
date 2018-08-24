@@ -1,6 +1,14 @@
 html, body{height:100%;font-family:'Roboto', sans-serif;}
 body {font-size: 13px;color: #6c757d; background-color: #fafafa; font-family: 'Roboto', sans-serif;
 width: 100%; background-color: #f5f5f5;letter-spacing: 0.3px;}
+a {color: #17a2b8;}
+a:hover {color: #dc3545;}
+
+.loader {position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 99999; background:rgba(255, 255, 255, 0.80);display: flex;justify-content: center;align-items: center;}
+.loader .loader-text {padding: 10px 0px;}
+.loader .feather-loader {width: 50px; height: 50px;}
+
+.showloader {background: url(../images/loader.svg) center center no-repeat; background-size: cover; height: 50px; width: 150px; margin: 0 auto; display:block;}
 
 .blue-gradient {background: -webkit-linear-gradient(-50deg, #30cfd0, #330867);background: -o-linear-gradient(-50deg, #30cfd0, #330867);background: linear-gradient(-40deg, #30cfd0, #330867);}
 
@@ -9,6 +17,9 @@ width: 100%; background-color: #f5f5f5;letter-spacing: 0.3px;}
 
 .bg-orange {background-color: #ec5a27 !important;}
 .bg-blue {background-color: #411f73 !important;}
+
+.alert {border: 0px !important;}
+.alert-dismissible .close {padding:.6rem 1.25rem;}
 
 h1, h2, h3, h4, h5, h6{font-family:'Roboto', sans-serif;margin-top:0;}
 .clear{clear:both;}
@@ -133,7 +144,6 @@ body::-webkit-scrollbar {width: 10px;}
 /*feather icon size*/
 .feather {width: 18px;height: 18px;stroke: currentColor;stroke-width: 2;stroke-linecap: round;stroke-linejoin: round;fill: none;}
 .feather-lg {width: 22px;height: 23px;}
-.feather-loader {width: 50px;height: 50px;}
 
 /*.fixed-sn .double-nav, .fixed-sn footer, .fixed-sn main {*/
 body:not(.fixed-sn) main {padding-left: 56px;}
@@ -231,10 +241,9 @@ select.form-control-sm:not([size]):not([multiple]) {height: calc(1.5rem + 2px);p
 
   .multi__checkbox_th {width: 40px;}
   table tr:hover .flot-action {opacity: 1 !important;}
-  ._table-style tbody tr:hover {background: rgba(0, 0, 0, 0.07) !important;
+  ._table-style tbody tr:hover:not(.nohover) {background: rgba(0, 0, 0, 0.07) !important;
     webkit-box-shadow:inset 4px 0 0 #999, 0 0px 5px 0 rgba(0,0,0,.03), 0 1px 5px 1px rgba(0,0,0,.15);
     box-shadow: inset 4px 0 0 #999, 0 0px 5px 0 rgba(0,0,0,.03), 0 1px 5px 1px rgba(0,0,0,.15);}
-
 
 
 /*card*/
@@ -291,10 +300,17 @@ select.form-control-sm:not([size]):not([multiple]) {height: calc(1.5rem + 2px);p
 
 /*. _btn-loader */
 ._btn-loader{position:relative;transition:padding-right .3s ease;}
-._btn-loader.spinning:after,._btn-loader.spinning:before{width:0;height:0;border-radius:50%;right:6px;top:50%;position:absolute}
-._btn-loader.spinning{padding-right:35px}
-._btn-loader.spinning:after{content:'';box-shadow:0 0 0 1px #080808;-webkit-animation:rotate360 .5s infinite linear,exist .1s forwards ease;animation:rotate360 .5s infinite linear,exist .1s forwards ease}
-._btn-loader.spinning:before{content:"";border:2px solid #000;border-right:3px solid #27ae60;-webkit-animation:rotate360 .5s infinite linear,exist .1s forwards ease;animation:rotate360 .5s infinite linear,exist .1s forwards ease}
+._btn-loader-center{position:relative;transition:}
+._btn-loader-center.spinning:before {right: inherit !important; left: 45% !important;}
+
+.spinning:before{width:0;height:0;border-radius:50%;right:6px;top:50%;position:absolute}
+.spinning{padding-right:35px}
+.spinning:before{content:"";border:2px solid rgba(255, 255, 255, 0.60);border-right:2px solid #d94f26;-webkit-animation:rotate360 .5s infinite linear,exist .1s forwards ease;animation:rotate360 .5s infinite linear,exist .1s forwards ease}
+
+.spinning-light:before{width:0;height:0;border-radius:50%;right:6px;top:50%;position:absolute}
+.spinning-light{padding-right:35px}
+.spinning-light:before{content:"";border:2px solid rgba(255, 255, 255, 0.2);border-right:2px solid #f7f7f7;-webkit-animation:rotate360 .5s infinite linear,exist .1s forwards ease;animation:rotate360 .5s infinite linear,exist .1s forwards ease}
+
 @-webkit-keyframes rotate360{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
 @keyframes rotate360{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
 @-webkit-keyframes exist{100%{width:15px;height:15px;margin:-8px 5px 0 0}}
