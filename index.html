@@ -17,7 +17,7 @@
 
 <body>
     <!-- <div class="loader">
-        <div class="text-center"><span class="showloader"></span>
+            <div class="text-center"><span class="showloader"></span>
             <div class="loader-text">LOADING</div>
         </div>
     </div> -->
@@ -64,8 +64,8 @@
                 <li class="nav-item dropdown pl-1">
                     <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="settings"></i></a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="#">Global Prefences</a>
-                        <a class="dropdown-item" href="#">Credit Cards</a>
+                        <a class="dropdown-item" href="global-preferences.html">Global Prefences</a>
+                        <a class="dropdown-item" href="credit-cards.html">Credit Cards</a>
                         <a class="dropdown-item" href="#">Users</a>
                         <a class="dropdown-item" href="#">Carriers</a>
                         <a class="dropdown-item" href="#">Boxes</a>
@@ -212,14 +212,10 @@
                         <div class="card card-hover-accsons mt-3">
                             <div class="card-header card-title">
                                 <div class="row">
-                                    <div class="col-12 col-sm">Shipping History</div>
-                                    <div class="col order-last">
-                                        <div class="sort-by">
-                                            <select class="form-control dropdown-info form-control-sm select7">
-                                                <option value="3">Month</option>
-                                                <option value="2">Week</option>
-                                                <option value="1">Today</option>
-                                            </select>
+                                    <div class="col">Shipping History</div>
+                                    <div class="pr-3">
+                                        <div class="daterange input-group input-date-icon">
+                                            <input type="text" class="form-control input-date _date_demo_left">
                                         </div>
                                     </div>
                                 </div>
@@ -631,22 +627,17 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 pr-xl-0">
                         <div class="card equal-h-card mt-3">
                             <div class="card-header card-title">
                                 <div class="row">
-                                    <div class="col-12 col-sm">
+                                    <div class="col">
                                         Created Shipments
                                     </div>
-                                    <div class="col order-last">
-                                        <div class="sort-by">
-                                            <select class="form-control dropdown-info form-control-sm select7">
-                                                        <option value="3">Month</option>
-                                                        <option value="2">Week</option>
-                                                        <option value="1">Today</option>
-                                                    </select>
+                                    <div class="pr-3">
+                                        <div class="daterange input-group input-date-icon">
+                                            <input type="text" class="form-control input-date _date_demo_right">
                                         </div>
                                     </div>
                                 </div>
@@ -661,16 +652,12 @@
                         <div class="card equal-h-card mt-3">
                             <div class="card-header card-title">
                                 <div class="row">
-                                    <div class="col-12 col-sm">
+                                    <div class="col">
                                         Money Spent
                                     </div>
-                                    <div class="col order-last">
-                                        <div class="sort-by">
-                                            <select class="form-control dropdown-info form-control-sm select7">
-                                                        <option value="3">Month</option>
-                                                        <option value="2">Week</option>
-                                                        <option value="1">Today</option>
-                                                    </select>
+                                    <div class="pr-3">
+                                        <div class="daterange input-group input-date-icon">
+                                            <input type="text" class="form-control input-date _date_demo_left">
                                         </div>
                                     </div>
                                 </div>
@@ -1034,7 +1021,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-6 pr-0">
                         <div class="card equal-h-card mt-3">
@@ -1180,8 +1166,8 @@
                 <div class="modal-header modal-header-theme">
                     <h4 class="modal-title" id="Your Addresses">Your Addresses</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
+                            <span aria-hidden="true">×</span>
+                            </button>
                 </div>
                 <!--Body-->
                 <div class="modal-body">
@@ -1378,6 +1364,49 @@
                 $(".loader").fadeOut("slow");
             }, 300);
         });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script>
+        $(function() {
+            $('._date_demo_left').daterangepicker({
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                },
+                "alwaysShowCalendars": true,
+                "startDate": "08/31/2018",
+                "endDate": "09/06/2018",
+                "opens": "left"
+            }, function(start, end, label) {
+                console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+            });
+        })
+    </script>
+    <script>
+        $(function() {
+            $('._date_demo_right').daterangepicker({
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                },
+                "alwaysShowCalendars": true,
+                "startDate": "08/31/2018",
+                "endDate": "09/06/2018",
+                "opens": "right"
+            }, function(start, end, label) {
+                console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+            });
+        })
     </script>
     <script src="js/_main.js"></script>
 </body>

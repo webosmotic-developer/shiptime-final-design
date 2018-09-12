@@ -20,7 +20,7 @@ a:hover {color: #dc3545;}
 
 .alert {border: 0px !important;}
 .alert-dismissible .close {padding:.6rem 1.25rem;}
-
+.question-icon {font-size: 18px;display: inline-block;}
 h1, h2, h3, h4, h5, h6{font-family:'Roboto', sans-serif;margin-top:0;}
 .clear{clear:both;}
 .nowrap {white-space: nowrap;}
@@ -202,6 +202,7 @@ select.form-control-sm:not([size]):not([multiple]) {height: calc(1.5rem + 2px);p
 
 .custom-control {display: flex; align-items: center; font-size: 0.8rem;}
 .custom-control-input:focus~.custom-control-label::before{box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(23, 162, 184, .2);}
+.custom-select.is-invalid:focus, .form-control.is-invalid:focus, .was-validated .custom-select:invalid:focus, .was-validated .form-control:invalid:focus, .custom-select.is-valid:focus, .form-control.is-valid:focus, .was-validated .custom-select:valid:focus, .was-validated .form-control:valid:focus{box-shadow: none;}
 
 ._form-search-block {position: relative; background-color: #fff;}
 /*._form-search-block .search-input.form-control {border: 5px solid #411f73; border-width: 5px 0px !important;}*/
@@ -266,6 +267,7 @@ div.equal-h-card {margin-bottom: 15px;}
 .card {background:0 0;padding:0;border-radius: .50rem; background: #FFFFFF;-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.15); box-shadow: 0 3px 6px rgba(0,0,0,.15); border: 0;}
 .card-header {padding: .75rem; border: 0;background-color: transparent;}
 .card-title {line-height: 34px; font-size: 16px;font-weight: 700;color: #000;padding-left: 20px;border-bottom: 1px solid #EEEEEE;}
+.card-title p {font-size: 12px;font-weight: normal;color: #999;line-height: 18px;margin-bottom: 8px;}
 .card-body {padding: 0 .75rem;}
 .card-footer {padding: .75rem;border: 0;background-color: transparent;}
 .dashboard-card {background-color:#fff;border:none;border-radius:8px!important;box-shadow:0 3px 6px rgba(0,0,0,.15);padding:20px}
@@ -373,12 +375,15 @@ box-shadow: 0 3px 6px rgba(0,0,0,.15);}
 
 /* daterange */
 .datepicker table tr td.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active:hover {background-color: #40799f;background-color: #40799f;background-image: -moz-linear-gradient(to bottom,#40799f,#17a2b8);background-image: -ms-linear-gradient(to bottom,#40799f,#17a2b8);background-image: -webkit-gradient(linear,0 0,0 100%,from(#40799f),to(#17a2b8));background-image: -webkit-linear-gradient(to bottom,#40799f,#17a2b8);background-image: -o-linear-gradient(to bottom,#40799f,#17a2b8);background-image: linear-gradient(to bottom,#40799f,#17a2b8);background-repeat: repeat-x;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40799f', endColorstr='#17a2b8', GradientType=0);border-color: #17a2b8 #17a2b8 #40799f;border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);}
+.daterange {width: 230px;}
+.daterange span {position: absolute;right: 0;top: 8px;cursor: pointer;z-index: 10;}
 .input-group-addon {cursor: pointer;padding: 6px 12px;color: #555;text-align: center;background-color: #eee;border: 1px solid #dcdcdc;}
 .input-group-addon-style {background-color: #fff;border-bottom: 1px solid rgba(100,121,143,0.122)!important;border: 0;}
 .input-group-addon-center {border-left: 0; border-right: 0;}
 .input-group-addon:last-child {border-left: 0;}
 .input-group-addon:last-child {border-bottom-right-radius: .25rem;border-top-right-radius: .25rem;}
-.input-date-icon:after {font-family: 'FontAwesome';position: absolute;top: 6px;right: 10px;content: "\f073";z-index: 10;}
+.daterange .input-date {background-image: url("../images/calendar.jpg");background-repeat: no-repeat;background-position: right;}
+/* .input-date-icon:after {font-family: 'FontAwesome';position: absolute;top: 6px;right: 10px;content: "\f073";z-index: 10;} */
 
 
 @media only screen and (max-width: 1440px) {
