@@ -477,23 +477,20 @@
                                         </div>
                                     </div>
                                 </div>
-                                <form class="form" autocomplete="off" novalidate>
+                                <form class="form needs-validation" novalidate>
                                     <fieldset>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox100">
-                                            <label class="custom-control-label" for="checkbox100"> Make Default</label>
+                                        <h6><label for="card-number" class="text-dark font-weight-bold">Card Number</label></h6>
+                                        <div class="input-cart-numbers">
+                                            <input type="num" id="card-number" class="form-control form-control-style input-cart-number text-center" placeholder="* * * *" maxlength="4" />
+                                            <input type="num" id="card-number-1" class="form-control form-control-style input-cart-number text-center" placeholder="* * * *" maxlength="4" />
+                                            <input type="num" id="card-number-2" class="form-control form-control-style input-cart-number text-center" placeholder="* * * *" maxlength="4" />
+                                            <input type="num" id="card-number-3" class="form-control form-control-style input-cart-number text-center" placeholder="* * * *" maxlength="4" />
                                         </div>
                                     </fieldset>
                                     <fieldset>
-                                        <h6><label for="card-number" class="text-dark font-weight-bold">Card Number</label></h6>
-                                        <input type="num" id="card-number" class="form-control form-control-style input-cart-number text-center" placeholder="* * * *" maxlength="4" />
-                                        <input type="num" id="card-number-1" class="form-control form-control-style input-cart-number text-center" placeholder="* * * *" maxlength="4" />
-                                        <input type="num" id="card-number-2" class="form-control form-control-style input-cart-number text-center" placeholder="* * * *" maxlength="4" />
-                                        <input type="num" id="card-number-3" class="form-control form-control-style input-cart-number text-center" placeholder="* * * *" maxlength="4" />
-                                    </fieldset>
-                                    <fieldset>
                                         <!-- <h6><label for="card-holder" class="text-dark font-weight-bold">Card holder Name</label></h6> -->
-                                        <input type="text" id="card-holder" class="form-control form-control-style pl-0" placeholder="Name On Card" />
+                                        <input type="text" id="card-holder" class="form-control form-control-style pl-0" placeholder="Name On Card" value="" required />
+                                        <div class="invalid-feedback">Please Enter Your Card Name.</div>
                                     </fieldset>
                                     <fieldset class="fieldset-expiration">
                                         <!-- <h6><label for="card-expiration-month" class="text-dark font-weight-bold">Expiration date</label></h6> -->
@@ -537,7 +534,13 @@
                                     </fieldset>
                                     <fieldset class="fieldset-ccv">
                                         <!-- <h6><label for="card-ccv" class="text-dark font-weight-bold">CV Code</label></h6> -->
-                                        <input type="text" id="card-ccv" class="form-control form-control-style pl-0" placeholder="CVC" maxlength="3" />
+                                        <input type="text" id="card-ccv" class="form-control form-control-style pl-0" placeholder="CVC" maxlength="3" value="" required>
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkbox100">
+                                            <label class="custom-control-label" for="checkbox100"> Make Default</label>
+                                        </div>
                                     </fieldset>
                                     <fieldset>
                                         <h6><label for="card-holder" class="text-dark font-weight-bold mt-3">Shipping  Address</label></h6>
@@ -591,7 +594,7 @@
                                     </fieldset>
                                     <fieldset class="text-right">
                                         <button type="button" class="btn btn-lg btn-link" data-dismiss="modal" aria-label="Close">Close</button>
-                                        <button type="button" class="btn btn-lg btn-info btn-shadow">Submit</button>
+                                        <button type="submit" class="btn btn-lg btn-info btn-shadow">Submit</button>
                                     </fieldset>
                                 </form>
                             </div>
