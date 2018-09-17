@@ -10,10 +10,21 @@ $(function() {
     if($('.select7').length){
         $('.select7').select7();
     }
-    
+
 })
 
 feather.replace()
+
+$("._xs-collapsible").click(function() {
+    if ($("._xs-collapsible").hasClass("active")) {
+        $("._xs-collapsible").removeClass('active');
+        $("._xs-collapsible").next('._xs-collapsible-content').slideUp();
+    } else {
+        $("._xs-collapsible").addClass('active');
+        $("._xs-collapsible").next('._xs-collapsible-content').slideDown();
+    }
+    return false;
+});
 
 function body_resize_class() {
     if ($(window).width() <= 991) {
