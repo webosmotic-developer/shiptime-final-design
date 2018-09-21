@@ -162,6 +162,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card mt-3">
+                                <div class="dashboard-card">
+                                    <div class="input-group bootstrap-timepicker timepicker">
+                                        <input id="timepicker1" type="text" class="form-control form-control-style">
+                                        <span class="input-group-addon timepicker1-clock"><i data-feather="clock"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6">
@@ -253,6 +263,10 @@
     <script src="js/feather.min.js"></script>
     <script src="js/_main.js"></script>
     <script type="text/javascript">
+    $('#timepicker1').focusin(function() {
+        $('.timepicker1-clock').trigger('click');
+    });
+
     $(window).load(function() {
         setTimeout(function() {
             $(".loader").fadeOut("slow");
@@ -293,6 +307,10 @@
             alert("You are " + years + " years old!");
         });
     });
+    </script>
+    <script src="js/bootstrap-timepicker.js"></script>
+    <script type="text/javascript">
+    $('#timepicker1').timepicker();
     </script>
 </body>
 
