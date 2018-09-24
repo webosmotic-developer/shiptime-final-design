@@ -263,10 +263,6 @@
     <script src="js/feather.min.js"></script>
     <script src="js/_main.js"></script>
     <script type="text/javascript">
-    $('#timepicker1').focusin(function() {
-        $('.timepicker1-clock').trigger('click');
-    });
-
     $(window).load(function() {
         setTimeout(function() {
             $(".loader").fadeOut("slow");
@@ -310,6 +306,9 @@
     </script>
     <script src="js/bootstrap-timepicker.js"></script>
     <script type="text/javascript">
+    $('#timepicker1').focusin(function() {
+        $('.timepicker1-clock').trigger('click');
+    });
     $('#timepicker1').timepicker();
     </script>
 </body>

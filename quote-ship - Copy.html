@@ -114,17 +114,21 @@
             <div class="row">
                 <div class="col-12">
                     <ol class="progress_bar progress--large wow fadeIn">
-                        <li class="fa-map-marker is-complete" data-step="1" data-toggle="tooltip" title="Address Details">
+                        <li class="is-complete" data-step="1" data-toggle="tooltip" title="Address Details">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
                             <span>Address Details</span></li>
-                        <li class="fa-pencil is-complete" data-step="2" data-toggle="tooltip" title="Shipment Details">
+                        <li class="is-complete" data-step="2" data-toggle="tooltip" title="Shipment Details">
                             <span>Shipment Details</span></li>
-                        <li class="fa-truck is-active" data-step="3" data-toggle="tooltip" title="Choose Carrier">
+                        <li class="is-active" data-step="3" data-toggle="tooltip" title="Choose Carrier">
                             <span>Choose Carrier</span></li>
-                        <li class="fa-shopping-cart" data-step="4" data-toggle="tooltip" title="Pickup Or Drop-off">
+                        <li data-step="4" data-toggle="tooltip" title="Pickup Or Drop-off">
                             <span>Pickup Or Drop-off</span></li>
-                        <li class="fa-globe" data-step="5" data-toggle="tooltip" title="International Details"><span>International Details</span></li>
-                        <li class="fa-credit-card" data-step="6" data-toggle="tooltip" title="Finalize & Pay"><span>Finalize & Pay</span></li>
-                        <li class="fa-print" data-step="7" class="progress__last" data-toggle="tooltip" title="Print Labels"><span>Print Labels</span></li>
+                        <li data-step="5" data-toggle="tooltip" title="International Details">
+                            <span>International Details</span></li>
+                        <li data-step="6" data-toggle="tooltip" title="Finalize & Pay">
+                            <span>Finalize & Pay</span></li>
+                        <li data-step="7" class="progress__last" data-toggle="tooltip" title="Print Labels">
+                            <span>Print Labels</span></li>
                     </ol>
                 </div>
             </div>
@@ -672,7 +676,7 @@
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="LTL-freight-pallet" role="tabpanel" aria-labelledby="LTL-freight-pallet-tab">
-                                            <div class="table-responsive-lg">
+                                            <div class="table-responsive">
                                                 <table class="table table-borderless table-vertical-align m-0">
                                                     <thead class="thead-light">
                                                         <tr>
@@ -1085,8 +1089,8 @@
                                         </div>
                                         <div class="form-group col-md-6">
                                             <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="checkbox1012">
-                                                <label class="custom-control-label" for="checkbox1012"> Save to address book</label>
+                                                <input type="checkbox" class="custom-control-input" id="checkbox101">
+                                                <label class="custom-control-label" for="checkbox101"> Save to address book</label>
                                             </div>
                                         </div>
                                         <div class="form-group col-6 col-sm-6 col-md-3">
@@ -1146,19 +1150,17 @@
                                     <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title="<strong>Please list every item in your shipment.</strong> <br> Customs brokers require this information to allow your shipment across the border. For each item, specify the quantity, HS Code, the value of each item, and the Country that the item was originally manufactured." data-placement="right" aria-hidden="true"> </i>
                                 </label>
                             </div>
-                            <div class="col-3">                                
-                                <div class="form-group float-right"  style="width: 100px;">                               
+                            <div class="col-3">
+                                <div class="form-inline">
+                                    <label for="inputPassword" class="mr-2 col-form-label text-dark nowrap">Currency</label>
                                     <select class="form-control form-control-style select7">
                                         <option value="1" selected>CAD</option>
                                         <option value="2">USD</option>
                                     </select>
                                 </div>
-                                <label for="inputPassword" class="mr-2 float-right col-form-label text-dark nowrap">Currency</label>
                             </div>
-                            <div class="col-12"> <hr class="mt-0"> </div>
-
-                            <div class="table-responsive-md">
-                                <table class="table table-vertical-align table-borderless m-0">
+                            <div class="table-responsive">
+                                <table class="table table-borderless m-0">
                                     <tbody>
                                         <tr>
                                             <td class="vertical-align-middle">#1</td>
@@ -1172,7 +1174,7 @@
                                                 <input class="form-control form-control-style pr-0" type="text" placeholder="HS Code">
                                             </td>
                                             <td>
-                                                <div class="form-group" style="width: 150px; margin-bottom: 0">
+                                                <div class="col">
                                                     <select class="form-control form-control-style select7">
                                                         <option value="" disabled selected>Country</option>
                                                         <option value="1">Canada</option>
@@ -1202,10 +1204,6 @@
                                     </tbody>
                                 </table>
                             </div>
-                        </div>
-                        <hr>
-                        <div class="col-12">
-                            <span>Add products from the Products Library <a href="#" class="text-danger" id="addProducts">click here</a></span>
                         </div>
                         <div class="col-md-12 text-right">
                             <button type="button" class="btn btn-info btn-shadow">Add another item</button>
@@ -1393,118 +1391,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal: Add products modal -->
-    <div class="modal fade" style="z-index: 10000;" id="addProductsModal" tabindex="-1" role="dialog" aria-labelledby="addProductsModal" aria-hidden="true">
-        <div class="modal-dialog modal-lg pt-5" role="document">
-            <div class="modal-content">
-                <!--Header-->
-                <div class="modal-header modal-header-theme">
-                    <h5 class="modal-title grey-text font-weight-bold pl-2" id="addProductsModalLabel">Products Library</h5>
-                    <div class="col text-right">
-                        <button class="btn btn-sm btn-info btn-shadow float-right">Add Selected</button>
-                    </div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <!--Body-->
-                <div class="modal-body border-0">
-                    <div class="table-responsive-lg">
-                            <table class="_table-style table table-bordered table-striped table-responsive-md" cellspacing="0" width="100%">
-                                <thead>
-                                    <tr>
-                                        <th class="multi__checkbox_th nowrap">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customControlInline">
-                                                <label class="custom-control-label" for="customControlInline"></label>
-                                            </div>
-                                        </th>
-                                        <th class="nowrap">Qty <i class="fa fa-sort-sort" aria-hidden="true"></i></th>
-                                        <th class="nowrap">Name</th>
-                                        <th class="nowrap">Country <i class="fa fa-sort-sort" aria-hidden="true"></i></th>
-                                        <th class="nowrap">Unit Price <i class="fa fa-sort" aria-hidden="true"></i></th>
-                                        <th class="nowrap">HS Code <i class="fa fa-sort" aria-hidden="true"></i></th>
-                                        <th class="nowrap">Description <i class="fa fa-sort" aria-hidden="true"></i></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customControlInline1">
-                                                <label class="custom-control-label" for="customControlInline1"></label>
-                                            </div>
-                                        </td>
-                                        <td class="nowrap">5</td>
-                                        <td class="nowrap">Name 1</td>
-                                        <td class="nowrap">India</td>
-                                        <td class="nowrap">10</td>
-                                        <td class="nowrap">HS1245</td>
-                                        <td class="nowrap">Test description</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customControlInline2">
-                                                <label class="custom-control-label" for="customControlInline2"></label>
-                                            </div>
-                                        </td>
-                                        <td class="nowrap">5</td>
-                                        <td class="nowrap">Name 1</td>
-                                        <td class="nowrap">India</td>
-                                        <td class="nowrap">10</td>
-                                        <td class="nowrap">HS1245</td>
-                                        <td class="nowrap">Test description</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customControlInline3">
-                                                <label class="custom-control-label" for="customControlInline3"></label>
-                                            </div>
-                                        </td>
-                                        <td class="nowrap">5</td>
-                                        <td class="nowrap">Name 1</td>
-                                        <td class="nowrap">India</td>
-                                        <td class="nowrap">10</td>
-                                        <td class="nowrap">HS1245</td>
-                                        <td class="nowrap">Test description</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customControlInline4">
-                                                <label class="custom-control-label" for="customControlInline4"></label>
-                                            </div>
-                                        </td>
-                                        <td class="nowrap">5</td>
-                                        <td class="nowrap">Name 1</td>
-                                        <td class="nowrap">India</td>
-                                        <td class="nowrap">10</td>
-                                        <td class="nowrap">HS1245</td>
-                                        <td class="nowrap">Test description</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customControlInline5">
-                                                <label class="custom-control-label" for="customControlInline5"></label>
-                                            </div>
-                                        </td>
-                                        <td class="nowrap">5</td>
-                                        <td class="nowrap">Name 1</td>
-                                        <td class="nowrap">India</td>
-                                        <td class="nowrap">10</td>
-                                        <td class="nowrap">HS1245</td>
-                                        <td class="nowrap">Test description</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
                 </div>
             </div>
         </div>
