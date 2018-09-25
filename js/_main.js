@@ -12,7 +12,7 @@ $(function() {
     }
 
 })
-
+    
 feather.replace()
 
 $("._xs-collapsible").click(function() {
@@ -25,6 +25,18 @@ $("._xs-collapsible").click(function() {
     }
     return false;
 });
+
+$(".div-collapsible").click(function() {
+    if ($(".div-collapsible").hasClass("active")) {
+        $(".div-collapsible").removeClass('active');
+        $(".div-collapsible").next('#overview-card-body').slideUp();
+    } else {
+        $(".div-collapsible").addClass('active');
+        $(".div-collapsible").next('#overview-card-body').slideDown();
+    }
+    return false;
+});
+
 
 function body_resize_class() {
     if ($(window).width() <= 991) {
