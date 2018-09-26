@@ -45,7 +45,7 @@
                                         <div class="invalid-feedback">Please enter a valid password.</div>
                                         <small class="form-text text-right"><a class="text-muted" href="#" id="show_passwordhelp">Forgot Password?</a></small>
                                     </div>
-                                    <button type="submit" class="btn btn-theme">Login</button>
+                                    <button type="submit" class="btn btn-theme _btn-loader">Login</button>
                                 </form>
                                 <div class="pt-4 pl-2">
                                     <div class="mb-4">
@@ -63,7 +63,7 @@
                                             <input type="email" class="form-control" placeholder="Enter Your Username" required>
                                             <div class="invalid-feedback">Please enter a your username.</div>
                                         </div>
-                                        <button type="submit" class="btn btn-theme">Send Email</button>
+                                        <button type="submit" class="btn btn-theme _btn-loader">Send Email</button>
                                     </form>
                                     <div class="pt-4 pl-2">
                                         <small class="text-muted">Do not have a ShipTime account?
@@ -79,7 +79,7 @@
                                             <input type="email" class="form-control" placeholder="Your Email Address" required>
                                             <div class="invalid-feedback">Please enter a your email address.</div>
                                         </div>
-                                        <button type="submit" class="btn btn-theme">Send Password</button>
+                                        <button type="submit" class="btn btn-theme _btn-loader">Send Password</button>
                                     </form>
                                     <div class="pt-4 pl-2">
                                         <small class="text-muted">Do not have a ShipTime account?
@@ -112,7 +112,7 @@
                                         <div class="inner-addon right-addon mt-2 mb-5">
                                             <img src="images/rc-anchor.jpg" alt="">
                                         </div>
-                                        <button type="submit" class="btn btn-theme">Create account</button>
+                                        <button type="submit" class="btn btn-theme _btn-loader">Create account</button>
                                     </form>
                                     <div class="pt-4 pl-2">
                                         <small class="text-muted">Already have an account?
@@ -163,6 +163,17 @@
             $('#show_forgot_password_form').slideDown(1000);
             event.preventDefault();
             });
+			
+			$('._btn-loader').on('click', function() {
+					  var $this = $(this);
+					$this.addClass('spinning-light');
+					$this.prop("disabled", true);
+					  setTimeout(function() {
+						 $this.removeClass('spinning-light');
+						 $this.prop("disabled", false);
+					 }, 10000);
+				  });
+	  
             });
             </script>
             <script src="js/login.js"></script>

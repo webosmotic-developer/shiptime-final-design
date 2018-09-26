@@ -37,6 +37,24 @@ h1 {font-size: 2rem; margin-bottom: 1.5rem}
 .was-validated .custom-select:valid:focus,
 .was-validated .form-control:valid:focus {box-shadow: none !important}
 
+/*. _btn-loader */
+._btn-loader{position:relative;transition:padding-right .3s ease;}
+._btn-loader-center{position:relative;transition:}
+._btn-loader-center.spinning:before {right: inherit !important; left: 45% !important;}
+
+.spinning:before{width:0;height:0;border-radius:50%;right:6px;top:50%;position:absolute}
+.spinning{padding-right:35px}
+.spinning:before{content:"";border:2px solid rgba(255, 255, 255, 0.60);border-right:2px solid #d94f26;-webkit-animation:rotate360 .5s infinite linear,exist .1s forwards ease;animation:rotate360 .5s infinite linear,exist .1s forwards ease}
+
+.spinning-light:before{width:0;height:0;border-radius:50%;right:6px;top:50%;position:absolute}
+.spinning-light{padding-right:35px}
+.spinning-light:before{content:"";border:2px solid rgba(255, 255, 255, 0.2);border-right:2px solid #f7f7f7;-webkit-animation:rotate360 .5s infinite linear,exist .1s forwards ease;animation:rotate360 .5s infinite linear,exist .1s forwards ease}
+
+@-webkit-keyframes rotate360{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+@keyframes rotate360{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+@-webkit-keyframes exist{100%{width:15px;height:15px;margin:-8px 5px 0 0}}
+@keyframes exist{100%{width:15px;height:15px;margin:-8px 5px 0 0}}
+
 /* footer  */
 .footer {padding: 20px;}
 .copyright {color: #fff; font-size: 13px;}

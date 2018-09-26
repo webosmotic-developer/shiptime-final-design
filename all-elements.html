@@ -269,6 +269,53 @@
         }, 300);
     });
     </script>
+	
+	<script>
+    $(function(){
+
+      $('._btn-loader').on('click', function() {
+          var $this = $(this);
+        $this.addClass('spinning-light');
+        $this.prop("disabled", true);
+          setTimeout(function() {
+             $this.removeClass('spinning-light');
+             $this.prop("disabled", false);
+         }, 10000);
+      });
+
+      $('._btn-loader._btn-loader-txt').on('click', function() {
+          var $this = $(this);
+          var $text = $(this).text();
+        $this.html('loading');
+        $this.addClass('spinning-light');
+        $this.prop("disabled", true);
+          setTimeout(function() {
+             $this.removeClass('spinning-light');
+             $this.html($text);
+             $this.prop("disabled", false);
+         }, 10000);
+      });
+
+      $('._btn-loader-center').on('click', function() {
+          var $this = $(this);
+          var $text = $this.text();
+          var $_width = $this.width();
+          $this.width($_width);
+
+        $this.html('&nbsp');
+        $this.addClass('spinning');
+        $this.prop("disabled", true);
+          setTimeout(function() {
+             $this.removeClass('spinning');
+             $this.html($text);
+             $this.prop("disabled", false);
+         }, 10000);
+      });
+
+
+      });
+    </script>
+	
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
