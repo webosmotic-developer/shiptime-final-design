@@ -298,11 +298,11 @@
                                         </li>
                                     </ul>
                                     <div class="shipping-tabs">
-                                        <div class="pb-3 d-block d-sm-flex checkboxes-radio">
-                                            <span class="font-weight-bold unit-label">Measurement unit</span>
-                                            <input type="radio" id="radio2" name="radios" value="false" checked>
+                                        <div class="pb-3 checkboxes-radio">
+                                            <span class="font-weight-bold">Measurement unit :</span>
+                                            <input type="radio" id="radio2" name="radios2" value="false" checked>
                                             <label class="rounded-left" for="radio2">Metric</label>
-                                            <input type="radio" id="radio3" name="radios" value="true">
+                                            <input type="radio" id="radio3" name="radios2" value="true">
                                             <label class="rounded-right" for="radio3">Imperial</label>
                                         </div>
                                         <div class="tab-content" id="myTabContent">
@@ -350,7 +350,7 @@
                                                                     <input class="form-control form-control-style text-center pr-0" type="text" placeholder="Ins. Value">
                                                                 </td>
                                                                 <td>
-                                                                    <textarea class="form-control form-control-style" rows="1" placeholder=""></textarea>
+                                                                    <textarea class="form-control form-control-style" style="resize: none;" rows="1" placeholder=""></textarea>
                                                                 </td>
                                                                 <td>
                                                                     <div class="col-12 align-self-center text-right p-0" style="width: 70px;">
@@ -385,7 +385,7 @@
                                                                     <input class="form-control form-control-style text-center pr-0" type="text" placeholder="Ins. Value">
                                                                 </td>
                                                                 <td>
-                                                                    <textarea class="form-control form-control-style" rows="1" placeholder=""></textarea>
+                                                                    <textarea class="form-control form-control-style" style="resize: none;" rows="1" placeholder=""></textarea>
                                                                 </td>
                                                                 <td>
                                                                     <div class="col-12 align-self-center text-right p-0" style="width: 70px;">
@@ -420,7 +420,7 @@
                                                                     <input class="form-control form-control-style text-center pr-0" type="text" placeholder="Ins. Value">
                                                                 </td>
                                                                 <td>
-                                                                    <textarea class="form-control form-control-style" rows="1" placeholder=""></textarea>
+                                                                    <textarea class="form-control form-control-style" style="resize: none;" rows="1" placeholder=""></textarea>
                                                                 </td>
                                                                 <td>
                                                                     <div class="col-12 align-self-center text-right p-0" style="width: 70px;">
@@ -433,46 +433,37 @@
                                                                     </div>
                                                                 </td>
                                                             </tr>
-                                                            <tr>
-                                                                <th class="align-self-center"></th>
-                                                                <td>
-                                                                    <button type="button" class="btn btn-info btn-shadow">Add Items</button>
-                                                                </td>
-                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-12 mt-3">
-                                                        <div class="float-left mr-4 d-block d-sm-flex">
-                                                            <span class="font-weight-bold unit-label">Tax & duty paid by</span>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline3">Consignee</label>
-                                                            </div>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline4">Shipper</label>
-                                                            </div>
+                                                <div class="row mt-3 align-items-center">
+                                                    <div class="col-12 col-md-6">
+                                                        <button type="button" class="btn btn-info btn-shadow">Add Items</button>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="float-right checkboxes-radio pt-2">
+                                                            <span class="font-weight-bold">Insurance :</span>
+                                                            <input type="radio" id="radio6" name="radios06" value="false" checked>
+                                                            <label class="rounded-left" for="radio6">Carrier</label>
+                                                            <input type="radio" id="radio7" name="radios06" value="true">
+                                                            <label class="rounded-right" for="radio7">ShipTime</label>
+                                                            <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title=" <strong>Did you know?</strong> <br> By insuring your shipment with ShipTime, you can save up to 50% on insurance and in the unlikely event that your shipment is damaged or lost you can easily process claims through your account and receive your refund in a timely manner." data-placement="right" aria-hidden="true"></i>
                                                         </div>
-                                                        <div class="float-left  d-block d-sm-flex">
-                                                            <span class="font-weight-bold unit-label">Insurance</span>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline5" name="customRadioInline3" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline5">Carrier</label>
-                                                            </div>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline6" name="customRadioInline3" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline6">ShipTime <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title=" <strong>Did you know?</strong> <br> By insuring your shipment with ShipTime, you can save up to 50% on insurance and in the unlikely event that your shipment is damaged or lost you can easily process claims through your account and receive your refund in a timely manner." data-placement="right" aria-hidden="true"></i></label>
-                                                            </div>
+                                                        <div class="float-right mr-3 checkboxes-radio pt-2">
+                                                            <span class="font-weight-bold">Tax & duty paid by :</span>
+                                                            <input type="radio" id="radio4" name="radios04" value="false" checked>
+                                                            <label class="rounded-left" for="radio4">Consignee</label>
+                                                            <input type="radio" id="radio5" name="radios04" value="true">
+                                                            <label class="rounded-right" for="radio5">Insurance</label>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12">
-                                                        <div class="col-12 mt-3 pt-3 pr-0 border-top text-right">
-                                                            <span class="mt-3 mt-lg-0">By selecting this service you agree to Shipsurance <a href="#" class="text-danger">terms and conditions</a></span>
-                                                        </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center justify-content-end mt-3">
+                                                    <div class="col text-right">
+                                                        <span class="mt-3 mt-lg-0">By selecting this service you agree to Shipsurance <a href="#" class="text-danger">terms and conditions</a></span>
                                                     </div>
-                                                    <div class="col-12 text-right mt-3">
+                                                    <div class="col-auto">
                                                         <button type="button" class="btn btn-info btn-shadow">Choose Carrier</button>
                                                     </div>
                                                 </div>
@@ -488,43 +479,37 @@
                                                                 </div>
                                                                 <label for="inputPassword" class="col-12 col-md-2 col-form-label vertical-align-middle text-dark nowrap">Description</label>
                                                                 <div class="form-group col-12 col-md-6">
-                                                                    <textarea class="form-control form-control-style" rows="1" placeholder="Your Description here.."></textarea>
+                                                                    <textarea class="form-control form-control-style" style="resize: none;" rows="1" placeholder="Your Description here.."></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
+                                                <div class="row mt-3 align-items-center">
                                                     <div class="col-12">
-                                                        <div class="float-left mr-4 d-block d-sm-flex">
-                                                            <span class="font-weight-bold unit-label">Tax & duty paid by</span>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline7" name="customRadioInline7" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline7">Consignee</label>
-                                                            </div>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline8" name="customRadioInline8" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline8">Shipper</label>
-                                                            </div>
+                                                        <div class="float-right checkboxes-radio pt-2">
+                                                            <span class="font-weight-bold">Insurance :</span>
+                                                            <input type="radio" id="radio10" name="radios0010" value="false" checked>
+                                                            <label class="rounded-left" for="radio10">Carrier</label>
+                                                            <input type="radio" id="radio11" name="radios0010" value="true">
+                                                            <label class="rounded-right" for="radio11">ShipTime</label>
+                                                            <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title=" <strong>Did you know?</strong> <br> By insuring your shipment with ShipTime, you can save up to 50% on insurance and in the unlikely event that your shipment is damaged or lost you can easily process claims through your account and receive your refund in a timely manner." data-placement="right" aria-hidden="true"></i>
                                                         </div>
-                                                        <div class="float-left  d-block d-sm-flex">
-                                                            <span class="font-weight-bold unit-label">Insurance</span>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline9" name="customRadioInline9" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline9">Carrier</label>
-                                                            </div>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline10" name="customRadioInline10" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline10">ShipTime <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title=" <strong>Did you know?</strong> <br> By insuring your shipment with ShipTime, you can save up to 50% on insurance and in the unlikely event that your shipment is damaged or lost you can easily process claims through your account and receive your refund in a timely manner." data-placement="right" aria-hidden="true"></i></label>
-                                                            </div>
+                                                        <div class="float-right mr-3 checkboxes-radio pt-2">
+                                                            <span class="font-weight-bold">Tax & duty paid by :</span>
+                                                            <input type="radio" id="radio8" name="radios008" value="false" checked>
+                                                            <label class="rounded-left" for="radio8">Consignee</label>
+                                                            <input type="radio" id="radio9" name="radios008" value="true">
+                                                            <label class="rounded-right" for="radio9">Insurance</label>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12">
-                                                        <div class="col-12 mt-3 pt-3 pr-0 border-top text-right">
-                                                            <span class="mt-3 mt-lg-0">By selecting this service you agree to Shipsurance <a href="#" class="text-danger">terms and conditions</a></span>
-                                                        </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center justify-content-end mt-3">
+                                                    <div class="col text-right">
+                                                        <span class="mt-3 mt-lg-0">By selecting this service you agree to Shipsurance <a href="#" class="text-danger">terms and conditions</a></span>
                                                     </div>
-                                                    <div class="col-12 text-right mt-3">
+                                                    <div class="col-auto">
                                                         <button type="button" class="btn btn-info btn-shadow">Choose Carrier</button>
                                                     </div>
                                                 </div>
@@ -544,43 +529,37 @@
                                                                 </div>
                                                                 <label for="inputPassword" class="col-6 col-xs-3 col-sm-2 col-xl-1  col-form-label vertical-align-middle text-dark nowrap">Description</label>
                                                                 <div class="form-group col-6 col-xs-9 col-sm-10 col-xl-5">
-                                                                    <textarea class="form-control form-control-style" rows="1" placeholder="Your Description here.."></textarea>
+                                                                    <textarea class="form-control form-control-style" style="resize: none;" rows="1" placeholder="Your Description here.."></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
+                                                <div class="row mt-3 align-items-center">
                                                     <div class="col-12">
-                                                        <div class="float-left mr-4 d-block d-sm-flex">
-                                                            <span class="font-weight-bold unit-label">Tax & duty paid by</span>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline11" name="customRadioInline11" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline11">Consignee</label>
-                                                            </div>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline12" name="customRadioInline12" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline12">Shipper</label>
-                                                            </div>
+                                                        <div class="float-right checkboxes-radio pt-2">
+                                                            <span class="font-weight-bold">Insurance :</span>
+                                                            <input type="radio" id="radio14" name="radios14" value="false" checked>
+                                                            <label class="rounded-left" for="radio14">Carrier</label>
+                                                            <input type="radio" id="radio15" name="radios14" value="true">
+                                                            <label class="rounded-right" for="radio15">ShipTime</label>
+                                                            <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title=" <strong>Did you know?</strong> <br> By insuring your shipment with ShipTime, you can save up to 50% on insurance and in the unlikely event that your shipment is damaged or lost you can easily process claims through your account and receive your refund in a timely manner." data-placement="right" aria-hidden="true"></i>
                                                         </div>
-                                                        <div class="float-left  d-block d-sm-flex">
-                                                            <span class="font-weight-bold unit-label">Insurance</span>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline13" name="customRadioInline13" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline13">Carrier</label>
-                                                            </div>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline14" name="customRadioInline14" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline14">ShipTime <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title=" <strong>Did you know?</strong> <br> By insuring your shipment with ShipTime, you can save up to 50% on insurance and in the unlikely event that your shipment is damaged or lost you can easily process claims through your account and receive your refund in a timely manner." data-placement="right" aria-hidden="true"></i></label>
-                                                            </div>
+                                                        <div class="float-right mr-3 checkboxes-radio pt-2">
+                                                            <span class="font-weight-bold">Tax & duty paid by :</span>
+                                                            <input type="radio" id="radio12" name="radios12" value="false" checked>
+                                                            <label class="rounded-left" for="radio12">Consignee</label>
+                                                            <input type="radio" id="radio13" name="radios12" value="true">
+                                                            <label class="rounded-right" for="radio13">Insurance</label>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12">
-                                                        <div class="col-12 mt-3 pt-3 pr-0 border-top text-right">
-                                                            <span class="mt-3 mt-lg-0">By selecting this service you agree to Shipsurance <a href="#" class="text-danger">terms and conditions</a></span>
-                                                        </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center justify-content-end mt-3">
+                                                    <div class="col text-right">
+                                                        <span class="mt-3 mt-lg-0">By selecting this service you agree to Shipsurance <a href="#" class="text-danger">terms and conditions</a></span>
                                                     </div>
-                                                    <div class="col-12 text-right mt-3">
+                                                    <div class="col-auto">
                                                         <button type="button" class="btn btn-info btn-shadow">Choose Carrier</button>
                                                     </div>
                                                 </div>
@@ -629,7 +608,7 @@
                                                                     <input class="form-control form-control-style text-center pr-0" type="text" placeholder="Ins. Value">
                                                                 </td>
                                                                 <td>
-                                                                    <textarea class="form-control form-control-style" rows="1" placeholder=""></textarea>
+                                                                    <textarea class="form-control form-control-style" style="resize: none;" rows="1" placeholder=""></textarea>
                                                                 </td>
                                                                 <td>
                                                                     <div class="col-12 align-self-center text-right p-0" style="width: 70px;">
@@ -642,46 +621,37 @@
                                                                     </div>
                                                                 </td>
                                                             </tr>
-                                                            <tr>
-                                                                <th class="align-self-center"></th>
-                                                                <td>
-                                                                    <button type="button" class="btn btn-info btn-shadow">Add Items</button>
-                                                                </td>
-                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-12 mt-3">
-                                                        <div class="float-left mr-4 d-block d-sm-flex">
-                                                            <span class="font-weight-bold unit-label">Tax & duty paid by</span>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline15" name="customRadioInline15" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline15">Consignee</label>
-                                                            </div>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline16" name="customRadioInline16" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline16">Shipper</label>
-                                                            </div>
+                                                <div class="row mt-3 align-items-center">
+                                                    <div class="col-12 col-md-6">
+                                                        <button type="button" class="btn btn-info btn-shadow">Add Items</button>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="float-right checkboxes-radio pt-2">
+                                                            <span class="font-weight-bold">Insurance :</span>
+                                                            <input type="radio" id="radio6" name="radios6" value="false" checked>
+                                                            <label class="rounded-left" for="radio6">Carrier</label>
+                                                            <input type="radio" id="radio7" name="radios6" value="true">
+                                                            <label class="rounded-right" for="radio7">ShipTime</label>
+                                                            <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title=" <strong>Did you know?</strong> <br> By insuring your shipment with ShipTime, you can save up to 50% on insurance and in the unlikely event that your shipment is damaged or lost you can easily process claims through your account and receive your refund in a timely manner." data-placement="right" aria-hidden="true"></i>
                                                         </div>
-                                                        <div class="float-left  d-block d-sm-flex">
-                                                            <span class="font-weight-bold unit-label">Insurance</span>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline17" name="customRadioInline17" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline17">Carrier</label>
-                                                            </div>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline18" name="customRadioInline18" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline18">ShipTime <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title=" <strong>Did you know?</strong> <br> By insuring your shipment with ShipTime, you can save up to 50% on insurance and in the unlikely event that your shipment is damaged or lost you can easily process claims through your account and receive your refund in a timely manner." data-placement="right" aria-hidden="true"></i></label>
-                                                            </div>
+                                                        <div class="float-right mr-3 checkboxes-radio pt-2">
+                                                            <span class="font-weight-bold">Tax & duty paid by :</span>
+                                                            <input type="radio" id="radio4" name="radios4" value="false" checked>
+                                                            <label class="rounded-left" for="radio4">Consignee</label>
+                                                            <input type="radio" id="radio5" name="radios4" value="true">
+                                                            <label class="rounded-right" for="radio5">Insurance</label>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12">
-                                                        <div class="col-12 mt-3 pt-3 pr-0 border-top text-right">
-                                                            <span class="mt-3 mt-lg-0">By selecting this service you agree to Shipsurance <a href="#" class="text-danger">terms and conditions</a></span>
-                                                        </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center justify-content-end mt-3">
+                                                    <div class="col text-right">
+                                                        <span class="mt-3 mt-lg-0">By selecting this service you agree to Shipsurance <a href="#" class="text-danger">terms and conditions</a></span>
                                                     </div>
-                                                    <div class="col-12 text-right mt-3">
+                                                    <div class="col-auto">
                                                         <button type="button" class="btn btn-info btn-shadow">Choose Carrier</button>
                                                     </div>
                                                 </div>
@@ -696,6 +666,7 @@
                                                                 <th scope="col" class="text-center">Length</th>
                                                                 <th scope="col" class="text-center">width</th>
                                                                 <th scope="col" class="text-center">Height</th>
+                                                                <th scope="col">Weightiest</th>
                                                                 <th scope="col" class="text-center">Edit</th>
                                                                 <th scope="col" class="text-center nowrap">Weight (kg)</th>
                                                                 <th scope="col" class="text-center nowrap">Ins. Value
@@ -720,6 +691,16 @@
                                                                 <td>
                                                                     <input class="form-control form-control-style text-center pr-0" type="text" placeholder="H">
                                                                 </td>
+                                                                <td style="width: 120px;">
+                                                                    <select class="form-control form-control-style select7">
+                                                                        <option value="1" selected disabled>Select</option>
+                                                                        <option value="2">50</option>
+                                                                        <option value="3">100</option>
+                                                                        <option value="4">150</option>
+                                                                        <option value="5">200</option>
+                                                                        <option value="6">250</option>
+                                                                    </select>
+                                                                </td>
                                                                 <td>
                                                                     <a href="#" data-placement="right" title="you can change it by click here" data-toggle="modal" data-target="#modalbox"><i class="fa fa-pencil-square-o ml-1 m-t-6 fa-lg grey-text"></i></a>
                                                                 </td>
@@ -730,7 +711,7 @@
                                                                     <input class="form-control form-control-style text-center pr-0" type="text" placeholder="Ins. Value">
                                                                 </td>
                                                                 <td>
-                                                                    <textarea class="form-control form-control-style" rows="1" placeholder=""></textarea>
+                                                                    <textarea class="form-control form-control-style" style="resize: none;" rows="1" placeholder=""></textarea>
                                                                 </td>
                                                                 <td>
                                                                     <div class="col-12 align-self-center text-right p-0" style="width: 70px;">
@@ -743,77 +724,47 @@
                                                                     </div>
                                                                 </td>
                                                             </tr>
-                                                            <tr>
-                                                                <th class="align-self-center"></th>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <select class="form-control form-control-style select7">
-                                                                            <option value="1" selected disabled>Select</option>
-                                                                            <option value="2">50</option>
-                                                                            <option value="3">100</option>
-                                                                            <option value="4">150</option>
-                                                                            <option value="5">200</option>
-                                                                            <option value="6">250</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th class="align-self-center"></th>
-                                                                <td>
-                                                                    <button type="button" class="btn btn-info btn-shadow">Add Items</button>
-                                                                </td>
-                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-auto">
-                                                        <span class="font-weight-bold unit-label">Tax & duty paid by :</span>
-                                                        <div class="d-block d-sm-flex pt-2">
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline19" name="customRadioInline19" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline19">Consignee</label>
-                                                            </div>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline20" name="customRadioInline20" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline20">Shipper</label>
+                                                <div class="row mt-3 align-items-center">
+                                                    <div class="col-12">
+                                                        <div class="float-right checkboxes-radio pt-2">
+                                                            <span class="font-weight-bold">Delivery Apt. :</span>
+                                                            <input type="radio" id="radio10" name="radios10" value="false" checked>
+                                                            <label class="rounded-left" for="radio10">Yes</label>
+                                                            <input type="radio" id="radio11" name="radios10" value="true">
+                                                            <label class="rounded-right" for="radio11">No</label>
+                                                        </div>
+                                                        <div class="float-right form-inline pt-2" style="margin-top: -6px;">
+                                                            <label for="inputPassword" class="font-weight-bold pr-2">Lift gate :</label>
+                                                            <div class="form-group" style="width: 80px;">
+                                                                <select class="form-control form-control-style select7">
+                                                                    <option value="1" selected disabled>None</option>
+                                                                    <option value="2">@Origin</option>
+                                                                    <option value="3">@Dest'n</option>
+                                                                    <option value="4">@Origin & Dest'n</option>
+                                                                    <option value="5">250</option>
+                                                                </select>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-4 form-group m-0">
-                                                        <label for="inputPassword" class="font-weight-bold">Lift gate :</label>
-                                                        <div class="form-group">
-                                                            <select class="form-control form-control-style select7">
-                                                                <option value="1" selected disabled>None</option>
-                                                                <option value="2">@Origin</option>
-                                                                <option value="3">@Dest'n</option>
-                                                                <option value="4">@Origin & Dest'n</option>
-                                                                <option value="5">250</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <span class="font-weight-bold unit-label">Delivery Apt. :</span>
-                                                        <div class="d-block d-sm-flex pt-2">
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline21" name="customRadioInline21" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline21">Yes</label>
-                                                            </div>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline22" name="customRadioInline22" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline22">No</label>
-                                                            </div>
+                                                        <div class="float-right mr-3 checkboxes-radio pt-2">
+                                                            <span class="font-weight-bold">Tax & duty paid by :</span>
+                                                            <input type="radio" id="radio8" name="radios8" value="false" checked>
+                                                            <label class="rounded-left" for="radio8">Consignee</label>
+                                                            <input type="radio" id="radio9" name="radios8" value="true">
+                                                            <label class="rounded-right" for="radio9">Shipper</label>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12">
-                                                    <div class="col-12 mt-3 pt-3 pr-0 border-top text-right">
+                                                <hr>
+                                                <div class="row align-items-center justify-content-end mt-3">
+                                                    <div class="col text-right">
                                                         <span class="mt-3 mt-lg-0">By selecting this service you agree to Shipsurance <a href="#" class="text-danger">terms and conditions</a> for LTL insurance.</span>
                                                     </div>
-                                                </div>
-                                                <div class="col-12 text-right mt-3">
-                                                    <button type="button" class="btn btn-info btn-shadow">Choose Carrier</button>
+                                                    <div class="col-auto">
+                                                        <button type="button" class="btn btn-info btn-shadow">Choose Carrier</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -829,13 +780,10 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="card mt-3">
-                            <div class="card-header card-title ">Choose Carrier And Service
+                            <div class="card-header card-title">Choose Carrier And Service
                                 <p>Choose the best courier for you based on price, delivery time and reliability</p>
-                                <span class="card-title-subtitle ">4 Packages <i class="fa fa-info-circle mt-1 mr-2 " data-toggle="tooltip " data-html="true " title=" " data-placement="top " aria-hidden="true "
-                                    data-original-title="<div style=width:100%;font-size:12px;> 1 lbs , 1 x 1 x 1 Inches , $1 value
-                                        <br> 1 lbs , 1 x 1 x 1 Inches , $1 value
-                                        <br> 1 lbs , 1 x 1 x 1 Inches , $1 value
-                                    <br> 1 lbs , 1 x 1 x 1 Inches , $1 value </div>"></i>
+                                <span class="card-title-subtitle" data-toggle="popover" data-html="true" title="" data-placement="bottom" aria-hidden="true"
+                                    data-original-title="<div style=width:100%;font-size:12px; overflow:auto; height:50px;> 1 lbs , 1 x 1 x 1 Inches , $1 value <br> 1 lbs , 1 x 1 x 1 Inches , $1 value<br> 1 lbs , 1 x 1 x 1 Inches , $1 value <br> 1 lbs , 1 x 1 x 1 Inches , $1 value <br> 1 lbs , 1 x 1 x 1 Inches , $1 value <br> 1 lbs , 1 x 1 x 1 Inches , $1 value <br> 1 lbs , 1 x 1 x 1 Inches , $1 value <br> 1 lbs , 1 x 1 x 1 Inches , $1 value <br> 1 lbs , 1 x 1 x 1 Inches , $1 value <br> 1 lbs , 1 x 1 x 1 Inches , $1 value </div>">4 Packages <i class="fa fa-info-circle mt-1 mr-2" ></i>
                                 </span>
                             </div>
                             <div class="card-body p-3">
@@ -947,38 +895,44 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <hr>
+                                <div class="row align-items-center justify-content-end mt-3">
+                                    <div class="col-auto">
+                                        <button type="button" class="btn btn-info btn-shadow">Pickup Or Drop-off</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- 04 -->
-            <div class="quote-ship-flow" id="step4">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card mt-3">
-                            <div class="card-header card-title">
-                                <img src="images/logos/fedex-en.png" height="50" />Shipping Information
-                            </div>
-                            <div class="card-body p-3">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label class="text-dark font-weight-bold m-0">You're shipping from : </label>
-                                        <hr>
-                                        <p>This address and contact information will be shown on the receiver's package and used for the courier pickup. </p>
-                                        <div class="alert alert-dark" role="alert">Test , test.com, 14838 Satanas St, 92129, California San Diego, 9898568523, test@gmail.com!</div>
-                                    </div>
+        <!-- 04 -->
+        <div class="quote-ship-flow" id="step4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mt-3">
+                        <div class="card-header card-title">
+                            <img src="images/logos/fedex-en.png" height="50" />Shipping Information
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="text-dark font-weight-bold m-0">You're shipping from : </label>
+                                    <hr>
+                                    <p>This address and contact information will be shown on the receiver's package and used for the courier pickup. </p>
+                                    <div class="alert alert-dark" role="alert">Test , test.com, 14838 Satanas St, 92129, California San Diego, 9898568523, test@gmail.com!</div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label class="text-dark font-weight-bold m-0">Service Options</label>
-                                        <hr>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="drop-off-cbk" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="drop-off-cbk"> Drop-off at Fed-Ex
-                                                <span class="font-weight-bold">(Free)</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="text-dark font-weight-bold m-0">Service Options</label>
+                                    <hr>
+                                </div>
+                                <div class="col-12">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="drop-off-cbk" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="drop-off-cbk"> Drop-off at Fed-Ex
+                                            <span class="font-weight-bold">(Free)</span>
                                                     </label>
                                 </div>
                                 <div class="custom-control custom-radio">
@@ -986,8 +940,6 @@
                                     <label class="custom-control-label" for="pickup-cbk">Pickup by Fed-Ex <span class="font-weight-bold">(Free)</span></label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-12 mt-3 d-none" id="pickup-div">
                                 <form>
                                     <div class="row">
@@ -1044,7 +996,7 @@
                                         <div class="col-12 col-md-6">
                                             <div class="form-row">
                                                 <div class="form-group col-12">
-                                                    <textarea class="form-control form-control-style" rows="3" placeholder="Special Instruction"></textarea>
+                                                    <textarea class="form-control form-control-style" style="resize: none;" rows="3" placeholder="Special Instruction"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -1072,19 +1024,24 @@
                                     <div class="col-12 col-md-6">
                                         <div class="form-row">
                                             <div class="form-group col-12">
-                                                <textarea class="form-control form-control-style" rows="3" placeholder="Special Instruction"></textarea>
+                                                <textarea class="form-control form-control-style" style="resize: none;" rows="3" placeholder="Special Instruction"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <hr class="m-0">
-                    <div class="card-footer">
-                        <div class="float-right">
-                            <span class="">Total Cost:</span>
-                            <span class="font-weight-bold text-dark">USD 855.53<i class="fa fa-exclamation-circle pl-1" data-toggle="tooltip" data-html="true" title="<strong>References allow you to enter one or two relevant numbers</strong> <br> to help you search for and identify this shipment in the future. For example, it might be an order number, or account number. You can even customize the name of the reference fields in ‘My Account’, by giving the fields names like ‘Order Number’ to better tailor your own shipping process." data-placement="right" aria-hidden="true"></i></span>
+                        <div class="card-footer">
+                            <div class="float-right">
+                                <span class="">Total Cost:</span>
+                                <span class="font-weight-bold text-dark">USD 855.53<i class="fa fa-exclamation-circle pl-1" data-toggle="tooltip" data-html="true" title="<strong>References allow you to enter one or two relevant numbers</strong> <br> to help you search for and identify this shipment in the future. For example, it might be an order number, or account number. You can even customize the name of the reference fields in ‘My Account’, by giving the fields names like ‘Order Number’ to better tailor your own shipping process." data-placement="right" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center justify-content-end mt-3">
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-info btn-shadow">International Details</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1222,7 +1179,11 @@
                                                     <input class="form-control form-control-style pr-0" type="text" placeholder="Unit Price">
                                                 </td>
                                                 <td style="min-width: 200px">
-                                                    <textarea class="form-control form-control-style" rows="1" placeholder="Description"></textarea>
+                                                    <textarea class="form-control form-control-style" style="resize: none;" rows="1" placeholder="Description"></textarea>
+                                                </td>
+                                                <td class="vertical-align-middle">
+                                                    <span class="nowrap text-right"><span class="font-weight-bold grey-text">Ext. Price</span> $55
+                                                    </span>
                                                 </td>
                                                 <td>
                                                     <div class="col-12 align-self-center text-right p-0">
@@ -1232,21 +1193,23 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td colspan="7">
-                                                    <span class="d-block text-right">
-                                                                    <span class="font-weight-bold grey-text">Ext. Price</span> $55
-                                                    </span>
-                                                </td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
+                            <div class="row align-items-center justify-content-end mt-3">
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-info btn-shadow">Add another item</button>
+                                </div>
+                                <div class="col">
+                                    <span>Add products from the Products Library <a href="#" class="text-danger" id="addProducts">click here</a></span>
+                                </div>
+                            </div>
                             <hr>
-                            <span>Add products from the Products Library <a href="#" class="text-danger" id="addProducts">click here</a></span>
-                            <div class="text-right">
-                                <button type="button" class="btn btn-info btn-shadow">Add another item</button>
+                            <div class="row align-items-center justify-content-end">
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-info btn-shadow">Finalize & Pay</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1492,6 +1455,12 @@
                                     </div>
                                 </div>
                             </div>
+                            <hr>
+                            <div class="row align-items-center justify-content-end">
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-info btn-shadow">Print Labels</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1543,11 +1512,24 @@
                             </div>
                             <hr>
                             <div class="row">
-                                <div class="col-12 mb-3">
+                                <div class="col-12 col-md-6 mb-3">
                                     <div class="custom-control custom-radio custom-control-inline d-inline-flex">
                                         <input type="radio" id="customRadioInline010101" name="customRadioInline1" class="custom-control-input">
                                         <label class="custom-control-label" for="customRadioInline010101">Label Preview</label>
                                     </div>
+                                    <div class="d-inline-block float-right">
+                                        <div class="col-12 align-self-center text-right p-0" style="width: 70px;">
+                                            <button type="button" class="btn btn-sm btn-info ttip btn-shadow  feather-btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Printer"><i data-feather="printer"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-danger ttip btn-shadow feather-btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mail"><i data-feather="mail"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 p-0 mt-4">
+                                        <object height="330px" width="100%" data="images/Canpar%20Label.pdf"></object>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
                                     <div class="custom-control custom-radio custom-control-inline d-inline-flex">
                                         <input type="radio" id="customRadioInline020202" name="customRadioInline1" class="custom-control-input">
                                         <label class="custom-control-label" for="customRadioInline020202">Custom Documents</label>
@@ -1560,9 +1542,9 @@
                                             </button>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12 my-auto">
-                                    <object height="330px" width="100%" data="images/Canpar%20Label.pdf"></object>
+                                    <div class="col-12 p-0 mt-4">
+                                        <object height="330px" width="100%" data="images/Canpar%20Label.pdf"></object>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -2186,6 +2168,7 @@
         });
     }, 500);
     </script>
+
     <script src="js/_main.js"></script>
 </body>
 
