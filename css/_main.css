@@ -493,6 +493,76 @@ font-size: 14px;}
 .card-title-subtitle {position: absolute;right: 10px; top: 12px;}
 
 
+
+
+
+#materialForm .flatButton{
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,.4);
+    border:none;
+    text-align:center;
+}
+
+
+
+#materialForm input, #materialForm .textarea label, #materialForm label{
+    display:block;
+}
+#materialForm label{
+    position:absolute;
+    transition: all .2s;
+    top: 0;
+}
+/*#materialForm .textarea label{
+    position:absolute;
+    transition: all .2s;
+    top: 10px;
+}*/
+/*#materialForm input, #materialForm textarea{
+    margin-top:30px;
+}*/
+#materialForm .formInput{
+    background-color:transparent;
+    border-top:none;
+    border-left:none;
+    border-right:none;    
+    width:100%;
+    margin-bottom:15%;
+    color:#8C8C8C;
+
+}
+
+#materialForm input:focus, #materialForm textarea:focus{
+    outline:none;
+    color:#000;
+    -webkit-transition:border-bottom .5s;
+    -moz-transition:border-bottom .5s;
+    -ms-transition:border-bottom .5s;
+     -o-transition:border-bottom .5s;
+        transition:border-bottom .5s;
+}
+#materialForm .active{
+    transform:translateY(-110%);
+    font-size:14px;
+}
+
+#materialForm #close{
+    display:block;
+    position:absolute;
+    cursor:pointer;
+    left:5px;
+    z-index:999;
+    margin-right:0;
+    padding-right:0;
+    padding-left:0;
+    color:#ffffff;
+}
+#materialForm #close:hover{
+    color:#c0392b;
+}
+
+
+
+
 @media (min-width:767px) {
   .bootstrap-timepicker-widget.modal { width: 200px; margin-left: -100px; }
 }
@@ -543,12 +613,19 @@ font-size: 14px;}
 .checkboxes-radio input[type=radio], .checkboxes-radio input[type=checkbox] { display: none; }
 .checkboxes-radio input[type=radio] + label, .checkboxes-radio input[type=checkbox] + label { display: inline-block; margin: -2px; padding: 4px 12px; text-align: center; cursor: pointer; background-color: #f5f5f5; }
 .checkboxes-radio input[type=radio]:checked + label, .checkboxes-radio input[type=checkbox]:checked + label { background-image: none; outline: 0; -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.40), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.40), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.40), 0 1px 2px rgba(0, 0, 0, 0.05); background-color: #ec5a26; color: #fff; }
-
+.custom-control-label-bold { font-size: 16px; font-weight: 600; color: #000; line-height: 17px; }
 /*Overview*/
   .div-collapsible { cursor: pointer; }
   .div-collapsible:after { content: '\002B'; color: #000; float: right; font-size: 24px;margin-right: 10px;line-height: 36px;}
   .div-collapsible.active:after { content: "\2212"; }
   .overview-card-body { display: none;}
+
+/*payment-tab*/
+.payment-tab {border: 1px solid #eee; height: 400px; margin-left: 0;}
+.payment-tab .tab {background: #eee; padding: 0;}
+.payment-tab .tab a {color: #999 !important;}
+.payment-tab .tab .nav-pills .nav-link {border-radius: 0;padding: 15px;}
+.payment-tab .tab .nav-pills .nav-link.active, .payment-tab .tab .nav-pills .show>.nav-link {background-color: #fff;color: #000 !important;}
 
 @media only screen and (max-width: 1440px) {
   .sideNav.fixed {-webkit-transform: translateX(0%);-ms-transform: translateX(0%);transform: translateX(0%);}

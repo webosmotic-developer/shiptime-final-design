@@ -132,6 +132,58 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mt-3">
+                                <div class="dashboard-card card-body">
+                                    <form id="materialForm" method="post" action="" role="form" autocomplete="off" class="needs-validation from" novalidate>
+                                        <div class="form-row">
+                                            <div class="col-6 mt-4">
+                                                <input type="text" class="form-control form-control-style" id="firstName" name="firstName" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a First Name.
+                                                </div>
+                                                <label class="labels" for="firstName">First Name</label>
+                                            </div>
+                                            <div class="col-6 mt-4">
+                                                <input type="text" class="form-control form-control-style" id="lastName" name="lastName" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a Last Name.
+                                                </div>
+                                                <label class="labels" for="lastName">Last Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-6 mt-4">
+                                                <input type="email" class="form-control form-control-style" id="email" name="email" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a Email.
+                                                </div>
+                                                <label class="labels" for="email">Email</label>
+                                            </div>
+                                            <div class="col-6 mt-4">
+                                                <input type="text" class="form-control form-control-style" id="phone" name="phone" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a Phone.
+                                                </div>
+                                                <label class="labels" for="phone">Phone</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-12 mt-4">
+                                                <textarea type="text" class="form-control form-control-style" id="description" name="description" rows="3" required></textarea>
+                                                <div class="invalid-feedback">
+                                                    Please provide a Project Description.
+                                                </div>
+                                                <label class="labels" for="description">Project Description</label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-info btn-shadow mt-3">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <br>
                     <h6>Datepicker</h6>
                     <div class="row">
@@ -261,6 +313,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/feather.min.js"></script>
+    <script src="js/materialForm.js"></script>
     <script src="js/_main.js"></script>
     <script type="text/javascript">
     $(window).load(function() {
@@ -269,53 +322,51 @@
         }, 300);
     });
     </script>
-	
-	<script>
-    $(function(){
+    <script>
+    $(function() {
 
-      $('._btn-loader').on('click', function() {
-          var $this = $(this);
-        $this.addClass('spinning-light');
-        $this.prop("disabled", true);
-          setTimeout(function() {
-             $this.removeClass('spinning-light');
-             $this.prop("disabled", false);
-         }, 10000);
-      });
+        $('._btn-loader').on('click', function() {
+            var $this = $(this);
+            $this.addClass('spinning-light');
+            $this.prop("disabled", true);
+            setTimeout(function() {
+                $this.removeClass('spinning-light');
+                $this.prop("disabled", false);
+            }, 10000);
+        });
 
-      $('._btn-loader._btn-loader-txt').on('click', function() {
-          var $this = $(this);
-          var $text = $(this).text();
-        $this.html('loading');
-        $this.addClass('spinning-light');
-        $this.prop("disabled", true);
-          setTimeout(function() {
-             $this.removeClass('spinning-light');
-             $this.html($text);
-             $this.prop("disabled", false);
-         }, 10000);
-      });
+        $('._btn-loader._btn-loader-txt').on('click', function() {
+            var $this = $(this);
+            var $text = $(this).text();
+            $this.html('loading');
+            $this.addClass('spinning-light');
+            $this.prop("disabled", true);
+            setTimeout(function() {
+                $this.removeClass('spinning-light');
+                $this.html($text);
+                $this.prop("disabled", false);
+            }, 10000);
+        });
 
-      $('._btn-loader-center').on('click', function() {
-          var $this = $(this);
-          var $text = $this.text();
-          var $_width = $this.width();
-          $this.width($_width);
+        $('._btn-loader-center').on('click', function() {
+            var $this = $(this);
+            var $text = $this.text();
+            var $_width = $this.width();
+            $this.width($_width);
 
-        $this.html('&nbsp');
-        $this.addClass('spinning');
-        $this.prop("disabled", true);
-          setTimeout(function() {
-             $this.removeClass('spinning');
-             $this.html($text);
-             $this.prop("disabled", false);
-         }, 10000);
-      });
+            $this.html('&nbsp');
+            $this.addClass('spinning');
+            $this.prop("disabled", true);
+            setTimeout(function() {
+                $this.removeClass('spinning');
+                $this.html($text);
+                $this.prop("disabled", false);
+            }, 10000);
+        });
 
 
-      });
+    });
     </script>
-	
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -357,6 +408,26 @@
         $('.timepicker1-clock').trigger('click');
     });
     $('#timepicker1').timepicker();
+    </script>
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
     </script>
 </body>
 
