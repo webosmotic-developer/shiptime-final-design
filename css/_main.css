@@ -17,6 +17,7 @@ a:hover {color: #dc3545;}
 
 .bg-orange {background-color: #ec5a27 !important;}
 .bg-blue {background-color: #411f73 !important;}
+.note { padding-top: 8px; display: inline-block; font-size: 10px; color: #9e9e9e; }
 
 .d-flax-nowrap { -ms-flex-wrap: nowrap; flex-wrap: nowrap;}
 

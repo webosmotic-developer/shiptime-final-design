@@ -144,27 +144,32 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="card mt-3">
-                            <div class="card-header card-title">Shipping From</div>
+                            <div class="card-header card-title">Shipping From :</div>
                             <div class="card-body p-3">
                                 <form>
                                     <div class="form-row">
                                         <div class="col-12 col-lg-6 mb-3">
                                             <label class="text-dark font-weight-bold">You're shipping from : </label>
-                                            <button type="button" class="btn btn-info btn-shadow btn-small btn-xs pull-right" data-toggle="modal" data-target="#modalCart" data-toggle="tooltip" data-placement="top" title="You can change it by click here">Get Address</button>
+                                            <button type="button" class="btn btn-info btn-shadow btn-small btn-xs pull-right" data-toggle="modal" data-target="#modalCart" data-toggle="tooltip" data-placement="top" title="You can change it by click here">Change Address</button>
                                             <div class="input-group">
                                                 <div class="d-block w-100">
                                                     <input readonly disabled type="text" class=" form-control form-control-style" placeholder="Ontario, L1Z 1L6,Canada">
                                                 </div>
                                             </div>
-                                            <br>
-                                            <span>Shipping rates are calculated according to your default sender address.</span>
+                                            <span class="note">Shipping rates are calculated according to your default sender address.</span>
                                         </div>
                                     </div>
-                                    <div class="form-row">
-                                        <div class="col-12 col-lg-6 mt-3">
-                                            <label class="text-dark font-weight-bold">Ship To :</label>
-                                        </div>
-                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mt-3">
+                            <div class="card-header card-title">Ship To :</div>
+                            <div class="card-body p-3">
+                                <form>
                                     <div class="form-row">
                                         <div class="form-group col-md-6" id="_getaddress">
                                             <input type="text" class="form-control form-control-style typeahead " placeholder="Search by Name, Address or Zip">
@@ -172,7 +177,7 @@
                                         <div class="form-group col-md-6">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="checkbox101">
-                                                <label class="custom-control-label" for="checkbox101"> Residential</label>
+                                                <label class="custom-control-label" for="checkbox101">Residential</label>
                                             </div>
                                         </div>
                                         <div class="form-group col-md-6">
@@ -294,7 +299,7 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link text-center" id="LTL-freight-pallet-tab" data-toggle="tab" href="#LTL-freight-pallet" role="tab" aria-controls="LTL-freight-pallet" aria-selected="false">
-                                            <i class="fa fa-envelope-open" aria-hidden="true"></i><br>LTL Freight (Pallet)</a>
+                                            <i class="fa fa-cubes" aria-hidden="true"></i><br>LTL Freight (Pallet)</a>
                                         </li>
                                     </ul>
                                     <div class="shipping-tabs">
@@ -303,14 +308,14 @@
                                                 <form class="d-flex">
                                                     <label class="font-weight-bold pr-2 align-self-center m-0 mb-1">Quantity</label>
                                                     <div style="width: 130px;">
-                                                    <select class="form-control form-control-style select7">
-                                                        <option value="1" selected disabled>Combo Box</option>
-                                                        <option value="2">50</option>
-                                                        <option value="3">100</option>
-                                                        <option value="4">150</option>
-                                                        <option value="5">200</option>
-                                                        <option value="6">250</option>
-                                                    </select>
+                                                        <select class="form-control form-control-style select7">
+                                                            <option value="1" selected disabled>Combo Box</option>
+                                                            <option value="2">50</option>
+                                                            <option value="3">100</option>
+                                                            <option value="4">150</option>
+                                                            <option value="5">200</option>
+                                                            <option value="6">250</option>
+                                                        </select>
                                                     </div>
                                                 </form>
                                             </div>
@@ -329,12 +334,11 @@
                                                         <thead class="thead-light">
                                                             <tr>
                                                                 <th scope="col">#</th>
-                                                                <th scope="col">Dimensions</th>
                                                                 <th scope="col" class="text-center">Length</th>
-                                                                <th scope="col" class="text-center">width</th>
+                                                                <th scope="col" class="text-center">Width</th>
                                                                 <th scope="col" class="text-center">Height</th>
                                                                 <th scope="col" class="text-center">Edit</th>
-                                                                <th scope="col" class="text-center nowrap">Weight (kg)</th>
+                                                                <th scope="col" class="text-center nowrap">Weight (kg/cm)</th>
                                                                 <th scope="col" class="text-center nowrap">Ins. Value
                                                                     <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title="<strong>Enter the total declared value for the contents of this package.</strong> <br> This is the value referenced if we ever have to file a claim with your chosen carrier. Declared Value represents the maximum liability for the courier chosen. Additional fees will apply for any amount above the standard liability of the courier" data-placement="right" aria-hidden="true"></i>
                                                                 </th>
@@ -347,7 +351,6 @@
                                                         <tbody>
                                                             <tr>
                                                                 <th class="align-self-center">#1</th>
-                                                                <td>Dimensions</td>
                                                                 <td>
                                                                     <input class="form-control form-control-style text-center pr-0" type="text" placeholder="L">
                                                                 </td>
@@ -382,7 +385,6 @@
                                                             </tr>
                                                             <tr>
                                                                 <th class="align-self-center">#2</th>
-                                                                <td>Dimensions</td>
                                                                 <td>
                                                                     <input class="form-control form-control-style text-center pr-0" type="text" placeholder="L">
                                                                 </td>
@@ -417,7 +419,6 @@
                                                             </tr>
                                                             <tr>
                                                                 <th class="align-self-center">#3</th>
-                                                                <td>Dimensions</td>
                                                                 <td>
                                                                     <input class="form-control form-control-style text-center pr-0" type="text" placeholder="L">
                                                                 </td>
@@ -460,9 +461,9 @@
                                                     <div class="col-12 col-md-6">
                                                         <div class="float-right checkboxes-radio pt-2">
                                                             <span class="font-weight-bold">Insurance </span>
-                                                            <input type="radio" id="radio6" name="radios06" value="false" checked>
+                                                            <input type="radio" id="radio6" name="radios06" value="false">
                                                             <label class="rounded-left" for="radio6">Carrier</label>
-                                                            <input type="radio" id="radio7" name="radios06" value="true">
+                                                            <input type="radio" id="radio7" name="radios06" value="true" checked>
                                                             <label class="rounded-right" for="radio7">ShipTime</label>
                                                             <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title=" <strong>Did you know?</strong> <br> By insuring your shipment with ShipTime, you can save up to 50% on insurance and in the unlikely event that your shipment is damaged or lost you can easily process claims through your account and receive your refund in a timely manner." data-placement="right" aria-hidden="true"></i>
                                                         </div>
@@ -506,9 +507,9 @@
                                                     <div class="col-12">
                                                         <div class="float-right checkboxes-radio pt-2">
                                                             <span class="font-weight-bold">Insurance </span>
-                                                            <input type="radio" id="radio10" name="radios0010" value="false" checked>
+                                                            <input type="radio" id="radio10" name="radios0010" value="false">
                                                             <label class="rounded-left" for="radio10">Carrier</label>
-                                                            <input type="radio" id="radio11" name="radios0010" value="true">
+                                                            <input type="radio" id="radio11" name="radios0010" value="true" checked>
                                                             <label class="rounded-right" for="radio11">ShipTime</label>
                                                             <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title=" <strong>Did you know?</strong> <br> By insuring your shipment with ShipTime, you can save up to 50% on insurance and in the unlikely event that your shipment is damaged or lost you can easily process claims through your account and receive your refund in a timely manner." data-placement="right" aria-hidden="true"></i>
                                                         </div>
@@ -556,9 +557,9 @@
                                                     <div class="col-12">
                                                         <div class="float-right checkboxes-radio pt-2">
                                                             <span class="font-weight-bold">Insurance </span>
-                                                            <input type="radio" id="radio14" name="radios14" value="false" checked>
+                                                            <input type="radio" id="radio14" name="radios14" value="false">
                                                             <label class="rounded-left" for="radio14">Carrier</label>
-                                                            <input type="radio" id="radio15" name="radios14" value="true">
+                                                            <input type="radio" id="radio15" name="radios14" value="true" checked>
                                                             <label class="rounded-right" for="radio15">ShipTime</label>
                                                             <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title=" <strong>Did you know?</strong> <br> By insuring your shipment with ShipTime, you can save up to 50% on insurance and in the unlikely event that your shipment is damaged or lost you can easily process claims through your account and receive your refund in a timely manner." data-placement="right" aria-hidden="true"></i>
                                                         </div>
@@ -587,12 +588,11 @@
                                                         <thead class="thead-light">
                                                             <tr>
                                                                 <th scope="col">#</th>
-                                                                <th scope="col">Dimensions</th>
                                                                 <th scope="col" class="text-center">Length</th>
-                                                                <th scope="col" class="text-center">width</th>
+                                                                <th scope="col" class="text-center">Width</th>
                                                                 <th scope="col" class="text-center">Height</th>
                                                                 <th scope="col" class="text-center">Edit</th>
-                                                                <th scope="col" class="text-center nowrap">Weight (kg)</th>
+                                                                <th scope="col" class="text-center nowrap">Weight (kg/cm)</th>
                                                                 <th scope="col" class="text-center nowrap">Ins. Value
                                                                     <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title="<strong>Enter the total declared value for the contents of this package.</strong> <br> This is the value referenced if we ever have to file a claim with your chosen carrier. Declared Value represents the maximum liability for the courier chosen. Additional fees will apply for any amount above the standard liability of the courier" data-placement="right" aria-hidden="true"></i>
                                                                 </th>
@@ -605,7 +605,6 @@
                                                         <tbody>
                                                             <tr>
                                                                 <th class="align-self-center">#1</th>
-                                                                <td>Dimensions</td>
                                                                 <td>
                                                                     <input class="form-control form-control-style text-center pr-0" type="text" placeholder="L">
                                                                 </td>
@@ -648,9 +647,9 @@
                                                     <div class="col-12 col-md-6">
                                                         <div class="float-right checkboxes-radio pt-2">
                                                             <span class="font-weight-bold">Insurance </span>
-                                                            <input type="radio" id="radio600" name="radios600" value="false" checked>
+                                                            <input type="radio" id="radio600" name="radios600" value="false">
                                                             <label class="rounded-left" for="radio600">Carrier</label>
-                                                            <input type="radio" id="radio700" name="radios600" value="true">
+                                                            <input type="radio" id="radio700" name="radios600" value="true" checked>
                                                             <label class="rounded-right" for="radio700">ShipTime</label>
                                                             <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title=" <strong>Did you know?</strong> <br> By insuring your shipment with ShipTime, you can save up to 50% on insurance and in the unlikely event that your shipment is damaged or lost you can easily process claims through your account and receive your refund in a timely manner." data-placement="right" aria-hidden="true"></i>
                                                         </div>
@@ -679,13 +678,12 @@
                                                         <thead class="thead-light">
                                                             <tr>
                                                                 <th scope="col">#</th>
-                                                                <th scope="col">Dimensions</th>
                                                                 <th scope="col" class="text-center">Length</th>
-                                                                <th scope="col" class="text-center">width</th>
+                                                                <th scope="col" class="text-center">Width</th>
                                                                 <th scope="col" class="text-center">Height</th>
-                                                                <th scope="col">Weightiest</th>
                                                                 <th scope="col" class="text-center">Edit</th>
-                                                                <th scope="col" class="text-center nowrap">Weight (kg)</th>
+                                                                <th scope="col">Weight Class</th>
+                                                                <th scope="col" class="text-center nowrap">Weight (kg/cm)</th>
                                                                 <th scope="col" class="text-center nowrap">Ins. Value
                                                                     <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title="<strong>Enter the total declared value for the contents of this package.</strong> <br> This is the value referenced if we ever have to file a claim with your chosen carrier. Declared Value represents the maximum liability for the courier chosen. Additional fees will apply for any amount above the standard liability of the courier" data-placement="right" aria-hidden="true"></i>
                                                                 </th>
@@ -698,7 +696,6 @@
                                                         <tbody>
                                                             <tr>
                                                                 <th class="align-self-center">#1</th>
-                                                                <td>Dimensions</td>
                                                                 <td>
                                                                     <input class="form-control form-control-style text-center pr-0" type="text" placeholder="L">
                                                                 </td>
@@ -708,18 +705,21 @@
                                                                 <td>
                                                                     <input class="form-control form-control-style text-center pr-0" type="text" placeholder="H">
                                                                 </td>
-                                                                <td style="width: 120px;">
-                                                                    <select class="form-control form-control-style select7">
-                                                                        <option value="1" selected disabled>Select</option>
-                                                                        <option value="2">50</option>
-                                                                        <option value="3">100</option>
-                                                                        <option value="4">150</option>
-                                                                        <option value="5">200</option>
-                                                                        <option value="6">250</option>
-                                                                    </select>
-                                                                </td>
                                                                 <td>
                                                                     <a href="#" data-placement="right" title="you can change it by click here" data-toggle="modal" data-target="#modalbox"><i class="fa fa-pencil-square-o ml-1 m-t-6 fa-lg grey-text"></i></a>
+                                                                </td>
+                                                                <td style="width: 145px;">
+                                                                    <div class="d-inline-block" style="width: 100px;">
+                                                                        <select class="form-control form-control-style select7">
+                                                                            <option value="1" selected disabled>Select</option>
+                                                                            <option value="2">50</option>
+                                                                            <option value="3">100</option>
+                                                                            <option value="4">150</option>
+                                                                            <option value="5">200</option>
+                                                                            <option value="6">250</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <span style="font-size: 7px;"> <i class="fa fa-calculator fa-2x mt-2 grey-text"></i></span>
                                                                 </td>
                                                                 <td>
                                                                     <input class="form-control form-control-style text-center pr-0" type="text" placeholder="Wt">
@@ -865,7 +865,7 @@
                                     <table class="_table-style table table-bordered table-striped table-responsive-md" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
-                                                <th class="nowrap">Delivery Time
+                                                <th class="nowrap">Estimated Delivery
                                                     <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title="<strong>The estimated number of business days</strong> it will take your shipment to reach its destination. Note that these are not guarantees, but rather suggested deliver times, unless otherwise stated." data-placement="right" aria-hidden="true"></i>
                                                     <i class="fa fa-sort float-right mt-1" aria-hidden="true"></i>
                                                 </th>
@@ -873,7 +873,7 @@
                                                 <th class="nowrap">Service Option</th>
                                                 <th class="nowrap">Carrier <i class="fa fa-sort float-right mt-1" aria-hidden="true"></i></th>
                                                 <th class="nowrap">Service</th>
-                                                <th class="nowrap">Total Cost <i class="fa fa-sort float-right mt-1" aria-hidden="true"></i></th>
+                                                <th class="nowrap">Price {$}<i class="fa fa-sort float-right mt-1" aria-hidden="true"></i></th>
                                                 <th class="nowrap" style="width: 80px;">Action</th>
                                                 <th><i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title="<strong>The estimated number of business days</strong> it will take your shipment to reach its destination. Note that these are not guarantees, but rather suggested deliver times, unless otherwise stated." data-placement="right" aria-hidden="true"></i></th>
                                             </tr>
@@ -901,8 +901,8 @@
                                                 </td>
                                                 <td class="nowrap">Standard Overnight</td>
                                                 <td class="nowrap">$33</td>
-                                                <td class="flot-actions flot-actions-show-xs flot-actions-show-md">
-                                                    <div class="flot-action nowrap">
+                                                <td class="flot-actions-show-xs flot-actions-show-md">
+                                                    <div class="nowrap">
                                                         <a href="#!" class="btn btn-sm btn-info btn-shadow" data-toggle="tooltip" data-placement="top" title="Select">Select</a>
                                                     </div>
                                                 </td>
@@ -930,8 +930,8 @@
                                                 </td>
                                                 <td class="nowrap">Express</td>
                                                 <td class="nowrap">$15</td>
-                                                <td class="flot-actions flot-actions-show-xs flot-actions-show-md">
-                                                    <div class="flot-action nowrap">
+                                                <td class="flot-actions-show-xs flot-actions-show-md">
+                                                    <div class="nowrap">
                                                         <a href="#!" class="btn btn-sm btn-info btn-shadow" data-toggle="tooltip" data-placement="top" title="Select">Select</a>
                                                     </div>
                                                 </td>
@@ -959,8 +959,8 @@
                                                 </td>
                                                 <td class="nowrap">Priority Overnight</td>
                                                 <td class="nowrap">$63</td>
-                                                <td class="flot-actions flot-actions-show-xs flot-actions-show-md">
-                                                    <div class="flot-action nowrap">
+                                                <td class="flot-actions-show-xs flot-actions-show-md">
+                                                    <div class="nowrap">
                                                         <a href="#!" class="btn btn-sm btn-info btn-shadow" data-toggle="tooltip" data-placement="top" title="Select">Select</a>
                                                     </div>
                                                 </td>
@@ -1017,10 +1017,12 @@
                             <div class="col-12 mt-3 d-none" id="pickup-div">
                                 <form>
                                     <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <input placeholder="Pickup date" type="text" id="pickup-date-picker" class="form-control form-control-style datepicker">
+                                        <div class="form-group col-md-3">
+                                            <div class="daterange input-group input-date-icon w-100">
+                                                <input type="text" name="birthday" value="10/24/1984" class="form-control form-control-style input-date">
+                                            </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-3">
                                             <div class="form-group">
                                                 <select class="form-control form-control-style select7">
                                                     <option value="1" selected disabled>Pickup Location</option>
@@ -1031,81 +1033,70 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <span>Courier will pickup by fed-ex in between</span>
-                                        </div>
-                                        <div class="form-group col-md-6">
                                             <div class="row">
                                                 <div class="col">
-                                                    <div class="input-group bootstrap-timepicker timepicker">
-                                                        <input id="timepicker1" type="text" class="form-control form-control-style" data-toggle="tooltip" data-html="true" title="From" data-placement="bottom" aria-hidden="true">
-                                                        <span class="input-group-addon timepicker1-clock"><i data-feather="clock"></i></span>
-                                                    </div>
+                                                    <select class="form-control form-control-style select7">
+                                                        <option value="1" selected disabled>From</option>
+                                                        <option value="2">10.00 am</option>
+                                                        <option value="3">12.00 am</option>
+                                                        <option value="4">01.00 pm</option>
+                                                        <option value="5">05.00 pm</option>
+                                                        <option value="6">10.00 pm</option>
+                                                    </select>
                                                 </div>
                                                 <div class="col-auto my-auto text-center">
                                                     <span class="grey-text">&</span>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="input-group bootstrap-timepicker timepicker">
-                                                        <input id="timepicker2" type="text" class="form-control form-control-style" data-toggle="tooltip" data-html="true" title="To" data-placement="bottom" aria-hidden="true">
-                                                        <span class="input-group-addon timepicker2-clock"><i data-feather="clock"></i></span>
-                                                    </div>
+                                                    <select class="form-control form-control-style select7">
+                                                        <option value="1" selected disabled>To</option>
+                                                        <option value="2">10.00 pm</option>
+                                                        <option value="3">12.00 pm</option>
+                                                        <option value="4">01.00 am</option>
+                                                        <option value="5">05.00 am</option>
+                                                        <option value="6">10.00 am</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 mb-3">
-                                            <span>Add <b>references</b> to easily find this shipment later.</span> <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title="<strong>References allow you to enter one or two relevant numbers</strong> <br> to help you search for and identify this shipment in the future. For example, it might be an order number, or account number. You can even customize the name of the reference fields in ‘My Account’, by giving the fields names like ‘Order Number’ to better tailor your own shipping process." data-placement="right" aria-hidden="true"> </i>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-row">
-                                                <div class="form-group col-12 mb-2">
-                                                    <input type="text" class="form-control form-control-style" placeholder="#Reference 2">
-                                                </div>
-                                                <div class="form-group col-12">
-                                                    <input type="text" class="form-control form-control-style" placeholder="#Reference 1" aria-label="#Reference 1" aria-describedby="basic-addon2">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-row">
-                                                <div class="form-group col-12">
-                                                    <textarea class="form-control form-control-style" style="resize: none;" rows="3" placeholder="Special Instruction"></textarea>
-                                                </div>
-                                            </div>
+                                        <div class="form-group col-md-6">
+                                            <span>Shipment will be picked up by {courier} between</span>
                                         </div>
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-12" id="drop-off-div">
+                            <div class="col-12 d-none" id="drop-off-div">
                                 <div class="row">
                                     <div class="col-12 mt-3">
                                         <span>You chose to drop off your package at a Fed-Ex authorized location. <a href="#" class="text-danger">Click here to find one near you.</a></span>
                                     </div>
-                                    <div class="col-12 mt-3 mb-3">
-                                        <span>Add <b>references</b> to easily find this shipment later.</span> <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title="<strong>References allow you to enter one or two relevant numbers</strong> <br> to help you search for and identify this shipment in the future. For example, it might be an order number, or account number. You can even customize the name of the reference fields in ‘My Account’, by giving the fields names like ‘Order Number’ to better tailor your own shipping process." data-placement="right" aria-hidden="true"> </i>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 mb-2">
+                                <span>Add <b class="text-dark">references</b> to easily find this shipment later.</span> <i class="fa fa-question-circle grey-text" data-toggle="tooltip" data-html="true" title="<strong>References allow you to enter one or two relevant numbers</strong> <br> to help you search for and identify this shipment in the future. For example, it might be an order number, or account number. You can even customize the name of the reference fields in ‘My Account’, by giving the fields names like ‘Order Number’ to better tailor your own shipping process." data-placement="right" aria-hidden="true"> </i>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-row">
+                                    <div class="form-group col-12 mb-2">
+                                        <input type="text" class="form-control form-control-style" placeholder="#Reference 2">
                                     </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-row">
-                                            <div class="form-group col-12 mb-2">
-                                                <input type="text" class="form-control form-control-style" placeholder="#Reference 2">
-                                            </div>
-                                            <div class="form-group col-12">
-                                                <input type="text" class="form-control form-control-style" placeholder="#Reference 1" aria-label="#Reference 1" aria-describedby="basic-addon2">
-                                            </div>
-                                        </div>
+                                    <div class="form-group col-12">
+                                        <input type="text" class="form-control form-control-style" placeholder="#Reference 1" aria-label="#Reference 1" aria-describedby="basic-addon2">
                                     </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-row">
-                                            <div class="form-group col-12">
-                                                <textarea class="form-control form-control-style" style="resize: none;" rows="3" placeholder="Special Instruction"></textarea>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <textarea class="form-control form-control-style" style="resize: none;" rows="3" placeholder="Special Instruction"></textarea>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer pl-0 pr-0">
+                            <div class="float-left">
+                                <span>Prices shown do not include any applicable taxes</span>
+                            </div>
                             <div class="float-right">
                                 <span class="">Total Cost:</span>
                                 <span class="font-weight-bold text-dark">USD 855.53<i class="fa fa-exclamation-circle pl-1" data-toggle="tooltip" data-html="true" title="<strong>References allow you to enter one or two relevant numbers</strong> <br> to help you search for and identify this shipment in the future. For example, it might be an order number, or account number. You can even customize the name of the reference fields in ‘My Account’, by giving the fields names like ‘Order Number’ to better tailor your own shipping process." data-placement="right" aria-hidden="true"></i></span>
@@ -1190,7 +1181,7 @@
                                             </div>
                                             <div class="form-group col-6 col-sm-6 col-md-3">
                                                 <select class="form-control form-control-style select7">
-                                                    <option value="" disabled selected>Country</option>
+                                                    <option value="" disabled selected>Manufactured Country</option>
                                                     <option value="1">Canada</option>
                                                     <option value="2">USA</option>
                                                     <option value="3">India</option>
@@ -1223,7 +1214,8 @@
                                     <label for="inputPassword" class="mr-2 float-right col-form-label text-dark nowrap">Currency</label>
                                 </div>
                                 <div class="col-12">
-                                    <hr class="mt-0"> </div>
+                                    <hr class="mt-0">
+                                </div>
                                 <div class="table-responsive-lg">
                                     <table class="table table-borderless" cellspacing="0" width="100%">
                                         <thead></thead>
@@ -1240,9 +1232,9 @@
                                                     <input class="form-control form-control-style pr-0" type="text" placeholder="HS Code">
                                                 </td>
                                                 <td style="min-width: 100px">
-                                                    <div class="form-group" style="width: 150px; margin-bottom: 0">
+                                                    <div class="form-group" style="width: 200px; margin-bottom: 0">
                                                         <select class="form-control form-control-style select7">
-                                                            <option value="" disabled selected>Country</option>
+                                                            <option value="" disabled selected>Manufactured Country</option>
                                                             <option value="1">Canada</option>
                                                             <option value="2">USA</option>
                                                             <option value="3">India</option>
@@ -2551,6 +2543,41 @@
             });
         }, false);
     })();
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script>
+    $(function() {
+        $('._date_demo').daterangepicker({
+            ranges: {
+                'Today': [moment(), moment()],
+                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            },
+            "alwaysShowCalendars": true,
+            "startDate": "08/31/2018",
+            "endDate": "09/06/2018"
+        }, function(start, end, label) {
+            console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+        });
+    })
+    </script>
+    <script>
+    $(function() {
+        $('input[name="birthday"]').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            minYear: 1901,
+            maxYear: parseInt(moment().format('YYYY'), 10)
+        }, function(start, end, label) {
+            var years = moment().diff(start, 'years');
+            alert("You are " + years + " years old!");
+        });
+    });
     </script>
     <script src="js/_main.js"></script>
 </body>
