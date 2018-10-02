@@ -23,8 +23,14 @@ $(function() {
 
     });
 
+    // sideNav-list - Multi menu
+    $('.sideNav-list').on('show.bs.collapse', function () {
+      $('.sideNav-list').find('.collapse.show').collapse('hide');
+  //  console.log("HI");
+  })
+
 })
-    
+
 feather.replace()
 
 $('body').on('click', function (e) {
@@ -110,6 +116,7 @@ function check_if_in_view() {
         $(".sideNav").removeClass('fixed');
         $(".sideNav").hover(function() {
             $(".sideNav").addClass('fixed');
+
         }, function() {
             $(".sideNav").removeClass('fixed');
         })
