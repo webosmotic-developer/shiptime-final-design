@@ -644,7 +644,7 @@ font-size: 14px;}
   .modal-dialog { max-width: 500px; margin: 1.75rem auto; padding: 0px 5px 0 10px; }
   .progress_bar > li:before {    width: 1.8em;
     height: 1.8em;line-height: 1.5em;}
-    .progress_bar > li:after {top: 0.9em;}
+    .progress_bar > li:after {top: 1.3em;}
     .progress_bar > li span {display: none;}
     .card-title-subtitle{position: relative; padding-left: 10px;}
     .shipping-nav-tabs .nav-tabs .nav-item {width: 50%;}
@@ -655,5 +655,6 @@ font-size: 14px;}
 }
 @media only screen and (max-width: 380px) {
   ._logo {width: 95px;}
-  .progress_bar > li:before {font-size: 15px;}
+  .progress_bar > li:before {font-size: 15px; margin-bottom: 0;}
+  .progress_bar > li:after {top: 0.9em;}
 }
