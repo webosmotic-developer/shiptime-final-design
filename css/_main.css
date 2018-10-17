@@ -592,18 +592,20 @@ font-size: 14px;}
 
 
 /*rewards*/
-/*[data-toggle="collapse"]:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f054"; transform: rotate(90deg); transition: all linear 0.25s; float: right; line-height: inherit; }
-[data-toggle="collapse"].collapsed:after { transform: rotate(0deg); }*/
-
-
-
 #collaps_aeroplan_up:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f00d"; transform: rotate(90deg); transition: all linear 0.25s; float: right; line-height: inherit; }
 #collaps_aeroplan_down:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f054"; transform: rotate(0deg); transition: all linear 0.25s; float: right; line-height: inherit; }
 #collaps_refer_up:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f00d"; transform: rotate(90deg); transition: all linear 0.25s; float: right; line-height: inherit; }
 #collaps_refer_down:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f054"; transform: rotate(0deg); transition: all linear 0.25s; float: right; line-height: inherit; }
 
+/*signup*/
+#_mainContainer._fixed-popup-container { background-color: rgba(0, 0, 0, 0.8); position: fixed; padding: 0; z-index: 9999999; overflow: auto; height: 100vh;}
+.associations-tab .tab-logo { padding: 0px; margin:0.5%; border: 2px solid #a5a5a5; border-radius: 10px; max-width: 140px; min-width: 140px; background: #fff; cursor: pointer; }
+.associations-tab .tab-logo.active { background: #fff; box-shadow: 0px 20px 30px 0px rgba(23, 24, 25, 0.18); border: 2px solid #ec5b28; }
+.associations-border {border-left: 1px solid #EEEEEE;}
+
 @media only screen and (max-width: 1440px) {
   .sideNav.fixed {-webkit-transform: translateX(0%);-ms-transform: translateX(0%);transform: translateX(0%);}
+  .associations-tab .tab-logo {max-width: 110px; min-width: 110px;}
 }
 
 @media only screen and (max-width: 990px) {
@@ -611,8 +613,12 @@ font-size: 14px;}
   #sideNav {width: 180px; transform: -webkit-transform: translateX(0);-ms-transform: translateX(0);transform: translateX(0);}
   #_mainContainer {padding-left: 0px !important;}
   .sidenav-overlay {height: 100%;position: fixed;width: 100%;top: 0;right: 0;background: rgba(0, 0, 0, 0.15);z-index: 999;}
+  .associations-border {border-left: none;}
 }
 
+@media (min-width: 1400px){
+  #_mainContainer._fixed-popup-container {display: flex; align-items: center; justify-content: center;}
+}
 
 @media (min-width: 1024px){
   .modal-lg {max-width: 1000px;}
@@ -627,6 +633,7 @@ font-size: 14px;}
 }
 @media only screen and (max-width: 991px) {
 .shipping-nav-tabs .nav-tabs .nav-item a { color: #999; border: 1px solid #dee2e6; margin-right: 5px; width: 160px; height: 58px; border-radius: .25rem; margin-bottom: 5px; }
+.associations-tab .tab-logo {max-width: 80px; min-width: 80px;}
 }
 
 
@@ -665,6 +672,7 @@ font-size: 14px;}
 }
 @media only screen and (max-width: 390px) {
   .shipping-nav-tabs .nav-tabs .nav-item a { width: auto; height: 75px; }
+    .associations-tab .tab-logo {max-width: 70px; min-width: 70px;}
 }
 @media only screen and (max-width: 380px) {
   ._logo {width: 95px;}

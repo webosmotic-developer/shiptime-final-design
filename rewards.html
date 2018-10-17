@@ -148,13 +148,20 @@
                                                     <span>Aeroplan Miles can be earned from many different retailers. If you have your eye on a certain reward, you can earn miles faster with the addition of ShipTime.</span>
                                                 </div>
                                             </div>
-                                            <div class="row mt-4" id="aeroplpanConfigure">
-                                                <div class="col-12 text-center pb-2">
-                                                    <span class="">No Aeroplan card has been configured.</span>
+                                            <div class="row mt-3 mb-3" id="aeroplpanConfigure">
+                                                <div class="col-6 border-right">
+                                                    <div class="text-center">
+                                                        <span class="d-block">No Aeroplan card has been configured.</span>
+                                                        <button class="btn btn-info btn-shadow btn-small mt-2" data-toggle="modal" data-target="#addCardModal">Add Card
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                                <div class="col-12 text-center mb-4">
-                                                    <button class="btn btn-info btn-shadow btn-small" data-toggle="modal" data-target="#addCardModal">Add Card
-                                                    </button>
+                                                <div class="col-6">
+                                                    <div class="text-center">
+                                                        <span class="d-block">Not an Aeroplan member?</span>
+                                                        <a href="https://www.aeroplan.com/enroll.do" class="btn btn-info btn-shadow btn-small mt-2" target="blenck">Become a member
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row d-none" id="aeroplanCard">
@@ -280,7 +287,7 @@
                                     </div>
                                 </div>
                                 <div class="" id="headingFour">
-                                     <button id="collaps_refer_up" class="collapsed btn w-100 text-left btn-shadow btn-info text-white" data-toggle="collapse"  aria-expanded="false" aria-controls="collapseReferDown" style="display:none;">Check who all are using this particular one.
+                                    <button id="collaps_refer_up" class="collapsed btn w-100 text-left btn-shadow btn-info text-white" data-toggle="collapse"  aria-expanded="false" aria-controls="collapseReferDown" style="display:none;">Check who all are using this particular one.
                                     </button>
                                     <button id="collaps_refer_down" class="collapsed btn w-100 text-left btn-shadow" data-toggle="collapse"  aria-expanded="false" aria-controls="collapseReferDown">Check who all are using this particular one.
                                     </button>
@@ -404,42 +411,37 @@
     });
     }, false);
     })();
-
-
     $('#collaps_aeroplan_down').click(function(){
-        $('#collaps_aeroplan_up').show();
-        $('#collaps_aeroplan_down').hide();
-       /* $('#collapseAeroplanDown').addClass('show');
-        $('#collapseAeroplanUp').removeClass('show');*/
-        $('#collapseAeroplanDown').slideDown();
-        $('#collapseAeroplanUp').slideUp();
+    $('#collaps_aeroplan_up').show();
+    $('#collaps_aeroplan_down').hide();
+    /* $('#collapseAeroplanDown').addClass('show');
+    $('#collapseAeroplanUp').removeClass('show');*/
+    $('#collapseAeroplanDown').slideDown();
+    $('#collapseAeroplanUp').slideUp();
     });
-
-
     $('#collaps_aeroplan_up').click(function(){
-        $('#collaps_aeroplan_down').show();
-        $('#collaps_aeroplan_up').hide();
-        /*$('#collapseAeroplanUp').addClass('show');
-        $('#collapseAeroplanDown').removeClass('show');*/
-        $('#collapseAeroplanDown').slideUp();
-        $('#collapseAeroplanUp').slideDown();
-       
+    $('#collaps_aeroplan_down').show();
+    $('#collaps_aeroplan_up').hide();
+    /*$('#collapseAeroplanUp').addClass('show');
+    $('#collapseAeroplanDown').removeClass('show');*/
+    $('#collapseAeroplanDown').slideUp();
+    $('#collapseAeroplanUp').slideDown();
+    
     });
     
-     $('#collaps_refer_down').click(function(){
-        $('#collaps_refer_up').show();
-        $('#collaps_refer_down').hide();
-        /*$('#collapseReferDown').addClass('show');
-        $('#collapseReferUp').removeClass('show');*/
-        $('#collapseReferDown').slideDown();
-        $('#collapseReferUp').slideUp();
-     });
-
+    $('#collaps_refer_down').click(function(){
+    $('#collaps_refer_up').show();
+    $('#collaps_refer_down').hide();
+    /*$('#collapseReferDown').addClass('show');
+    $('#collapseReferUp').removeClass('show');*/
+    $('#collapseReferDown').slideDown();
+    $('#collapseReferUp').slideUp();
+    });
     $('#collaps_refer_up').click(function(){
-        $('#collaps_refer_down').show();
-        $('#collaps_refer_up').hide();
-        $('#collapseReferDown').slideUp();
-        $('#collapseReferUp').slideDown();        
+    $('#collaps_refer_down').show();
+    $('#collaps_refer_up').hide();
+    $('#collapseReferDown').slideUp();
+    $('#collapseReferUp').slideDown();
     });
     </script>
 </body>
