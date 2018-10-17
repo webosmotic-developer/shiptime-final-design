@@ -107,6 +107,7 @@ ul.notification-list {margin: 0px; padding: 0px; list-style: none;}
 
 #_slideNav ul.nav-submenu {padding-top: 0.5rem; list-style: disc;}
 #_slideNav ul.nav-submenu a {background: transparent; color: #fff !important;  padding-left: 0px !important;font-size: 0.7rem;min-height: 30px;padding: 0 0;}
+#_slideNav ul.nav-submenu a.active,
 #_slideNav ul.nav-submenu a:hover { text-decoration: underline; background: transparent; }
 #_slideNav .toggle-submenu {position: absolute;right: 5px; padding: 0px;color: #fff !important;line-height: 33px;height: 33px;top: 5px;width: 33px;text-align: center;}
 #_slideNav .toggle-submenu:after { content: "\2212"; color: #fff; font-size: 24px;}
@@ -588,6 +589,18 @@ font-size: 14px;}
 .payment-tab .tab a {color: #999 !important;}
 .payment-tab .tab .nav-pills .nav-link {border-radius: 0;padding: 15px;}
 .payment-tab .tab .nav-pills .nav-link.active, .payment-tab .tab .nav-pills .show>.nav-link {background-color: #fff;color: #000 !important;}
+
+
+/*rewards*/
+/*[data-toggle="collapse"]:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f054"; transform: rotate(90deg); transition: all linear 0.25s; float: right; line-height: inherit; }
+[data-toggle="collapse"].collapsed:after { transform: rotate(0deg); }*/
+
+
+
+#collaps_aeroplan_up:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f00d"; transform: rotate(90deg); transition: all linear 0.25s; float: right; line-height: inherit; }
+#collaps_aeroplan_down:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f054"; transform: rotate(0deg); transition: all linear 0.25s; float: right; line-height: inherit; }
+#collaps_refer_up:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f00d"; transform: rotate(90deg); transition: all linear 0.25s; float: right; line-height: inherit; }
+#collaps_refer_down:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f054"; transform: rotate(0deg); transition: all linear 0.25s; float: right; line-height: inherit; }
 
 @media only screen and (max-width: 1440px) {
   .sideNav.fixed {-webkit-transform: translateX(0%);-ms-transform: translateX(0%);transform: translateX(0%);}
