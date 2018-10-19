@@ -119,13 +119,12 @@
                             <div class="signup-card card-body">
                                 <!-- SingUp tabs -->
                                 <ul class="nav nav-tabs nav-pills nav-justified" id="myTab" role="tablist">
-                                  <li class="nav-item"><a class="nav-link first-radius active" id="yourinfo-tab" data-toggle="tab" href="#yourinfo" role="tab" aria-controls="yourinfo" aria-selected="true">Your Info</a></li>
-                                  <li class="nav-item"><a class="nav-link last-radius" id="address-tab" data-toggle="tab" href="#address" role="tab" aria-controls="address" aria-selected="false">Your Address</a></li>
+                                  <li class="nav-item"><a class="nav-link first-last-radius active" id="yourinfo-tab" data-toggle="tab" href="#yourinfo" role="tab" aria-controls="yourinfo" aria-selected="true">Your Info</a></li>
                                 </ul>
 
                                 <!-- SingUp Tab panes -->
                                 <div class="tab-content">
-                                  <div class="tab-pane signup-card-overflow active" id="yourinfo" role="tabpanel" aria-labelledby="yourinfo-tab">
+                                  <div class="tab-pane signup-card-overflow-no active" id="yourinfo" role="tabpanel" aria-labelledby="yourinfo-tab">
 
                                           <div class="row">
                                               <div class="col-12 col-md-6">
@@ -156,139 +155,75 @@
 
                                           </div>
 
-                                          <div class="associations-tab">
-                                              <div class="mt-2">
-                                                  <h6><label class=" text-dark font-weight-bold m-0" for="contain">Have a membership with one of the following associations?</label></h6>
-                                                  <p class="mb-4">Click to link your membership details to unlock even better rates and services</p>
+                                          <label class="text-dark font-weight-bold mt-2">Address details</label>
+                                          <div id="addressType">
+                                              <div class="form-group mb-3">
+                                                  <input type="text" class="form-control form-control-style" placeholder="Enter a location">
                                               </div>
-                                              <label class="tab-logo"><input type="radio" name="associationsRadio" value="costco" class="d-none"><img class="tab-icon" src="./images/associations/tab-costco.svg" alt="Costco"></label>
-                                              <label class="tab-logo"><input type="radio" name="associationsRadio" value="cfib" class="d-none"><img class="tab-icon" src="./images/associations/tab-cfib-new-en.svg" alt="Cfib"></label>
-                                              <label class="tab-logo"><input type="radio" name="associationsRadio" value="cangift" class="d-none"><img class="tab-icon" src="./images/associations/tab-cangift-en.svg" alt="Cangift"></label>
-                                              <div class="costco associations-tab-box" style="display: none;">
-                                                  <div class="row mt-3">
-                                                      <div class="col-12">
-                                                          <div class="form-group text-left">
-                                                              <label class="text-dark font-weight-bold">Costco Membership #</label>
-                                                              <input type="text" class="form-control form-control-style" value="" placeholder="Costco Membership" required>
-                                                          </div>
-                                                      </div>
-                                                      <div class="col-12">
-                                                          <div class="form-group text-left">
-                                                              <label class="text-dark font-weight-bold">Membership Type</label>
-                                                              <select class="form-control form-control-style select7">
-                                                                  <option value="">Membership Type</option>
-                                                                  <option value="1">Business Member</option>
-                                                                  <option value="2">Gold Star Member</option>
-                                                                  <option value="3">Executive Member</option>
-                                                              </select>
-                                                          </div>
+                                              <span>Can't find your address?</span>
+                                              <a class="text-danger" href="#!" onclick="$('#addressType').addClass('d-none');$('#addressFields').removeClass('d-none');$('#address2').removeClass('d-none');"><span> Click here </span></a><span>to type it in.</span>
+                                          </div>
+                                          <div id="addressFields" class="d-none">
+                                              <div class="row">
+                                                  <div class="col-6">
+                                                      <div class="form-group">
+                                                          <input type="text" class="form-control form-control-style" placeholder="Street">
                                                       </div>
                                                   </div>
-                                              </div>
-                                              <div class="cfib associations-tab-box" style="display: none;">
-                                                  <div class="row mt-3">
-                                                      <div class="col-12">
-                                                          <div class="form-group text-left">
-                                                              <label class="text-dark font-weight-bold">Costco Membership #</label>
-                                                              <input type="text" class="form-control form-control-style" value="" placeholder="Costco Membership" required>
-                                                          </div>
+                                                  <div class="col-6">
+                                                      <div class="form-group">
+                                                          <input type="text" class="form-control form-control-style" placeholder="Appt. Unit, P.O., Box, etc">
                                                       </div>
                                                   </div>
-                                              </div>
-                                              <div class="cangift associations-tab-box" style="display: none;">
-                                                  <div class="row mt-3">
-                                                      <div class="col-12">
-                                                          <div class="form-group text-left">
-                                                              <label class="text-dark font-weight-bold">Costco Membership #</label>
-                                                              <input type="text" class="form-control form-control-style" value="" placeholder="Costco Membership" required>
-                                                          </div>
-                                                      </div>
-                                                      <div class="col-12">
-                                                          <div class="form-group text-left">
-                                                              <label class="text-dark font-weight-bold">Membership Type</label>
-                                                              <select class="form-control form-control-style select7">
-                                                                  <option value="">Membership Type</option>
-                                                                  <option value="1">Business Member</option>
-                                                                  <option value="2">Gold Star Member</option>
-                                                                  <option value="3">Executive Member</option>
-                                                              </select>
-                                                          </div>
+                                                  <div class="col-6 col-md-3">
+                                                      <div class="form-group">
+                                                          <input type="text" class="form-control form-control-style" placeholder="City">
                                                       </div>
                                                   </div>
+                                                  <div class="col-6 col-md-3">
+                                                      <div class="form-group">
+                                                          <input type="text" class="form-control form-control-style" placeholder="Postal">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-6 col-md-3">
+                                                      <div class="form-group">
+                                                          <select class="form-control form-control-style select7">
+                                                              <option value="" disabled selected>Province
+                                                              </option>
+                                                              <option value="1">Ontario</option>
+                                                              <option value="2">California</option>
+                                                              <option value="3">Arizona</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-6 col-md-3">
+                                                      <div class="form-group">
+                                                          <select class="form-control form-control-style select7">
+                                                              <option value="" disabled selected>Country</option>
+                                                              <option value="1">Canada</option>
+                                                              <option value="2">USA</option>
+                                                              <option value="3">India</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-12">
+                                                      <span>Want to enter your address easier? <a href="#!" class="text-danger" onclick="$('#addressType').removeClass('d-none');$('#addressFields').addClass('d-none');$('#address2').addClass('d-none');">Click here</a> to let us help</span>
+                                                  </div>
                                               </div>
-                                              <p class="text-left mt-3 mb-0"><label class=" text-dark font-weight-bold m-0" for="contain">Info:</label> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal </p>
-                                        </div>
+                                          </div>
 
-                                  </div>
-                                  <div class="tab-pane signup-card-overflow" id="address" role="tabpanel" aria-labelledby="address-tab">
-                                    <label class="text-dark font-weight-bold">Address details</label>
-                                    <div id="addressType">
-                                        <div class="form-group mb-3">
-                                            <input type="text" class="form-control form-control-style" placeholder="Enter a location">
-                                        </div>
-                                        <span>Can't find your address?</span>
-                                        <a class="text-danger" href="#!" onclick="$('#addressType').addClass('d-none');$('#addressFields').removeClass('d-none');$('#address2').removeClass('d-none');"><span> Click here </span></a><span>to type it in.</span>
-                                    </div>
-                                    <div id="addressFields" class="d-none">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control form-control-style" placeholder="Street">
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control form-control-style" placeholder="Appt. Unit, P.O., Box, etc">
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control form-control-style" placeholder="City">
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control form-control-style" placeholder="Postal">
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-md-3">
-                                                <div class="form-group">
-                                                    <select class="form-control form-control-style select7">
-                                                        <option value="" disabled selected>Province
-                                                        </option>
-                                                        <option value="1">Ontario</option>
-                                                        <option value="2">California</option>
-                                                        <option value="3">Arizona</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-md-3">
-                                                <div class="form-group">
-                                                    <select class="form-control form-control-style select7">
-                                                        <option value="" disabled selected>Country</option>
-                                                        <option value="1">Canada</option>
-                                                        <option value="2">USA</option>
-                                                        <option value="3">India</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <span>Want to enter your address easier? <a href="#!" class="text-danger" onclick="$('#addressType').removeClass('d-none');$('#addressFields').addClass('d-none');$('#address2').addClass('d-none');">Click here</a> to let us help</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                          <div class="form-group mt-4">
+                                            <label class="text-dark font-weight-bold">Expected Shipping Volume</label>
+                                              <select class="form-control form-control-style select7">
+                                                  <option value="" disabled selected>Select</option>
+                                                  <option value="1">I only ship personal shipments</option>
+                                                  <option value="2">Fewer than 50 shipments a month</option>
+                                                  <option value="3">Between 51 to 500 shipments a month</option>
+                                                  <option value="4">Between 501 to 5000 shipments a month</option>
+                                                  <option value="5">More than 5000 shipments a month</option>
+                                              </select>
+                                          </div>
 
-                                    <div class="form-group mt-4">
-                                      <label class="text-dark font-weight-bold">Expected Shipping Volume</label>
-                                        <select class="form-control form-control-style select7">
-                                            <option value="" disabled selected>Select</option>
-                                            <option value="1">I only ship personal shipments</option>
-                                            <option value="2">Fewer than 50 shipments a month</option>
-                                            <option value="3">Between 51 to 500 shipments a month</option>
-                                            <option value="4">Between 501 to 5000 shipments a month</option>
-                                            <option value="5">More than 5000 shipments a month</option>
-                                        </select>
-                                    </div>
 
                                   </div>
                                 </div>

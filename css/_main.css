@@ -599,9 +599,32 @@ font-size: 14px;}
 #collaps_refer_down:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f054"; transform: rotate(0deg); transition: all linear 0.25s; float: right; line-height: inherit; }
 
 /*signup*/
-#_mainContainer._fixed-popup-container { background-color: rgba(0, 0, 0, 0.8); position: fixed; padding: 0; z-index: 9999999; overflow: auto; height: 100vh;}
-.associations-tab .tab-logo { padding: 0px; margin:0.5%; border: 2px solid #a5a5a5; border-radius: 10px; max-width: 140px; min-width: 140px; background: #fff; cursor: pointer; }
-.associations-tab .tab-logo.active { background: #fff; box-shadow: 0px 20px 30px 0px rgba(23, 24, 25, 0.18); border: 2px solid #ec5b28; }
+#_mainContainer._fixed-popup-container { background-color: rgba(0, 0, 0, 0.8); position: fixed; padding: 0; z-index: 9999999; overflow: auto; height: 100vh;width: 100%;}
+#_mainContainer._fixed-popup-container ._mainContainer {max-width: 900px; margin: 0 auto; padding: 1.5rem 2.5rem;}
+
+.signup-card-info {background: #42CCCF url(../images/bg-menu.jpg) top left no-repeat; background-size: cover; color: #fff; padding: 25px;}
+.signup-card-info .card-header h3 {font-size: 32px;padding-top: 40px;font-weight: 300;}
+.signup-card-info .card-header p {font-size: 14px;}
+.signup-card-info-img {width: 80%; max-width: 200px; position: absolute; bottom: 20px;}
+.signup-card {background-color: #fff;border: none;border-radius: 8px!important;box-shadow: 0 3px 6px rgba(0,0,0,.15);padding: 0px;}
+.signup-card .signup-card-overflow-no {padding: 20px;height: 70vh;}
+.signup-card .signup-card-overflow {padding: 20px;height: 70vh; max-height: 610px;overflow: auto;}
+.signup-card .nav-pills .nav-link  {color: #000; border: 0px; border-bottom:2px solid #f2f2f2; border-radius:0; padding: 1.10rem 1rem; font-weight: 500;font-size: 14px;}
+.signup-card .nav-pills .nav-link.active, .signup-card .nav-pills .show>.nav-link {border: 0px;color: #17a0b6; background: #f2f2f2; border-bottom: 2px solid #17a0b6;}
+.signup-card .tab-content {}
+._signup-page .signup-card-form {/*overflow: hidden;*/}
+._signup-page .signup-card-form {}
+
+.signup-card .nav-pills .nav-link.first-radius {-webkit-border-top-left-radius: .50rem;-moz-border-radius-topleft: .50rem;border-top-left-radius: .50rem;}
+.signup-card .nav-pills .nav-link.last-radius {-webkit-border-top-right-radius: .50rem;-moz-border-radius-topright: .50rem;border-top-right-radius: .50rem;}
+.signup-card .nav-pills .nav-link.first-last-radius {-webkit-border-top-left-radius: .50rem;-moz-border-radius-topleft: .50rem;border-top-left-radius: .50rem; -webkit-border-top-right-radius: .50rem;-moz-border-radius-topright: .50rem;border-top-right-radius: .50rem;}
+
+.associations-tab .tab-logo { padding: 0px; margin:0 10px 0 0; border: 2px solid #f3f3f3; border-radius: 5px; max-width: 100px; min-width: 100px; background: #fff; cursor: pointer; position: relative;}
+.associations-tab .tab-logo.active { background: #fff; border: 2px solid #4CAF50; background: #4CAF50;}
+.associations-tab .tab-logo.active img {filter: brightness(0) invert(1);}
+.associations-tab .tab-logo:before {position: absolute; display: inline-block;font: normal normal normal 14px/1 FontAwesome;font-size: inherit;text-rendering: auto;-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;color: #fff; padding: 5px;}
+  .associations-tab .tab-logo.active:before{ content: "\f05d";}
+
 .associations-border {border-left: 1px solid #EEEEEE;}
 
 @media only screen and (max-width: 1440px) {
@@ -618,7 +641,7 @@ font-size: 14px;}
 }
 
 @media (min-width: 1400px){
-  #_mainContainer._fixed-popup-container {display: flex; align-items: center; justify-content: center;}
+  /*#_mainContainer._fixed-popup-container {display: flex; align-items: center; justify-content: center;}*/
 }
 
 @media (min-width: 1024px){
@@ -631,6 +654,9 @@ font-size: 14px;}
 
 @media only screen and (min-width: 768px) {
 ._xs-collapsible-content {display: block !important;}
+
+._signup-page .signup-card-form {-webkit-border-top-right-radius: 0px;-webkit-border-bottom-right-radius: 0px;-moz-border-radius-topright: 0px;-moz-border-radius-bottomright: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;}
+._signup-page .signup-card-info {-webkit-border-top-left-radius: 0px;-webkit-border-bottom-left-radius: 0px;-moz-border-radius-topleft: 0px;-moz-border-radius-bottomleft: 0px;border-top-left-radius: 0px;border-bottom-left-radius: 0px;}
 }
 @media only screen and (max-width: 991px) {
 .shipping-nav-tabs .nav-tabs .nav-item a { color: #999; border: 1px solid #dee2e6; margin-right: 5px; width: 160px; height: 58px; border-radius: .25rem; margin-bottom: 5px; }
@@ -656,6 +682,10 @@ font-size: 14px;}
   ._xs-collapsible-content { display: none;}
   .overview-step-hight {height: auto;}
   .payment-tab {height: auto;}
+
+  #_mainContainer._fixed-popup-container ._mainContainer {padding: 0.5rem 1.5rem 2.5rem !important;}
+  .signup-card .signup-card-overflow {height: inherit !important; max-height: inherit !important;}
+  ._signup-page .card-title {line-height: 20px;}
 }
 @media only screen and (max-width: 576px) {
   #_mainHeader .navbar-nav .dropdown-menu-big { min-width: 10rem; }
