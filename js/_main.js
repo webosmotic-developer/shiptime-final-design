@@ -29,6 +29,11 @@ $(function() {
   //  console.log("HI");
   })
 
+  if ($(window).width() >= 1380) {
+      //console.log($(window).width());
+      $("._slideAction a.slide-btn").trigger('click');
+  }
+
 })
 
 feather.replace()
