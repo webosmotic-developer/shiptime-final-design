@@ -86,6 +86,7 @@ h1, h2, h3, h4, h5, h6{font-family:'Roboto', sans-serif;margin-top:0;}
 
 /*mainHeader-white*/
 ._mainHeader-white ._logo {background: url(../images/shiptime-logo.svg) center no-repeat !important;}
+._mainHeader-white ._logo._logo-fr {background: url(../images/shiptime-logo-fr.svg) center no-repeat !important;}
 ._mainHeader-white .navbar {background: #fff !important;box-shadow: 2px 2px 10px 0 rgba(0,0,0,.1) !important;}
 ._mainHeader-white ._slideAction a.slide-btn{color: #000!important;}
  ._mainHeader-white .page-title {border-right: 1px solid rgba(0, 0, 0, 0.30)!important; color: #000!important;}
@@ -334,7 +335,7 @@ div.equal-h-card {margin-bottom: 15px;}
 .modal-header .modal-title .feather {float: left;margin-top: 2px;margin-right: 10px;}
 .modal-title {font-size: 18px; font-weight: 700; line-height: 30px;}
 .modal-action {margin-left: auto; padding-right: 10px;}
-  .modal-action .btn-icon {border: 0px; border-radius: 20px; padding: 5px; margin: 0px 5px; display: inline-block;height: 30px;width: 30px; line-height: 28px; text-align: center;}
+  .modal-action .btn-icon {border: 0px; border-radius: 20px; padding: 5px; margin: 0px 5px; display: inline-block;height: 30px;width: 30px; line-height: 18px; text-align: center;}
 .modal-content {border-radius:.8rem; border: none;}
 
 .modal-content .row{margin-right:-7px;margin-left:-7px}
@@ -426,7 +427,8 @@ box-shadow: 0 3px 6px rgba(0,0,0,.15);}
 .form button .fa { margin-right: 6px; }
 
 /* Checkout */
-.checkout { margin: 50px auto 30px; position: relative; background: white; border-radius: 15px; padding: 40px 15px 10px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); }
+.modal-checkout {max-width: 430px;}
+.checkout { margin: 50px auto 30px; position: relative; background: white; border-radius: 15px; padding: 40px 15px 10px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);}
 
 /* Credit Card */
 #addCardModal.modal, #addCardModal-sm.modal { z-index: 999999 !important; }
@@ -700,6 +702,8 @@ font-size: 14px;}
     .card-title-subtitle{position: relative; padding-left: 10px;}
     .shipping-nav-tabs .nav-tabs .nav-item {width: 50%;}
     .shipping-nav-tabs .nav-tabs .nav-item a { width: auto; }
+
+  .modal-checkout {max-width:95%;}  
 }
 @media only screen and (max-width: 390px) {
   .shipping-nav-tabs .nav-tabs .nav-item a { width: auto; height: 75px; }
@@ -709,4 +713,14 @@ font-size: 14px;}
   ._logo {width: 95px;}
   .progress_bar > li:before {font-size: 15px; margin-bottom: 0;}
   .progress_bar > li:after {top: 0.9em;}
+}
+
+._table-style .custom-control .custom-control-label::before,
+._table-style .custom-control .custom-control-label::after {left:0}
+.flot-action .btn-icon, button.feather-btn-sm {line-height: 18px}
+
+@media screen and (min-width:0\0) and (min-resolution: +72dpi) {/* IE 9 and above */
+    ._table-style .custom-control .custom-control-label::before,
+    ._table-style .custom-control .custom-control-label::after {left:0}
+    .flot-action .btn-icon, button.feather-btn-sm {line-height: 18px}
 }
