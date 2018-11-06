@@ -267,8 +267,8 @@ select.form-control-sm:not([size]):not([multiple]) {height: calc(1.5rem + 2px);p
   .multi__checkbox_th {width: 40px;}
   table tr:hover .flot-action {opacity: 1 !important;}
   ._table-style tbody tr:hover:not(.nohover) {background: rgba(0, 0, 0, 0.07) !important;
-    webkit-box-shadow:inset 4px 0 0 #999, 0 0px 5px 0 rgba(0,0,0,.03), 0 1px 5px 1px rgba(0,0,0,.15);
-    box-shadow: inset 4px 0 0 #999, 0 0px 5px 0 rgba(0,0,0,.03), 0 1px 5px 1px rgba(0,0,0,.15);}
+    webkit-box-shadow:inset 0px 0 0 #999, 0 0px 5px 0 rgba(0,0,0,.03), 0 1px 5px 1px rgba(0,0,0,.15);
+    box-shadow: inset 0px 0 0 #999, 0 0px 5px 0 rgba(0,0,0,.03), 0 1px 5px 1px rgba(0,0,0,.15);}
 
 /* dashboard */
 .dashboard .quick-quote .shipping-from {padding: 10px 0px 10px 10px;margin: 10px 0;}
