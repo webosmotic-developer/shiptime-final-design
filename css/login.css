@@ -24,7 +24,7 @@ h1 {font-size: 2rem; margin-bottom: 1.5rem}
 .was-validated .form-control:invalid:focus {box-shadow: none;}
 .btn.focus, .btn:focus {box-shadow: none;}
 /* form-control */
-.form-control {border: 0;border-bottom: 2px solid #e6e6e6;border-radius: 0;padding: 0;line-height: 2.5;}
+.form-control {border: 0;border-bottom: 2px solid #e6e6e6;border-radius: 0;padding: 0;line-height: 2.5; min-height: 42px;}
 .form-control:focus {box-shadow: none;border-color: #e6e6e6;}
 .inner-addon {position: relative;}
 .inner-addon .icon {position: absolute;width: 20px;height: 20px;margin: 10px;pointer-events: none;color: #9E9E9E;}
