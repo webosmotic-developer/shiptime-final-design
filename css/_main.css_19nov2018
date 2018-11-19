@@ -50,7 +50,8 @@ h1, h2, h3, h4, h5, h6{font-family:'Roboto', sans-serif;margin-top:0;}
 .row.gutters-5>[class^="col"], .row.gutters-5>[class*=" col"]{padding-right:5px;padding-left:5px}
 .row.gutters-10{margin-right:-10px;margin-left:-10px}
 .row.gutters-10>[class^="col"], .row.gutters-10>[class*=" col"]{padding-right:10px;padding-left:10px}
-.word_break{word-break: break-word;}
+
+
 
 /*Header*/
 #_mainHeader {background:#3a2270 url(../images/bg-img.jpg) top center no-repeat; background-size: cover; background-attachment: fixed;}
@@ -164,7 +165,7 @@ body::-webkit-scrollbar {width: 10px;}
 ::-webkit-scrollbar-thumb:hover {background: #000; }
 
 /*feather icon size*/
-.feather {width: 14px;height: 20px;stroke: currentColor;stroke-width: 2;stroke-linecap: round;stroke-linejoin: round;fill: none;}
+.feather {width: 18px;height: 18px;stroke: currentColor;stroke-width: 2;stroke-linecap: round;stroke-linejoin: round;fill: none;}
 .feather-lg {width: 22px;height: 23px;}
 
 /*.fixed-sn .double-nav, .fixed-sn footer, .fixed-sn main {*/
@@ -193,7 +194,7 @@ height: calc(100vh - 56px); */
 .col-form-label {font-size: 0.85rem;vertical-align: middle;font-weight: 500;}
 .form-control {border: 1px solid #dcdcdc;font-size: 0.85rem; padding: .375rem .5rem;}
 .form-control:focus{box-shadow: none;border-color: #17a2b8;}
-select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); padding: .375rem .25rem; border-radius: 0;}
+select.form-control:not([size]):not([multiple]) {height: calc(2rem + 2px); padding: .375rem .25rem; border-radius: 0;}
 select.form-control-sm:not([size]):not([multiple]) {height: calc(1.5rem + 2px);padding: 0rem .25rem;}
 .form-control-lg {padding: 1rem .5rem !important;}
 /*select {
@@ -224,7 +225,6 @@ select.form-control-sm:not([size]):not([multiple]) {height: calc(1.5rem + 2px);p
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before, .custom-radio .custom-control-input:checked~.custom-control-label::before {background-color: #17a2b8;}
 
 .custom-control {display: flex; align-items: center; font-size: 0.8rem;}
-.custom-control-label::before,.custom-control-label::after{top: 0.12rem;}
 .custom-control-input:focus~.custom-control-label::before{box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(23, 162, 184, .2);}
 .custom-select.is-invalid:focus, .form-control.is-invalid:focus, .was-validated .custom-select:invalid:focus, .was-validated .form-control:invalid:focus, .custom-select.is-valid:focus, .form-control.is-valid:focus, .was-validated .custom-select:valid:focus, .was-validated .form-control:valid:focus{box-shadow: none;}
 
@@ -261,8 +261,8 @@ select.form-control-sm:not([size]):not([multiple]) {height: calc(1.5rem + 2px);p
     .flot-action {/*position: absolute; right:1px; top:1px; bottom: 1px; padding: .75rem .75rem .75rem .75rem; text-align: right; background: #e9ecef;*/ opacity: 0; display: inline-block;}
 
     .flot-action .btn-icon, button.feather-btn-sm {border: 0px; border-radius: 20px; padding: 5px; margin: 0px 1px; display: inline-block;height: 30px;width:30px; line-height: 28px; text-align: center;}
-    .flot-action .btn-icon .feather, button.feather-btn-sm .feather {width: 14px;height: 20px;}
-  ._table-style .custom-control {padding: 0px; margin-top: -10px; width: 15px;}
+    .flot-action .btn-icon .feather, button.feather-btn-sm .feather {width: 14px;height: 16px;}
+  ._table-style .custom-control {padding: 0px; margin-top: -3px; width: 15px;}
   ._table-style .custom-control-label::before {background-color: #f7f7f7; border:1px solid #c3c3c3;}
 
   .multi__checkbox_th {width: 40px;}
@@ -572,7 +572,6 @@ font-size: 14px;}
 .unit-label {margin-top: 3px;margin-right: 15px;}
 /* .shipping-nav-tabs .nav-tabs { display: -webkit-box; width: 100%; overflow-x: auto; overflow-y: hidden; } */
 .shipping-nav-tabs .table-vertical-align th, .table-vertical-align td{vertical-align: middle;}
-.shipping-nav-tabs .shipping-tabs .tab-content .tab-pane textarea.form-control {height: calc(2.25rem + 2px);padding-top: 9px;}
 .shipping-nav-tabs .table-vertical-align td input, .table-vertical-align td textarea {font-size: 13px;}
 .shipping-tabs { border: 1px solid #eee; border-top: 0; padding: 15px; }
 
@@ -580,10 +579,6 @@ font-size: 14px;}
 .checkboxes-radio input[type=radio] + label, .checkboxes-radio input[type=checkbox] + label { display: inline-block; margin: -2px; padding: 4px 12px; text-align: center; cursor: pointer; background-color: #f5f5f5; }
 .checkboxes-radio input[type=radio]:checked + label, .checkboxes-radio input[type=checkbox]:checked + label { background-image: none; outline: 0; -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.40), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.40), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.40), 0 1px 2px rgba(0, 0, 0, 0.05); background-color: #ec5a26; color: #fff; }
 .custom-control-label-bold { font-size: 16px; font-weight: 600; color: #000; line-height: 17px; }
-
-.quote-ship-flow .card-body textarea.form-control {height: calc(2.25rem + 2px);padding-top: 9px;}
-#addProductsModal .modal-body .table td .custom-control-label::before,#addProductsModal .modal-body .table td .custom-control-label::after{top: -1.5px;}
-#addProductsModal .modal-body .table th .custom-control-label::before,#addProductsModal .modal-body .table th .custom-control-label::after{top: -0.4rem;}
 /*Overview*/
   .div-collapsible { cursor: pointer; }
   .div-collapsible:after { content: '\002B'; color: #000; float: right; font-size: 24px;margin-right: 10px;line-height: 36px;}
@@ -598,8 +593,6 @@ font-size: 14px;}
 .payment-tab .tab .nav-pills .nav-link {border-radius: 0;padding: 15px;}
 .payment-tab .tab .nav-pills .nav-link.active, .payment-tab .tab .nav-pills .show>.nav-link {background-color: #fff;color: #000 !important;}
 
-/* history-tracking page */
-._historyTracking-page .card-body .table tr th .custom-control-label::before,._historyTracking-page .card-body .table tr th .custom-control-label::after{top: -5px;}
 
 /*rewards*/
 #collaps_aeroplan_up:after { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f00d"; transform: rotate(90deg); transition: all linear 0.25s; float: right; line-height: inherit; }
@@ -725,12 +718,6 @@ font-size: 14px;}
 ._table-style .custom-control .custom-control-label::before,
 ._table-style .custom-control .custom-control-label::after {left:0}
 .flot-action .btn-icon, button.feather-btn-sm {line-height: 18px}
-
-
-@media all\0 { /* IE8 uses \0 */
-  ._historyTracking-page .card-body .table tr th .custom-control-label::before, ._historyTracking-page .card-body .table tr th .custom-control-label::after{top:4px;}
-  ._table-style .custom-control {padding: 0px; margin-top: 0px; width: 15px;}
-} 
 
 @media screen and (min-width:0\0) and (min-resolution: +72dpi) {/* IE 9 and above */
     ._table-style .custom-control .custom-control-label::before,
