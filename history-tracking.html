@@ -1055,28 +1055,33 @@
                                 <h6><label class=" text-dark font-weight-bold m-0" for="contain">Basic contact details</label></h6>
                             </div>
                             <div class="col-12">
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-style" placeholder="Company Name">
+                                <div class="form-group _material-form-group">
+                                    <input type="text" class="form-control form-control-style" id="CompanyName">
+                                    <label class="mlabel" for="CompanyName">Company Name</label>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-style" placeholder="First Name">
+                                <div class="form-group _material-form-group">
+                                    <input type="text" class="form-control form-control-style" id="firstName">
+                                    <label class="mlabel" for="firstName">First Name</label>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-style" placeholder="Last Name">
+                                <div class="form-group _material-form-group">
+                                    <input type="text" class="form-control form-control-style" id="LastName">
+                                    <label class="mlabel" for="LastName">Last Name</label>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-style" placeholder="Email">
+                                <div class="form-group _material-form-group">
+                                    <input type="text" class="form-control form-control-style" id="labelEmail">
+                                    <label class="mlabel" for="labelEmail">Email</label>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-style" placeholder="Phone">
+                                <div class="form-group _material-form-group">
+                                    <input type="text" class="form-control form-control-style" id="labelPhone">
+                                    <label class="mlabel" for="labelPhone">Phone</label>
                                 </div>
                             </div>
                             <div class="col-12 mt-2">
@@ -1093,13 +1098,15 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-style" placeholder="Category">
+                                <div class="form-group _material-form-group">
+                                    <input type="text" class="form-control form-control-style" id="labelCategory">
+                                    <label class="mlabel" for="labelCategory">Category</label>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="form-group">
-                                    <textarea class="form-control form-control-style" style="height: 80px;" placeholder="Special Intruction"></textarea>
+                                <div class="form-group _material-form-group">
+                                    <textarea class="form-control form-control-style" style="height: 80px;" id="SpecialIntruction"></textarea>
+                                    <label class="mlabel" for="SpecialIntruction">Special Intruction</label>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -1128,8 +1135,9 @@
                                 <h6><label class=" text-dark font-weight-bold m-0" for="contain">Account default</label></h6>
                             </div>
                             <div id="addressType" class="col-12">
-                                <div class="form-group mb-3">
-                                    <input type="text" class="form-control form-control-style" placeholder="Search for your address here">
+                                <div class="form-group mb-3 _material-form-group">
+                                    <input type="text" class="form-control form-control-style" id="labeladdress">
+                                    <label class="mlabel" for="labeladdress">Search for your address here</label>
                                 </div>
                                 <span>Can't find your address?</span>
                                 <a class="text-danger" href="#!" onclick="$('#addressType').addClass('d-none');$('#addressFields').removeClass('d-none');$('#address2').removeClass('d-none');"><span> Click here </span></a><span>to type it in.</span>
@@ -1137,23 +1145,27 @@
                             <div id="addressFields" class="col-12 d-none">
                                 <div class="row">
                                     <div class="col-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control form-control-style" placeholder="Street">
+                                        <div class="form-group _material-form-group">
+                                            <input type="text" class="form-control form-control-style" id="Street">
+                                            <label class="mlabel" for="Street">Street</label>
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control form-control-style" placeholder="Appt. Unit, P.O., Box, etc">
+                                        <div class="form-group _material-form-group">
+                                            <input type="text" class="form-control form-control-style" id="labelPO">
+                                            <label class="mlabel" for="labelPO">Appt. Unit, P.O., Box, etc</label>
                                         </div>
                                     </div>
                                     <div class="col-6 col-md-3">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control form-control-style" placeholder="City">
+                                        <div class="form-group _material-form-group">
+                                            <input type="text" class="form-control form-control-style" id="City">
+                                            <label class="mlabel" for="City">City</label>
                                         </div>
                                     </div>
                                     <div class="col-6 col-md-3">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control form-control-style" placeholder="Postal">
+                                        <div class="form-group _material-form-group">
+                                            <input type="text" class="form-control form-control-style" id="Postal">
+                                            <label class="mlabel" for="Postal">Postal</label>
                                         </div>
                                     </div>
                                     <div class="col-6 col-md-3">
@@ -1612,6 +1624,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/feather.min.js"></script>
     <script src="js/jquery-select7.js"></script>
+    <script src="js/materialForm.js"></script>
     <script src="js/_main.js"></script>
     <script type="text/javascript">
     $(window).load(function() {

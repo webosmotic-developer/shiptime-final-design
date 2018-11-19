@@ -526,6 +526,11 @@ font-size: 14px;}
 #materialForm #close { display: block; position: absolute; cursor: pointer; left: 5px; z-index: 999; margin-right: 0; padding-right: 0; padding-left: 0; color: #ffffff; }
 #materialForm #close:hover { color: #c0392b; }
 
+._material-form-group input, ._material-form-group label.mlabel { display: block; }
+._material-form-group label.mlabel { position: absolute; transition: all .2s; top: .375rem; font-size: 0.85rem; }
+._material-form-group label.mlabel.active { transform: translateY(-80%); font-size: 0.65rem; }
+
+
 
 
 @media (min-width:767px) {
@@ -710,7 +715,7 @@ font-size: 14px;}
     .shipping-nav-tabs .nav-tabs .nav-item {width: 50%;}
     .shipping-nav-tabs .nav-tabs .nav-item a { width: auto; }
 
-  .modal-checkout {max-width:95%;}  
+  .modal-checkout {max-width:95%;}
 }
 @media only screen and (max-width: 390px) {
   .shipping-nav-tabs .nav-tabs .nav-item a { width: auto; height: 75px; }
@@ -730,7 +735,7 @@ font-size: 14px;}
 @media all\0 { /* IE8 uses \0 */
   ._historyTracking-page .card-body .table tr th .custom-control-label::before, ._historyTracking-page .card-body .table tr th .custom-control-label::after{top:4px;}
   ._table-style .custom-control {padding: 0px; margin-top: 0px; width: 15px;}
-} 
+}
 
 @media screen and (min-width:0\0) and (min-resolution: +72dpi) {/* IE 9 and above */
     ._table-style .custom-control .custom-control-label::before,
