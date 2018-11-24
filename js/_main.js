@@ -1,4 +1,4 @@
-$(function() {
+$(function() {    
     $('[data-toggle="tooltip"],.ttip').tooltip();
 
     $('.dropdown-menu').on('click', function(e) {

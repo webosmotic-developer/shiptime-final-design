@@ -156,6 +156,489 @@
     </header>
     <main id="_mainContainer">
         <div class="_mainContainer">
+          <div class="row">
+              <div class="col-6">
+                <div class="card dashboard-card card-body mb-3">
+                  <!-- 01 -->
+                  <form class="_material-form-group-with-border">
+                      <div class="row">
+                          <div class="col-12 mt-2">
+                              <h6><label class=" text-dark font-weight-bold m-0" for="contain">Basic contact details (With Border)</label></h6>
+                          </div>
+                          <div class="col-12">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="CompanyName1">
+                                  <label class="mlabel" for="CompanyName1">Company Name</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="firstName1">
+                                  <label class="mlabel" for="firstName1">First Name</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="LastName1">
+                                  <label class="mlabel" for="LastName1">Last Name</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labelEmail1">
+                                  <label class="mlabel" for="labelEmail1">Email</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labelPhone1">
+                                  <label class="mlabel" for="labelPhone1">Phone</label>
+                              </div>
+                          </div>
+                          <div class="col-12 mt-2">
+                              <h6><label class=" text-dark font-weight-bold m-0" for="contain">Account default setting details</label></h6>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group">
+                                  <select class="form-control form-control-style select7">
+                                      <option value="">Select Category</option>
+                                      <option value="1">Create New Category</option>
+                                      <option value="2">New Test</option>
+                                      <option value="3">Personal</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labelCategory1">
+                                  <label class="mlabel" for="labelCategory1">Category</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <textarea class="form-control form-control-style" style="height: 80px;" id="SpecialIntruction1"></textarea>
+                                  <label class="mlabel" for="SpecialIntruction1">Special Intruction</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="row mt-2">
+                                  <div class="col-12">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox1051">
+                                          <label class="custom-control-label" for="checkbox1051">Residential</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox1041">
+                                          <label class="custom-control-label" for="checkbox1041">Default Ship from</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox1031">
+                                          <label class="custom-control-label" for="checkbox1031">custom-control custom-checkbox</label>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 mt-2">
+                              <h6><label class=" text-dark font-weight-bold m-0" for="contain">Account default</label></h6>
+                          </div>
+                          <div id="addressType" class="col-12">
+                              <div class="form-group mb-3 _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labeladdress1">
+                                  <label class="mlabel" for="labeladdress1">Search for your address here</label>
+                              </div>
+                              <span>Can't find your address?</span>
+                              <a class="text-danger" href="#!" onclick="$('#addressType').addClass('d-none');$('#addressFields').removeClass('d-none');$('#address2').removeClass('d-none');"><span> Click here </span></a><span>to type it in.</span>
+                          </div>
+                          <div id="addressFields" class="col-12 d-none">
+                              <div class="row">
+                                  <div class="col-6">
+                                      <div class="form-group _material-form-group">
+                                          <input type="text" class="form-control form-control-style" id="Street1">
+                                          <label class="mlabel" for="Street1">Street</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-6">
+                                      <div class="form-group _material-form-group">
+                                          <input type="text" class="form-control form-control-style" id="labelPO1">
+                                          <label class="mlabel" for="labelPO1">Appt. Unit, P.O., Box, etc</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-6 col-md-3">
+                                      <div class="form-group _material-form-group">
+                                          <input type="text" class="form-control form-control-style" id="City1">
+                                          <label class="mlabel" for="City1">City</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-6 col-md-3">
+                                      <div class="form-group _material-form-group">
+                                          <input type="text" class="form-control form-control-style" id="Postal1">
+                                          <label class="mlabel" for="Postal1">Postal</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-6 col-md-3">
+                                      <div class="form-group">
+                                          <select class="form-control form-control-style select7">
+                                              <option value="" disabled selected>Province
+                                              </option>
+                                              <option value="1">Ontario</option>
+                                              <option value="2">California</option>
+                                              <option value="3">Arizona</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-6 col-md-3">
+                                      <div class="form-group">
+                                          <select class="form-control form-control-style select7">
+                                              <option value="" disabled selected>Country
+                                              </option>
+                                              <option value="1">Canada</option>
+                                              <option value="2">USA</option>
+                                              <option value="3">India</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <span>Want to enter your address easier? <a href="#!" class="text-danger" onclick="$('#addressType').removeClass('d-none');$('#addressFields').addClass('d-none');$('#address2').addClass('d-none');">Click here</a> to let us help</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row mt-3">
+                          <div class="col-12 text-right">
+                              <button class="btn btn-info btn-shadow">Save</button>
+                          </div>
+                      </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="card dashboard-card card-body mb-3">
+                  <!-- 02 -->
+                  <form>
+                      <div class="row">
+                          <div class="col-12 mt-2">
+                              <h6><label class=" text-dark font-weight-bold m-0" for="contain">Basic contact details</label></h6>
+                          </div>
+                          <div class="col-12">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="CompanyName2">
+                                  <label class="mlabel" for="CompanyName2">Company Name</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="firstName2">
+                                  <label class="mlabel" for="firstName2">First Name</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="LastName2">
+                                  <label class="mlabel" for="LastName2">Last Name</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labelEmail2">
+                                  <label class="mlabel" for="labelEmail2">Email</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labelPhone2">
+                                  <label class="mlabel" for="labelPhone2">Phone</label>
+                              </div>
+                          </div>
+                          <div class="col-12 mt-2">
+                              <h6><label class=" text-dark font-weight-bold m-0" for="contain">Account default setting details</label></h6>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group">
+                                  <select class="form-control form-control-style select7">
+                                      <option value="">Select Category</option>
+                                      <option value="1">Create New Category</option>
+                                      <option value="2">New Test</option>
+                                      <option value="3">Personal</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labelCategory2">
+                                  <label class="mlabel" for="labelCategory2">Category</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <textarea class="form-control form-control-style" style="height: 80px;" id="SpecialIntruction2"></textarea>
+                                  <label class="mlabel" for="SpecialIntruction2">Special Intruction</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="row mt-2">
+                                  <div class="col-12">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox1052">
+                                          <label class="custom-control-label" for="checkbox1052">Residential</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox1042">
+                                          <label class="custom-control-label" for="checkbox1042">Default Ship from</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox1032">
+                                          <label class="custom-control-label" for="checkbox1032">custom-control custom-checkbox</label>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 mt-2">
+                              <h6><label class=" text-dark font-weight-bold m-0" for="contain">Account default</label></h6>
+                          </div>
+                          <div id="addressType" class="col-12">
+                              <div class="form-group mb-3 _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labeladdress">
+                                  <label class="mlabel" for="labeladdress">Search for your address here</label>
+                              </div>
+                              <span>Can't find your address?</span>
+                              <a class="text-danger" href="#!" onclick="$('#addressType').addClass('d-none');$('#addressFields').removeClass('d-none');$('#address2').removeClass('d-none');"><span> Click here </span></a><span>to type it in.</span>
+                          </div>
+                      </div>
+                      <div class="row mt-3">
+                          <div class="col-12 text-right">
+                              <button class="btn btn-info btn-shadow">Save</button>
+                          </div>
+                      </div>
+                  </form>
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-6">
+                <div class="card dashboard-card card-body mb-3">
+                  <!-- 03 -->
+                  <form class="_material-form-group-with-border">
+                      <div class="row">
+                          <div class="col-12 mt-2">
+                              <h6><label class=" text-dark font-weight-bold m-0" for="contain">Basic contact details</label></h6>
+                          </div>
+                          <div class="col-12">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="CompanyName3">
+                                  <label class="show-label" for="CompanyName3">Company Name</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="firstName3">
+                                  <label class="show-label" for="firstName3">First Name</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="LastName3">
+                                  <label class="show-label" for="LastName3">Last Name</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labelEmail3">
+                                  <label class="show-label" for="labelEmail3">Email</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labelPhone3">
+                                  <label class="show-label" for="labelPhone3">Phone</label>
+                              </div>
+                          </div>
+                          <div class="col-12 mt-2">
+                              <h6><label class=" text-dark font-weight-bold m-0" for="contain">Account default setting details</label></h6>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <select class="form-control form-control-style select7" id="labelCategory3">
+                                      <option value="">Select Category</option>
+                                      <option value="1">Create New Category</option>
+                                      <option value="2">New Test</option>
+                                      <option value="3">Personal</option>
+                                  </select>
+                                  <label class="show-label" for="labelCategory3">Select Category</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labelCategory3">
+                                  <label class="show-label" for="labelCategory3">Category</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <textarea class="form-control form-control-style" style="height: 80px;" id="SpecialIntruction3"></textarea>
+                                  <label class="show-label" for="SpecialIntruction3">Special Intruction</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="row mt-2">
+                                  <div class="col-12">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox1053">
+                                          <label class="custom-control-label" for="checkbox1053">Residential</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox1043">
+                                          <label class="custom-control-label" for="checkbox1043">Default Ship from</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox1033">
+                                          <label class="custom-control-label" for="checkbox1033">custom-control custom-checkbox</label>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 mt-2">
+                              <h6><label class=" text-dark font-weight-bold m-0" for="contain">Account default</label></h6>
+                          </div>
+                          <div id="addressType" class="col-12">
+                              <div class="form-group mb-3 _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labeladdress3">
+                                  <label class="show-label" for="labeladdress3">Search for your address here</label>
+                              </div>
+                              <span>Can't find your address?</span>
+                              <a class="text-danger" href="#!" onclick="$('#addressType').addClass('d-none');$('#addressFields').removeClass('d-none');$('#address2').removeClass('d-none');"><span> Click here </span></a><span>to type it in.</span>
+                          </div>
+                      </div>
+                      <div class="row mt-3">
+                          <div class="col-12 text-right">
+                              <button class="btn btn-info btn-shadow">Save</button>
+                          </div>
+                      </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="card dashboard-card card-body mb-3">
+                  <!-- 04 -->
+                  <form class="_material-form-group-with-inside-boxshadow">
+                      <div class="row">
+                          <div class="col-12 mt-2">
+                              <h6><label class=" text-dark font-weight-bold m-0" for="contain">Basic contact details(Inside Box-shadow)</label></h6>
+                          </div>
+                          <div class="col-12">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="CompanyName">
+                                  <label class="mlabel" for="CompanyName">Company Name</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="firstName">
+                                  <label class="mlabel" for="firstName">First Name</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="LastName">
+                                  <label class="mlabel" for="LastName">Last Name</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labelEmail">
+                                  <label class="mlabel" for="labelEmail">Email</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labelPhone">
+                                  <label class="mlabel" for="labelPhone">Phone</label>
+                              </div>
+                          </div>
+                          <div class="col-12 mt-2">
+                              <h6><label class=" text-dark font-weight-bold m-0" for="contain">Account default setting details</label></h6>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group">
+                                  <select class="form-control form-control-style select7">
+                                      <option value="">Select Category</option>
+                                      <option value="1">Create New Category</option>
+                                      <option value="2">New Test</option>
+                                      <option value="3">Personal</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labelCategory">
+                                  <label class="mlabel" for="labelCategory">Category</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="form-group _material-form-group">
+                                  <textarea class="form-control form-control-style" style="height: 80px;" id="SpecialIntruction"></textarea>
+                                  <label class="mlabel" for="SpecialIntruction">Special Intruction</label>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="row mt-2">
+                                  <div class="col-12">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox105">
+                                          <label class="custom-control-label" for="checkbox105">Residential</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox104">
+                                          <label class="custom-control-label" for="checkbox104">Default Ship from</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="checkbox103">
+                                          <label class="custom-control-label" for="checkbox103">custom-control custom-checkbox</label>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 mt-2">
+                              <h6><label class=" text-dark font-weight-bold m-0" for="contain">Account default</label></h6>
+                          </div>
+                          <div id="addressType" class="col-12">
+                              <div class="form-group mb-3 _material-form-group">
+                                  <input type="text" class="form-control form-control-style" id="labeladdress">
+                                  <label class="mlabel" for="labeladdress">Search for your address here</label>
+                              </div>
+                              <span>Can't find your address?</span>
+                              <a class="text-danger" href="#!" onclick="$('#addressType').addClass('d-none');$('#addressFields').removeClass('d-none');$('#address2').removeClass('d-none');"><span> Click here </span></a><span>to type it in.</span>
+                          </div>
+                      </div>
+                      <div class="row mt-3">
+                          <div class="col-12 text-right">
+                              <button class="btn btn-info btn-shadow">Save</button>
+                          </div>
+                      </div>
+                  </form>
+                </div>
+              </div>
+          </div>
+
+
             <div class="row">
                 <div class="col-6">
                     <div class="card mb-3">

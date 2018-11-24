@@ -526,12 +526,28 @@ font-size: 14px;}
 #materialForm #close { display: block; position: absolute; cursor: pointer; left: 5px; z-index: 999; margin-right: 0; padding-right: 0; padding-left: 0; color: #ffffff; }
 #materialForm #close:hover { color: #c0392b; }
 
+/* 01*/
+._material-form-group-with-border ._material-form-group .form-control-style, ._material-form-group-with-border .form-control{border: 1px solid #dfdfdf; border-radius: 4px!important; padding-left: 10px!important;}
+._material-form-group-with-border ._material-form-group label.mlabel {margin: 0px; margin-left: 10px; top: .475rem;background: #fff;}
+._material-form-group-with-border ._material-form-group label.mlabel.active { transform: translateY(-90%);font-weight: 500;/* font-size: 0.65rem; */}
+
+/* 02 */
+._material-form-group{position: relative;}
 ._material-form-group input, ._material-form-group label.mlabel { display: block; }
-._material-form-group label.mlabel { position: absolute; transition: all .2s; top: .375rem; font-size: 0.85rem; }
-._material-form-group label.mlabel.active { transform: translateY(-80%); font-size: 0.65rem; }
+._material-form-group label.mlabel { position: absolute; transition: all .2s; top: .375rem; font-size: 0.85rem; margin: 0px; }
+._material-form-group label.mlabel.active { transform: translateY(-80%);font-weight: 500;/* font-size: 0.65rem; */}
 
+/* 03 */
+._material-form-group label.show-label { display: block; }
+._material-form-group label.show-label { position: absolute; transition: all .2s; top: .375rem; margin: 0px;  margin-left: 10px; font-size: 12px;transform: translateY(-90%);background:#d4d4d4;line-height: 100%;padding: 2px 5px;color: #828282;border-radius: 2px;}
+._material-form-group label.show-label.active { transform: translateY(-90%);/* font-size: 0.65rem; */}
 
-
+/* 04 */
+._material-form-group-with-inside-boxshadow ._material-form-group {margin-top: 10px;}
+._material-form-group-with-inside-boxshadow .form-control{box-shadow: 3px 3px 10px 1px rgba(169, 169, 169, 0.18) inset;-webkit-box-shadow: 1px 1px 9px 2px rgba(169, 169, 169, 0.18) inset;-moz-box-shadow: 3px 3px 10px 1px rgba(169, 169, 169, 0.18) inset;padding: 10px;border-radius: 4px}
+._material-form-group-with-inside-boxshadow ._material-form-group label.mlabel,
+._material-form-group-with-inside-boxshadow ._material-form-group label.mlabel.active {top: -20px;padding: 0px;transform: translateY(0%); font-weight: 500;}
+._material-form-group-with-inside-boxshadow .form-control:focus {border-color: transparent;}
 
 @media (min-width:767px) {
   .bootstrap-timepicker-widget.modal { width: 200px; margin-left: -100px; }

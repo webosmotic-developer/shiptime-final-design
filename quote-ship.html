@@ -175,47 +175,269 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="card mt-3">
-                            <div class="card-header card-title">Ship To :</div>
+                            <div class="card-header card-title">Ship To : (1)</div>
                             <div class="card-body p-3">
-                                <form>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6" id="_getaddress">
-                                            <input type="text" class="form-control form-control-style typeahead " placeholder="Search by Name, Address or Zip">
+                              <!-- 01 -->
+                              <form>
+                                <div class="form-row">
+                                    <div class="form-group _material-form-group col-md-6" id="_getaddress">
+                                        <input type="text" class="form-control form-control-style typeahead " id="SearchName">
+                                        <label class="mlabel" for="SearchName">Search by Name, Address or Zip</label>
+                                    </div>
+                                    <div class="form-group col-md-6 _material-form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkbox101">
+                                            <label class="custom-control-label" for="checkbox101">Residential</label>
                                         </div>
-                                        <div class="form-group col-md-6">
+                                    </div>
+                                    <div class="form-group col-md-6 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="CompanyName">
+                                        <label class="mlabel" for="CompanyName">Company Name</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="FirstName">
+                                        <label class="mlabel" for="FirstName">First Name</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="LastName">
+                                        <label class="mlabel" for="LastName">Last Name</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="Email">
+                                        <label class="mlabel" for="Email">Email</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="Phone">
+                                        <label class="mlabel" for="Phone">Phone</label>
+                                    </div>
+                                    <div class="form-group col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="Street">
+                                        <label class="mlabel" for="Street">Street</label>
+                                    </div>
+                                    <div class="form-group col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="Apt">
+                                        <label class="mlabel" for="Apt">Apt. Unit, P.O. Box etc.</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="City">
+                                        <label class="mlabel" for="City">City</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="Postal">
+                                        <label class="mlabel" for="Postal">Postal</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <select class="form-control form-control-style select7">
+                                            <option value="" disabled selected>Province</option>
+                                            <option value="1">Ontario</option>
+                                            <option value="2">California</option>
+                                            <option value="3">Arizona</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <select class="form-control form-control-style select7">
+                                            <option value="" disabled selected>Country</option>
+                                            <option value="1">Canada</option>
+                                            <option value="2">USA</option>
+                                            <option value="3">India</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-auto">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox10">
+                                                    <label class="custom-control-label" for="checkbox10">Confirm Delivery</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-auto">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox11">
+                                                    <label class="custom-control-label" for="checkbox11">Save to address book</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-auto">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox12">
+                                                    <label class="custom-control-label" for="checkbox12">Signature Required</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-auto">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox13">
+                                                    <label class="custom-control-label" for="checkbox13">Special Handling</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 text-right">
+                                        <button type="reset" class="btn btn-link">Clear</button>
+                                        <button type="button" class="btn btn-info btn-shadow">Shipment Details</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-header card-title">Ship To : (2)</div>
+                            <div class="card-body p-3">
+                              <!-- 02 -->
+                              <form class="_material-form-group-with-border">
+                                <div class="form-row">
+                                    <div class="form-group _material-form-group col-md-6" id="_getaddress">
+                                        <input type="text" class="form-control form-control-style typeahead " id="SearchName">
+                                        <label class="mlabel" for="SearchName">Search by Name, Address or Zip</label>
+                                    </div>
+                                    <div class="form-group col-md-6 _material-form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkbox101">
+                                            <label class="custom-control-label" for="checkbox101">Residential</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="CompanyName">
+                                        <label class="mlabel" for="CompanyName">Company Name</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="FirstName">
+                                        <label class="mlabel" for="FirstName">First Name</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="LastName">
+                                        <label class="mlabel" for="LastName">Last Name</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="Email">
+                                        <label class="mlabel" for="Email">Email</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="Phone">
+                                        <label class="mlabel" for="Phone">Phone</label>
+                                    </div>
+                                    <div class="form-group col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="Street">
+                                        <label class="mlabel" for="Street">Street</label>
+                                    </div>
+                                    <div class="form-group col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="Apt">
+                                        <label class="mlabel" for="Apt">Apt. Unit, P.O. Box etc.</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="City">
+                                        <label class="mlabel" for="City">City</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <input type="text" class="form-control form-control-style" id="Postal">
+                                        <label class="mlabel" for="Postal">Postal</label>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <select class="form-control form-control-style select7">
+                                            <option value="" disabled selected>Province</option>
+                                            <option value="1">Ontario</option>
+                                            <option value="2">California</option>
+                                            <option value="3">Arizona</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <select class="form-control form-control-style select7">
+                                            <option value="" disabled selected>Country</option>
+                                            <option value="1">Canada</option>
+                                            <option value="2">USA</option>
+                                            <option value="3">India</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-auto">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox10">
+                                                    <label class="custom-control-label" for="checkbox10">Confirm Delivery</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-auto">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox11">
+                                                    <label class="custom-control-label" for="checkbox11">Save to address book</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-auto">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox12">
+                                                    <label class="custom-control-label" for="checkbox12">Signature Required</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-auto">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox13">
+                                                    <label class="custom-control-label" for="checkbox13">Special Handling</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 text-right">
+                                        <button type="reset" class="btn btn-link">Clear</button>
+                                        <button type="button" class="btn btn-info btn-shadow">Shipment Details</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-header card-title">Ship To : (3)</div>
+                            <div class="card-body p-3">
+                              <!-- 03 -->
+                              <form class="_material-form-group-with-inside-boxshadow">
+                                    <div class="form-row">
+                                        <div class="form-group _material-form-group col-md-6" id="_getaddress">
+                                            <input type="text" class="form-control form-control-style typeahead " id="SearchName">
+                                            <label class="mlabel" for="SearchName">Search by Name, Address or Zip</label>
+                                        </div>
+                                        <div class="form-group col-md-6 _material-form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="checkbox101">
                                                 <label class="custom-control-label" for="checkbox101">Residential</label>
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-6">
-                                            <input type="text" class="form-control form-control-style" placeholder="Company Name">
+                                        <div class="form-group col-md-6 _material-form-group">
+                                            <input type="text" class="form-control form-control-style" id="CompanyName">
+                                            <label class="mlabel" for="CompanyName">Company Name</label>
                                         </div>
-                                        <div class="form-group col-6 col-sm-6 col-md-3">
-                                            <input type="text" class="form-control form-control-style" placeholder="First Name">
+                                        <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                            <input type="text" class="form-control form-control-style" id="FirstName">
+                                            <label class="mlabel" for="FirstName">First Name</label>
                                         </div>
-                                        <div class="form-group col-6 col-sm-6 col-md-3">
-                                            <input type="text" class="form-control form-control-style" placeholder="Last Name">
+                                        <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                            <input type="text" class="form-control form-control-style" id="LastName">
+                                            <label class="mlabel" for="LastName">Last Name</label>
                                         </div>
-                                        <div class="form-group col-6 col-sm-6 col-md-3">
-                                            <input type="text" class="form-control form-control-style" placeholder="Email">
+                                        <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                            <input type="text" class="form-control form-control-style" id="Email">
+                                            <label class="mlabel" for="Email">Email</label>
                                         </div>
-                                        <div class="form-group col-6 col-sm-6 col-md-3">
-                                            <input type="text" class="form-control form-control-style" placeholder="Phone">
+                                        <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                            <input type="text" class="form-control form-control-style" id="Phone">
+                                            <label class="mlabel" for="Phone">Phone</label>
                                         </div>
-                                        <div class="form-group col-md-3">
-                                            <input type="text" class="form-control form-control-style" placeholder="Street">
+                                        <div class="form-group col-md-3 _material-form-group">
+                                            <input type="text" class="form-control form-control-style" id="Street">
+                                            <label class="mlabel" for="Street">Street</label>
                                         </div>
-                                        <div class="form-group col-md-3">
-                                            <input type="text" class="form-control form-control-style" placeholder="Apt. Unit, P.O. Box etc.">
+                                        <div class="form-group col-md-3 _material-form-group">
+                                            <input type="text" class="form-control form-control-style" id="Apt">
+                                            <label class="mlabel" for="Apt">Apt. Unit, P.O. Box etc.</label>
                                         </div>
-                                        <div class="form-group col-6 col-sm-6 col-md-3">
-                                            <input type="text" class="form-control form-control-style" placeholder="City">
+                                        <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                            <input type="text" class="form-control form-control-style" id="City">
+                                            <label class="mlabel" for="City">City</label>
                                         </div>
-                                        <div class="form-group col-6 col-sm-6 col-md-3">
-                                            <input type="text" class="form-control form-control-style" placeholder="Postal">
+                                        <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                            <input type="text" class="form-control form-control-style" id="Postal">
+                                            <label class="mlabel" for="Postal">Postal</label>
                                         </div>
-                                        <div class="form-group col-6 col-sm-6 col-md-3">
+                                        <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                          <label class="mlabel">Province</label>
                                             <select class="form-control form-control-style select7">
                                                 <option value="" disabled selected>Province</option>
                                                 <option value="1">Ontario</option>
@@ -223,7 +445,8 @@
                                                 <option value="3">Arizona</option>
                                             </select>
                                         </div>
-                                        <div class="form-group col-6 col-sm-6 col-md-3">
+                                        <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                          <label class="mlabel">Country</label>
                                             <select class="form-control form-control-style select7">
                                                 <option value="" disabled selected>Country</option>
                                                 <option value="1">Canada</option>
@@ -267,6 +490,8 @@
                                 </form>
                             </div>
                         </div>
+
+
                         <div class="row mt-3 text-center pt-2" id="batchShipLink">
                             <div class="col-12">
                                 <span>Want to create a batch shipment to multiple addresses?
@@ -2655,6 +2880,7 @@
         });
     });
     </script>
+    <script src="js/materialForm.js"></script>
     <script src="js/_main.js"></script>
 </body>
 
