@@ -283,55 +283,65 @@
                             <div class="card-header card-title">Ship To : (2)</div>
                             <div class="card-body p-3">
                               <!-- 02 -->
-                              <form class="_material-form-group-with-border">
+                              <form class="_material-form-group-with-border form needs-validation" novalidate>
                                 <div class="form-row">
-                                    <div class="form-group _material-form-group col-md-6" id="_getaddress">
-                                        <input type="text" class="form-control form-control-style typeahead " id="SearchName">
-                                        <label class="mlabel" for="SearchName">Search by Name, Address or Zip</label>
+                                    <div class="form-group _material-form-group col-md-6">
+                                        <input type="text" class="form-control form-control-style" id="SearchName2" required>
+                                        <label class="mlabel" for="SearchName2">Search by Name, Address or Zip</label>
+                                        <div class="invalid-feedback">Please valid enter value.</div>
                                     </div>
                                     <div class="form-group col-md-6 _material-form-group">
                                         <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="checkbox101">
-                                            <label class="custom-control-label" for="checkbox101">Residential</label>
+                                            <input type="checkbox" class="custom-control-input" id="checkbox1012">
+                                            <label class="custom-control-label" for="checkbox1012">Residential</label>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-6 _material-form-group">
-                                        <input type="text" class="form-control form-control-style" id="CompanyName">
-                                        <label class="mlabel" for="CompanyName">Company Name</label>
+                                        <input type="text" class="form-control form-control-style" id="CompanyName2" required>
+                                        <label class="mlabel" for="CompanyName2">Company Name</label>
+                                        <div class="invalid-feedback">Please valid enter value.</div>
                                     </div>
                                     <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
-                                        <input type="text" class="form-control form-control-style" id="FirstName">
-                                        <label class="mlabel" for="FirstName">First Name</label>
+                                        <input type="text" class="form-control form-control-style" id="FirstName2" required>
+                                        <label class="mlabel" for="FirstName2">First Name</label>
+                                        <div class="invalid-feedback">Please valid enter value.</div>
                                     </div>
                                     <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
-                                        <input type="text" class="form-control form-control-style" id="LastName">
-                                        <label class="mlabel" for="LastName">Last Name</label>
+                                        <input type="text" class="form-control form-control-style" id="LastName2" required>
+                                        <label class="mlabel" for="LastName2">Last Name</label>
+                                        <div class="invalid-feedback">Please valid enter value.</div>
                                     </div>
                                     <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
-                                        <input type="text" class="form-control form-control-style" id="Email">
-                                        <label class="mlabel" for="Email">Email</label>
+                                        <input type="email" class="form-control form-control-style" id="Email2" required>
+                                        <label class="mlabel" for="Email2">Email</label>
+                                        <div class="invalid-feedback">Please valid enter value.</div>
                                     </div>
                                     <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
-                                        <input type="text" class="form-control form-control-style" id="Phone">
-                                        <label class="mlabel" for="Phone">Phone</label>
+                                        <input type="text" class="form-control form-control-style" id="Phone2" required>
+                                        <label class="mlabel" for="Phone2">Phone</label>
+                                        <div class="invalid-feedback">Please valid enter value.</div>
                                     </div>
                                     <div class="form-group col-md-3 _material-form-group">
-                                        <input type="text" class="form-control form-control-style" id="Street">
-                                        <label class="mlabel" for="Street">Street</label>
+                                        <input type="text" class="form-control form-control-style" id="Street2" required>
+                                        <label class="mlabel" for="Street2">Street</label>
+                                        <div class="invalid-feedback">Please valid enter value.</div>
                                     </div>
                                     <div class="form-group col-md-3 _material-form-group">
-                                        <input type="text" class="form-control form-control-style" id="Apt">
-                                        <label class="mlabel" for="Apt">Apt. Unit, P.O. Box etc.</label>
+                                        <input type="text" class="form-control form-control-style" id="Apt2" required>
+                                        <label class="mlabel" for="Apt2">Apt. Unit, P.O. Box etc.</label>
+                                        <div class="invalid-feedback">Please valid enter value.</div>
                                     </div>
                                     <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
-                                        <input type="text" class="form-control form-control-style" id="City">
-                                        <label class="mlabel" for="City">City</label>
+                                        <input type="text" class="form-control form-control-style" id="City2" required>
+                                        <label class="mlabel" for="City2">City</label>
+                                        <div class="invalid-feedback">Please valid enter value.</div>
                                     </div>
                                     <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
-                                        <input type="text" class="form-control form-control-style" id="Postal">
-                                        <label class="mlabel" for="Postal">Postal</label>
+                                        <input type="text" class="form-control form-control-style" id="Postal2" required>
+                                        <label class="mlabel" for="Postal2">Postal</label>
+                                        <div class="invalid-feedback">Please valid enter value.</div>
                                     </div>
-                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group" required>
                                         <select class="form-control form-control-style select7">
                                             <option value="" disabled selected>Province</option>
                                             <option value="1">Ontario</option>
@@ -339,7 +349,7 @@
                                             <option value="3">Arizona</option>
                                         </select>
                                     </div>
-                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group">
+                                    <div class="form-group col-6 col-sm-6 col-md-3 _material-form-group" required>
                                         <select class="form-control form-control-style select7">
                                             <option value="" disabled selected>Country</option>
                                             <option value="1">Canada</option>
@@ -351,33 +361,33 @@
                                         <div class="row">
                                             <div class="col-12 col-sm-6 col-md-auto">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="checkbox10">
-                                                    <label class="custom-control-label" for="checkbox10">Confirm Delivery</label>
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox102">
+                                                    <label class="custom-control-label" for="checkbox102">Confirm Delivery</label>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-sm-6 col-md-auto">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="checkbox11">
-                                                    <label class="custom-control-label" for="checkbox11">Save to address book</label>
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox112">
+                                                    <label class="custom-control-label" for="checkbox112">Save to address book</label>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-sm-6 col-md-auto">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="checkbox12">
-                                                    <label class="custom-control-label" for="checkbox12">Signature Required</label>
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox122">
+                                                    <label class="custom-control-label" for="checkbox122">Signature Required</label>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-sm-6 col-md-auto">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="checkbox13">
-                                                    <label class="custom-control-label" for="checkbox13">Special Handling</label>
+                                                    <input type="checkbox" class="custom-control-input" id="checkbox132">
+                                                    <label class="custom-control-label" for="checkbox132">Special Handling</label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12 text-right">
                                         <button type="reset" class="btn btn-link">Clear</button>
-                                        <button type="button" class="btn btn-info btn-shadow">Shipment Details</button>
+                                        <button type="submit" class="btn btn-info btn-shadow">Shipment Details</button>
                                     </div>
                                 </div>
                                 </form>
@@ -491,6 +501,86 @@
                             </div>
                         </div>
 
+                        <div class="card mt-3">
+                            <div class="card-header card-title">Ship To : (4)</div>
+                            <div class="card-body p-3">
+                              <!-- 02 -->
+                              <form class="form needs-validation input-animation" novalidate>
+                                <div class="form-row">
+                                    <div class="col-6 col-sm-6 col-md-6 _material-form-group">
+                                        <div class="col-12 p-0">
+                                            <div style="position:relative;">
+                                                <input type="text" class="form-control form-control-style effect-20" id="CompanyName4" required>
+                                                <label class="mlabel" for="CompanyName4">Company Name</label>
+                                                <span class="focus-border">
+                                                    <i></i>
+                                                </span>
+                                            </div>
+                                            <div class="feedback">Please valid enter value.</div>
+                                        </div>                                        
+                                    </div>                                   
+                                    <div class="col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <div class="col-12 p-0">                                            
+                                            <input type="text" class="form-control form-control-style effect-20" id="FirstName4" required>
+                                            <label class="mlabel" for="FirstName4">First Name</label>
+                                            <span class="focus-border">
+                                                <i></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <div class="col-12 p-0">
+                                            <input type="text" class="form-control form-control-style effect-20" id="LastName4" required>
+                                            <label class="mlabel" for="LastName4">Last Name</label>
+                                            <span class="focus-border">
+                                                <i></i>
+                                            </span>
+                                        </div>
+                                    </div>   
+                                    <div class="col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <div class="col-12 p-0">
+                                            <input type="text" class="form-control form-control-style effect-20" id="email4" required>
+                                            <label class="mlabel" for="email4">Email</label>
+                                            <span class="focus-border">
+                                                <i></i>
+                                            </span>
+                                        </div>
+                                    </div>  
+                                    <div class="col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <div class="col-12 p-0">
+                                            <input type="text" class="form-control form-control-style effect-20" id="phone4" required>
+                                            <label class="mlabel" for="phone4">Phone</label>
+                                            <span class="focus-border">
+                                                <i></i>
+                                            </span>
+                                        </div>
+                                    </div>  
+                                    <div class="col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <div class="col-12 p-0">
+                                            <input type="text" class="form-control form-control-style effect-20" id="street4" required>
+                                            <label class="mlabel" for="street4">Street</label>
+                                            <span class="focus-border">
+                                                <i></i>
+                                            </span> 
+                                        </div>
+                                    </div>  
+                                    <div class="col-6 col-sm-6 col-md-3 _material-form-group">
+                                        <div class="col-12 p-0">
+                                            <input type="text" class="form-control form-control-style effect-20" id="apt4" required>
+                                            <label class="mlabel" for="apt4">Apt. Unit, P.O. Box etc.</label>
+                                            <span class="focus-border">
+                                                <i></i>
+                                            </span> 
+                                        </div>
+                                    </div>                                   
+                                    <div class="col-md-12 text-right">
+                                        <button type="reset" class="btn btn-link">Clear</button>
+                                        <button type="submit" class="btn btn-info btn-shadow">Shipment Details</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
 
                         <div class="row mt-3 text-center pt-2" id="batchShipLink">
                             <div class="col-12">
