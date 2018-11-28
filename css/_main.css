@@ -528,7 +528,7 @@ font-size: 14px;}
 
 /* 01*/
 .form-control {padding: 9px .5rem;}
-._material-form-group-with-border ._material-form-group{position: relative;margin-top: 10px; margin-bottom: 20px;}
+._material-form-group-with-border ._material-form-group{position: relative;margin-top: 10px; margin-bottom: 15px;}
 ._material-form-group-with-border ._material-form-group .form-control-style, ._material-form-group-with-border .form-control{border: 1px solid #dfdfdf; border-radius: 4px!important; padding-left: 10px!important;}
 .custom-control-input.is-valid~.custom-control-label, .was-validated .custom-control-input:valid~.custom-control-label {color:#6c757d!important;}
 .was-validated .custom-control-input:valid~.custom-control-label::before{background-color: #dee2e6;}
@@ -560,7 +560,7 @@ font-size: 14px;}
 ._material-form-group-with-inside-boxshadow .form-control:focus {border-color: transparent;}
 
 /* 05 */
-.input-animation ._material-form-group{padding:0px 10px;margin: 20px 0px;}
+.input-animation ._material-form-group{padding:0px 10px;margin:15px 0px 10px;}
 .input-animation ._material-form-group label.mlabel.active {transform: translateY(-100%);font-weight: 500;top: 0px;margin: 0px;}
 .input-animation .effect-20{border: 1px solid #ccc;padding: 7px 10px;transition: 0.4s;background: transparent;}
 .input-animation .effect-20 ~ .focus-border:before,.input-animation .effect-20 ~ .focus-border:after{content: ""; position: absolute; top: 0; left: 0px; width: 0; height: 2px; background-color: #17a2b8; transition: 0.3s;}
