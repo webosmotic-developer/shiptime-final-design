@@ -1,4 +1,4 @@
-$(function() {    
+$(function() {
     $('[data-toggle="tooltip"],.ttip').tooltip();
 
     $('.dropdown-menu').on('click', function(e) {
@@ -10,6 +10,10 @@ $(function() {
     if($('.select7').length){
         $('.select7').select7();
     }
+
+    /*if($('.collapse').length){
+      $('.collapse').collapse();
+    }*/
 
   $("[data-toggle=popover]").each(function(i, obj) {
 
