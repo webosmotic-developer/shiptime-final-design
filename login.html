@@ -140,6 +140,8 @@
             <script src="js/jquery-3.3.1.min.js"></script>
             <script src="js/bootstrap.min.js"></script>
             <script src="js/feather.min.js"></script>
+
+            <script src="js/login.js"></script>
             <script>
             feather.replace()
             $(document).ready(function($){
@@ -175,7 +177,10 @@
 				  });
 	  
             });
+
+            if ($('body.__safari').length) {
+                $('.site-wrapper,#_forms').height($(window).height());
+            }
             </script>
-            <script src="js/login.js"></script>
         </body>
     </html>

@@ -741,12 +741,12 @@ font-size: 14px;}
 
 @media (min-width: 1024px){
   .modal-lg {max-width: 1000px;}
- 
+
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px){
   .modal-lg {max-width: 750px;}
-  
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -798,7 +798,7 @@ font-size: 14px;}
     .card-title-subtitle{position: relative; padding-left: 10px;}
     .shipping-nav-tabs .nav-tabs .nav-item {width: 50%;}
     .shipping-nav-tabs .nav-tabs .nav-item a { width: auto; }
-    
+
   .modal-checkout {max-width:95%;}
 }
 @media only screen and (max-width: 390px) {
