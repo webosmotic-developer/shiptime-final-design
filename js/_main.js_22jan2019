@@ -124,9 +124,8 @@ function check_if_in_view() {
     if ($(window).width() > 990) {
         $(".sideNav").removeClass('fixed');
         $(".sideNav").hover(function() {
-            //console.log("HI");
             $(".sideNav").addClass('fixed');
-            $("._mainContainer").find('select._selecthack').blur();
+
         }, function() {
             $(".sideNav").removeClass('fixed');
         })
