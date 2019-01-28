@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>ShipTime</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <div class="site-wrapper d-flex w-100 mx-auto flex-column">
+            <header id="header" class="header">
+                <div class="container">
+                    <div class="nav_logo"><img src="images/shiptime-logo-white.svg" alt="ShipTime"></div>
+                </div>
+            </header>
+            <!-- /header -->
+            <main>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 Welcome-text align-self-center text-white">
+                            <h1 class="text-white">Welcome to ShipTime</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and setting simply dummy text of the printing and typesetting and crambled it to make specimen book orem Ipsum is simply dummy text of the printing and setting simply dummy text of the printing and typesetting and crambled it to make specimen book. </p>
+                            <p>printing and typesetting and crambled it to make specimen book.</p>
+                        </div>
+                        <div id="_forms" class="form-body col-12 col-lg-6 align-self-center">
+                            <div class="_form" id="show_login_form">
+                                <h2 class="pb-4"><b>Member Login</b></h2>
+                                <form class="needs-validation" novalidate>
+                                    <div class="inner-addon right-addon mb-4">
+                                        <i class="icon" data-feather="mail"></i>
+                                        <input type="email" class="form-control" placeholder="Email address" required>
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                        <small class="form-text text-right"><a class="text-muted" href="#" id="show_emailhelp">Forgot Email Address?</a></small>
+                                    </div>
+                                    <div class="inner-addon right-addon mb-4">
+                                        <i class="icon" data-feather="unlock"></i>
+                                        <input type="password" class="form-control" placeholder="Password" required>
+                                        <div class="invalid-feedback">Please enter a valid password.</div>
+                                        <small class="form-text text-right"><a class="text-muted" href="#" id="show_passwordhelp">Forgot Password?</a></small>
+                                    </div>
+                                    <button type="submit" class="btn btn-theme _btn-loader">Login</button>
+                                </form>
+                                <div class="pt-4 pl-2">
+                                    <div class="mb-4">
+                                        <small class="text-muted">I agree to ShipTime's <a class="theme-color" href="#">Terms of Service</a> and <a class="theme-color" href="#">Privacy Policy</a></small></div>
+                                        <small class="text-muted">Don’t have a ShipTime account?
+                                        <a class="hash-link theme-color" href="#" id="show_signup"><b>Create one for free</b>.</a>
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="_form" id="show_forgot_email_form" style="display:none">
+                                    <h2 class="pb-4"><b>Forgot Email Address?</b></h2>
+                                    <form class="needs-validation" novalidate>
+                                        <div class="inner-addon right-addon mb-5">
+                                            <i class="icon" data-feather="user"></i>
+                                            <input type="email" class="form-control" placeholder="Enter Your Username" required>
+                                            <div class="invalid-feedback">Please enter a your username.</div>
+                                        </div>
+                                        <button type="submit" class="btn btn-theme _btn-loader">Send Email</button>
+                                    </form>
+                                    <div class="pt-4 pl-2">
+                                        <small class="text-muted">Do not have a ShipTime account?
+                                        <a class="theme-color login_button __show_login" href="#"><b>Log In</b></a>
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="_form" id="show_forgot_password_form" style="display: none">
+                                    <h2 class="pb-4"><b>Forgot Your Password?</b></h2>
+                                    <form class="needs-validation" novalidate>
+                                        <div class="inner-addon right-addon mb-5">
+                                            <i class="icon" data-feather="mail"></i>
+                                            <input type="email" class="form-control" placeholder="Your Email Address" required>
+                                            <div class="invalid-feedback">Please enter a your email address.</div>
+                                        </div>
+                                        <button type="submit" class="btn btn-theme _btn-loader">Send Password</button>
+                                    </form>
+                                    <div class="pt-4 pl-2">
+                                        <small class="text-muted">Do not have a ShipTime account?
+                                        <a class="theme-color login_button __show_login" href="#show_login"><b>Log In</b></a>
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="_form" id="show_signup_form" style="display: none">
+                                    <h2 class="pb-4"><b>Sign Up</b></h2>
+                                    <form class="needs-validation" novalidate>
+                                        <div class="inner-addon right-addon mb-4">
+                                            <i class="icon" data-feather="user"></i>
+                                            <input type="email" class="form-control" id="Email" placeholder="Email address" required>
+                                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                                        </div>
+                                        <div class="inner-addon right-addon mb-4">
+                                            <i class="icon" data-feather="unlock"></i>
+                                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                            <div class="invalid-feedback">Please enter a valid password.</div>
+                                        </div>
+                                        <div class="inner-addon right-addon mb-4">
+                                            <i class="icon" data-feather="lock"></i>
+                                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                                            <div class="invalid-feedback">Please enter a valid confirm password.</div>
+                                        </div>
+                                        <div class="input-addon right-addon mb-4">
+                                            <label for="access-code">Exclusive Access  Code (optional)</label>
+                                            <input value="SHIP-" id="access-code" type="text" class="form-control" aria-required="true">
+                                        </div>
+                                        <div class="inner-addon right-addon mt-2 mb-5">
+                                            <img src="images/rc-anchor.jpg" alt="">
+                                        </div>
+                                        <button type="submit" class="btn btn-theme _btn-loader">Create account</button>
+                                    </form>
+                                    <div class="pt-4 pl-2">
+                                        <small class="text-muted">Already have an account?
+                                        <a class="hash-link theme-color login_button __show_login" href="#"><b>Log In</b></a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <!-- /main -->
+                <footer class="footer mt-auto">
+                    <div class="container">
+                        <div class="copyright">© 2018 ShipTime Inc.</div>
+                        <div class="social">
+                            <a class="text-white pr-2 hint--top hint--warning" aria-label="Visit us Facebook" href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a class="text-white pr-2 hint--top hint--warning" aria-label="Visit us Twitter" href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                            <a class="text-white hint--top hint--warning" aria-label="Visit us LinkedIn" href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </footer>
+                <!-- /footer -->
+            </div>
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/feather.min.js"></script>
+            <script>
+            feather.replace()
+            $(document).ready(function($){
+            $('#show_signup').click(function() {
+            $('#show_login_form,#show_forgot_password_form, #show_forgot_email_form').slideUp();
+            $('#show_signup_form').slideDown(1000);
+            event.preventDefault();
+            });
+            $('.__show_login').click(function() {
+            $('#show_signup_form, #show_forgot_password_form, #show_forgot_email_form').slideUp();
+            $('#show_login_form').slideDown(1000);
+            event.preventDefault();
+            });
+            $('#show_emailhelp').click(function() {
+            $('#show_login_form, #show_signup_form, #show_forgot_password_form').slideUp();
+            $('#show_forgot_email_form').slideDown(1000);
+            event.preventDefault();
+            });
+            $('#show_passwordhelp').click(function() {
+            $('#show_login_form, #show_signup_form, #show_forgot_email_form').slideUp();
+            $('#show_forgot_password_form').slideDown(1000);
+            event.preventDefault();
+            });
+			
+			$('._btn-loader').on('click', function() {
+					  var $this = $(this);
+					$this.addClass('spinning-light');
+					$this.prop("disabled", true);
+					  setTimeout(function() {
+						 $this.removeClass('spinning-light');
+						 $this.prop("disabled", false);
+					 }, 10000);
+				  });
+	  
+            });
+            </script>
+            <script src="js/login.js"></script>
+        </body>
+    </html>

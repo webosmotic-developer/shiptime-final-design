@@ -111,7 +111,7 @@
             <div class="_mainContainer">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-8 signup-card-form card">
-                      <form class="needs-validation _material-form-group-with-border" novalidate>
+                      <form class="needs-validation" novalidate>
                             <div class="card-header card-title d-block d-md-none">
                                 <h6>Welcome to your ShipTime account, MandatoryFirstName!</h6>
                                 <p>To make shipping easier, complete your profile below!</p>
@@ -129,43 +129,31 @@
 
                                           <div class="row">
                                               <div class="col-12 col-md-6">
-                                                <div class="form-group _material-form-group">
-                                                    <input type="text" class="form-control form-control-style" id="FirstName">
-                                                    <label class="mlabel" for="FirstName">First Name</label>
-                                                </div>
-                                              </div>
-                                              <div class="col-12 col-md-6">
-                                                  <div class="form-group _material-form-group">
-                                                      <input type="text" class="form-control form-control-style" id="lastName" value="" placeholder="" required>
-                                                      <label class="mlabel" for="lastName">Last Name</label>
+                                                  <div class="form-group">
+                                                      <label class="text-dark font-weight-bold">First Name</label>
+                                                      <input type="text" class="form-control form-control-style" value="" placeholder="" required>
                                                   </div>
                                               </div>
                                               <div class="col-12 col-md-6">
-                                                  <div class="form-group _material-form-group">
-                                                      <input type="text" class="form-control form-control-style" id="CompanyName" value="" placeholder="" required>
-                                                      <label class="mlabel" for="CompanyName">Company Name</label>
+                                                  <div class="form-group">
+                                                      <label class="text-dark font-weight-bold">Last Name</label>
+                                                      <input type="text" class="form-control form-control-style" value="" placeholder="" required>
                                                   </div>
                                               </div>
                                               <div class="col-12 col-md-6">
-                                                  <div class="form-group _material-form-group">
-                                                      <input type="text" class="form-control form-control-style" id="Phoneno" value="" required>
-                                                      <label class="mlabel" for="Phoneno">Phone</label>
+                                                  <div class="form-group">
+                                                      <label class="text-dark font-weight-bold">Company Name</label>
+                                                      <input type="text" class="form-control form-control-style" value="" placeholder="" required>
                                                   </div>
                                               </div>
-                                          </div>
+                                              <div class="col-12 col-md-6">
+                                                  <div class="form-group">
+                                                      <label class="text-dark font-weight-bold">Phone</label>
+                                                      <input type="text" class="form-control form-control-style" value="" placeholder="" required>
+                                                  </div>
+                                              </div>
 
-                                          <h6 class=" text-dark font-weight-bold">How are you shipping?</h6>
-                                          <div class="shipping_type_radio">
-                                              <div class="input-radio ">
-                                                <input type="radio" id="personal" name="shipping-type" value="Personal"> 
-                                                <label for="personal" class="btn"><img src="images/personal-icon.svg" width="40px;"><br>Personal 
-                                                    <span class="check-sign"></span></label>
-                                              </div>
-                                              <div class="input-radio">
-                                                <input type="radio" id="business" name="shipping-type" value="Business"> 
-                                                <label for="business" class="btn"><img src="images/business-icon.svg" width="40px;"><br>Business 
-                                                    <span class="check-sign"></span></label>
-                                              </div>
+
                                           </div>
 
                                           <div class="associations-tab">
@@ -235,9 +223,8 @@
                                   <div class="tab-pane signup-card-overflow" id="address" role="tabpanel" aria-labelledby="address-tab">
                                     <label class="text-dark font-weight-bold">Address details</label>
                                     <div id="addressType">
-                                        <div class="form-group mb-3 _material-form-group">
-                                            <input type="text" class="form-control form-control-style" id="location">
-                                            <label class="mlabel" for="location">Enter a location</label>
+                                        <div class="form-group mb-3">
+                                            <input type="text" class="form-control form-control-style" placeholder="Enter a location">
                                         </div>
                                         <span>Can't find your address?</span>
                                         <a class="text-danger" href="#!" onclick="$('#addressType').addClass('d-none');$('#addressFields').removeClass('d-none');$('#address2').removeClass('d-none');"><span> Click here </span></a><span>to type it in.</span>
@@ -245,31 +232,27 @@
                                     <div id="addressFields" class="d-none">
                                         <div class="row">
                                             <div class="col-6">
-                                                <div class="form-group _material-form-group">
-                                                    <input type="text" class="form-control form-control-style" id="Street">
-                                                    <label class="mlabel" for="Street">Street</label>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-style" placeholder="Street">
                                                 </div>
                                             </div>
                                             <div class="col-6">
-                                                <div class="form-group _material-form-group">
-                                                    <input type="text" class="form-control form-control-style" id="Appt">
-                                                    <label class="mlabel" for="Appt">Appt. Unit, P.O., Box, etc</label>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-style" placeholder="Appt. Unit, P.O., Box, etc">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-md-3">
-                                                <div class="form-group _material-form-group">
-                                                    <input type="text" class="form-control form-control-style" id="City">
-                                                    <label class="mlabel" for="City">City</label>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-style" placeholder="City">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-md-3">
-                                                <div class="form-group _material-form-group">
-                                                    <input type="text" class="form-control form-control-style" id="Postal">
-                                                    <label class="mlabel" for="Postal">Postal</label>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-style" placeholder="Postal">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-md-3">
-                                                <div class="form-group _material-form-group">
+                                                <div class="form-group">
                                                     <select class="form-control form-control-style select7">
                                                         <option value="" disabled selected>Province
                                                         </option>
@@ -280,7 +263,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-6 col-md-3">
-                                                <div class="form-group _material-form-group">
+                                                <div class="form-group">
                                                     <select class="form-control form-control-style select7">
                                                         <option value="" disabled selected>Country</option>
                                                         <option value="1">Canada</option>
@@ -306,28 +289,6 @@
                                             <option value="5">More than 5000 shipments a month</option>
                                         </select>
                                     </div>
-                                    <!--div>
-                                        <div class="sell_online_switch">                                        
-                                            <label class="text-dark font-weight-bold">Do you sell online?</label>  
-                                            <div class="switch-field">
-                                                <input type="radio" id="switch_left" name="switch_2" value="yes" /><label for="switch_left" class="waves-effect waves-light">Yes</label>
-                                                <input type="radio" id="switch_right" name="switch_2" value="no" /><label for="switch_right" class="waves-effect waves-light">No</label>
-                                            </div>
-                                        </div>
-                                    </div-->
-                                    <div class="sell_online_switch2">
-                                            <label class="text-dark font-weight-bold">Do you sell online?</label> 
-                                        <div class="toggle-radio">
-                                            <input type="radio" name="rdo" id="yes" checked>
-                                            <input type="radio" name="rdo" id="no">
-                                            <div class="switch">
-                                                <label for="yes">Yes</label>
-                                                <label for="no">No</label>
-                                                <span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-
 
                                   </div>
                                 </div>
@@ -360,7 +321,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/feather.min.js"></script>
     <script src="js/jquery-select7.js"></script>
-    <script src="js/materialForm.js"></script>
     <script src="js/_main.js"></script>
     <script type="text/javascript">
     $(window).load(function() {
@@ -369,8 +329,7 @@
     }, 300);
     });
     </script>
-    <script>      
-     
+    <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function() {
 
