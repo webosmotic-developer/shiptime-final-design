@@ -713,7 +713,7 @@ font-size: 14px;}
 .shipping_type_radio .input-radio input[type=radio]:checked + label{background: #34ADB8;color: #fff;}
 .shipping_type_radio .input-radio input[type=radio]:checked + label > span{display: inline;}
 .shipping_type_radio .input-radio input[type=radio] + label > img {padding-bottom: 5px;}
-.shipping_type_radio .input-radio input[type=radio]:checked + label > img {filter: brightness(0) invert(1);}
+/*.shipping_type_radio .input-radio input[type=radio]:checked + label > img {filter: brightness(0) invert(1);}*/
 
 .sell_online_switch, .toggle-radio{position: relative;}
 .sell_online_switch .switch-title {margin-bottom: 6px;}
