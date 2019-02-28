@@ -642,7 +642,19 @@ font-size: 14px;}
   .div-collapsible:after { content: '\002B'; color: #000; float: right; font-size: 24px;margin-right: 10px;line-height: 36px;}
   .div-collapsible.active:after { content: "\2212"; }
   .overview-card-body { display: none;}
-  .overview-step-hight {height: 200px;}
+  
+  .quote-ship-flow .card-h100 {height: 100%;}
+  .row-quote-ship-flow .card-overview,
+  .row-quote-ship-flow .card-payment {margin-bottom: 20px;}
+  .row-quote-ship-flow .card-overview .card {background: #faf8eb;}
+  @media (min-width: 768px) {
+    .row-quote-ship-flow #overview-card-body {display: block !important;}
+    .row-quote-ship-flow .div-collapsible {cursor: default;}
+    .row-quote-ship-flow .div-collapsible:after {display: none;}
+    .row-quote-ship-flow .card-overview {padding-right: 0px;}
+    .row-quote-ship-flow .card-payment {padding-left: 0px;}
+  }
+
 
 /*payment-tab*/
 .payment-tab {border: 1px solid #eee; height: 400px; margin-left: 0;}

@@ -1679,17 +1679,17 @@
         </div>
         <!-- 06 -->
         <div class="quote-ship-flow" id="step6">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card mt-3">
-                        <div class="card-header card-title div-collapsible">
-                            <span style="position: relative;margin-right: 5px;top: 3px;"><i data-feather="truck"></i></span> Overview
+            <div class="row row-quote-ship-flow">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-3 card-overview">
+                    <div class="card card-h100">
+                        <div class="card-header card-title p-3 div-collapsible">
+                            <span style="position: relative;margin-right: 5px;"><i data-feather="truck"></i></span> Overview
                         </div>
                         <div class="card-body p-3" id="overview-card-body" style="display:none;">
                             <div class="row">
-                                <div class="col-12 col-md-4 mt-3 m-md-0">
+                                <div class="col-12 col-sm-6 col-md-12 mt-3 m-md-0">
                                     <label class="text-dark font-weight-bold mb-3">1. Shipment Details</label>
-                                    <div class="body-height overview-step-hight">
+                                    <div class="body-height overview-step-height">
                                         <div class="font-weight-bold mb-2 text-info">3 Packages</div>
                                         <ul class="list-unstyled">
                                             <li>1 lbs , 1 x 1 x 1 Inches , $1 value.</li>
@@ -1697,22 +1697,22 @@
                                             <li class="mt-2"><a href="#" title="more">More...</a></li>
                                         </ul>
                                     </div>
-                                    <div class="text-right">
+                                    <div class="text-left">
                                         <button type="button" class="btn btn-xs btn-info btn-shadow">
                                             <i class="fa fa-angle-double-left"></i> Edit shipment details
                                         </button>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4 mt-3 m-md-0">
+                                <div class="col-12 col-sm-6 col-md-12 mt-3 m-md-0 pt-3">
                                     <label class="text-dark font-weight-bold mb-3">2. Rates and Pickups</label>
-                                    <div class="body-height overview-step-hight">
+                                    <div class="body-height overview-step-height">
                                         <div class="font-weight-bold mb-2 text-info">$21.25</div>
                                         <p>Express Worldwide</p>
                                         <div class="font-weight-bold mt-2 mb-2 text-info">Drop-Off</div>
                                         <p>You chose to drop off your package.</p>
                                     </div>
                                     <div class="row">
-                                        <div class="col text-right">
+                                        <div class="col text-left">
                                             <button type="button" class="btn btn-xs btn-info btn-shadow">
                                                 <i class="fa fa-angle-double-left"></i> Edit Rate
                                             </button>
@@ -1722,11 +1722,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4 mt-3 m-md-0">
+                                <div class="col-12 col-sm-12 col-md-12 mt-3 m-md-0 pt-3">
                                     <label class="text-dark font-weight-bold mb-3">3. Confirm Details</label>
-                                    <div class="body-height overview-step-hight">
+                                    <div class="body-height overview-step-height">
                                         <div class="table-responsive-lg">
-                                            <table class="table table-borderless">
+                                            <table class="table bg-light">
                                                 <thead class="thead-light">
                                                     <tr>
                                                         <th class="nowrap">Details</th>
@@ -1752,7 +1752,7 @@
                                             </table>
                                         </div>
                                     </div>
-                                    <div class="text-right">
+                                    <div class="text-left">
                                         <button type="button" class="btn btn-xs btn-danger btn-shadow">
                                             <i class="fa fa-close"></i> Cancel this shipment
                                         </button>
@@ -1762,10 +1762,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="card mt-3">
+                <div class="col-12 col-sm-12 col-md-8 col-lg-9 card-payment">
+                    <div class="card card-h100">
                         <div class="card-header card-title p-3">
                             <div class="row">
                                 <div class="col-6 text-left nowrap">Payment Method</div>
@@ -1784,7 +1782,7 @@
                                 </div>
                             </div>
                             <div class="row mt-3 pr-3">
-                                <div class="col-12 col-lg-8">
+                                <div class="col-12">
                                     <div class="row payment-tab">
                                         <div class="col-12 col-sm-3 tab">
                                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -1929,7 +1927,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                                    <div class="col-12 col-xl-6 mb-3">
+                                                    <div class="col-12 col-xl-10 mb-3">
                                                         <div class="row">
                                                             <div class="col-12 align-self-center mb-3 mt-3">
                                                                 <div class="custom-control custom-checkbox">
@@ -1965,7 +1963,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                                    <div class="col-12 col-xl-6 mb-3">
+                                                    <div class="col-12 col-xl-10 mb-3">
                                                         <div class="row">
                                                             <div class="col-12 align-self-center mb-3 mt-3">
                                                                 <label class=" text-dark font-weight-bold m-0 pt-2 pb-2" for="contain">Select From Popular Banks</label>
@@ -1996,9 +1994,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-4 mt-3 pr-0">
+                                <div class="col-12 pr-0">
                                     <div class="row">
-                                        <div class="col-12">
+                                        <div class="col-12 pt-3">
                                             <label class="text-dark font-weight-bold mb-3">Confirm Details</label>
                                             <div class="body-height">
                                                 <div class="table-responsive-lg">
