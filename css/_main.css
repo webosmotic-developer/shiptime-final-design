@@ -779,7 +779,7 @@ label[for=no] {position: absolute;right: 0px;}
 .create-shipment-block {min-width: 920px;}
 .create-shipment-block-responsive {display: block; width: 100%; overflow-x: auto;  -webkit-overflow-scrolling: touch;}
 
-.create_shipment_head {display: flex;text-align: left;background: #fff;border-radius: 4px;-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.15);box-shadow: 0 3px 6px rgba(0,0,0,.15);padding: 12px 10px;margin-bottom: 10px;}
+.create_shipment_head {display: flex;text-align: left;background: #efefef;border-radius: 4px;-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.15);box-shadow: 0 3px 6px rgba(0,0,0,.15);padding: 12px 10px;margin-bottom: 10px;}
 .create_shipment_head .head-list {flex:1; color: #000;font-size: 14px;font-weight: 500; padding: 5px;}
 
 .create_shipment_head .is_sort {cursor: pointer;}
