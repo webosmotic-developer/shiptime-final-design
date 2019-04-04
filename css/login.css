@@ -11,14 +11,17 @@ a:hover {color: #ed5926;}
 
 /* header  */
 .header {border-bottom: 1px solid rgba(255, 255, 255, 0.3);}
-.nav_logo img {width: 200px;padding-left: 10px; height: 50px}
-.nav_logo {padding: 10px;}
+.nav_logo img {width: 162px; padding-left: 0px; height: 50px;}
+.nav_logo {padding: 10px 0px;}
 
 /* main */
 main {display:flex;height:100%;}
 main .container {align-self: center;}
 h1 {font-size: 2rem; margin-bottom: 1.5rem}
 .Welcome-text {padding-right: 80px;}
+
+.login-img {padding-top: 30px;}
+
 #_forms, ._form {}
 #_forms ._form {width: 100%; min-width: 100%;}
 .was-validated .form-control:invalid:focus {box-shadow: none;}
@@ -78,7 +81,10 @@ body.__safari .header {position: absolute;width: 100%;top: 0px;}
 body.__safari .footer {position: absolute;width: 100%;bottom: 0px;}
 body.__safari #_forms ._form{padding-top: 50px;}
 
-
+@media only screen and (max-width: 1200px) {
+  .login-img {padding-top: 20px;}
+  .login-img img {height: 250px} 
+}
 @media only screen and (max-width: 991px) {
   .site-wrapper {background: url(../images/bg-img.jpg) center no-repeat;height: 100%;background-size: cover;}
   .Welcome-text {margin: 2rem 0;padding: 0;text-align: center;}
@@ -89,6 +95,8 @@ body.__safari #_forms ._form{padding-top: 50px;}
   body.__safari .site-wrapper, body.__safari #_forms {height: auto!important;}
   body.__safari #_forms ._form{padding-top: 0px;}
 
+  .login-img {padding-top: 20px;}
+  .login-img img {height: 150px} 
 }
 
 @media only screen and (max-width: 576px) {
